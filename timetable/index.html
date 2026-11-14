@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>School Timetable Builder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar no-print">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">▦</span>
+        <div>
+          <div class="brand-title">Timetable Builder</div>
+          <div class="brand-sub" id="schoolNameLabel"></div>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button class="btn ghost" id="btnSample" title="Replace everything with an example school">Load example school</button>
+        <button class="btn ghost" id="btnExport" title="Save all data to a file">Save to file</button>
+        <label class="btn ghost" title="Open a file saved earlier">
+          Open file<input type="file" id="fileImport" accept="application/json,.json" hidden />
+        </label>
+        <button class="btn ghost danger" id="btnReset">Start over</button>
+      </div>
+    </header>
+
+    <nav class="tabs no-print" id="tabs" role="tablist"></nav>
+
+    <main id="main"></main>
+
+    <dialog id="dialog">
+      <form method="dialog" class="dialog-body">
+        <h3 id="dialogTitle"></h3>
+        <p class="muted" id="dialogHint"></p>
+        <div id="dialogContent"></div>
+        <div class="dialog-actions">
+          <button class="btn primary" value="ok">Done</button>
+        </div>
+      </form>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="solver.js"></script>
+    <script src="sample-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

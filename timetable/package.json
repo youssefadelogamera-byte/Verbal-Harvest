@@ -1,0 +1,8 @@
+{
+  "name": "school-timetable-builder",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test tests/solver.test.js"
+  }
+}
