@@ -1,0 +1,127 @@
+# Generic school mathematics, grades 1 to 8.
+# This map is NOT tied to any one country or national syllabus. It lists widely taught topics and the
+# order in which they depend on each other. Athar graphs a curriculum; it does not invent or
+# change one. A school can replace this file with its own pack in the same format.
+id: generic-maths
+name: School mathematics, grades 1 to 8
+subject: maths
+subject_label: {en: Mathematics}
+grades: [1, 8]
+languages: [en]
+
+strands:
+  - {id: number, label: {en: Number and place value}}
+  - {id: operations, label: {en: Operations and calculation}}
+  - {id: fractions-and-ratio, label: {en: "Fractions, decimals, ratio and proportion"}}
+  - {id: measurement, label: {en: Measurement}}
+  - {id: geometry, label: {en: Geometry and space}}
+  - {id: data, label: {en: Data and probability}}
+  - {id: algebra, label: {en: Patterns and algebra}}
+
+skills:
+  - {id: spatial-reasoning, label: {en: Spatial reasoning}}
+  - {id: pattern-finding, label: {en: Pattern finding}}
+  - {id: explaining-reasoning, label: {en: Explaining reasoning}}
+  - {id: persistence-on-hard-problems, label: {en: Persistence on hard problems}, kind: disposition}
+  - {id: working-with-data, label: {en: Working with data}}
+  - {id: estimating-and-checking, label: {en: Estimating and checking}}
+
+approaches:
+  - {id: concrete_objects, label: {en: Hands-on objects}}
+  - {id: visual_models, label: {en: Diagrams and visual models}}
+  - {id: worked_examples, label: {en: Worked examples}}
+  - {id: peer_groups, label: {en: Group work with peers}}
+  - {id: story_problems, label: {en: Story and real-life problems}}
+  - {id: drill_practice, label: {en: Drill and practice}}
+
+concepts:
+  # ---------------------------------------------------------------- Number
+  - {id: counting-to-20, label: {en: Counting and number names to 20}, strand: number, grade: 1, requires: [], skills: []}
+  - {id: number-bonds-10, label: {en: Number bonds to 10}, strand: number, grade: 1, requires: [counting-to-20], skills: []}
+  - {id: place-value-tens-ones, label: {en: "Place value, tens and ones"}, strand: number, grade: 1, requires: [counting-to-20], skills: []}
+  - {id: number-patterns, label: {en: Number patterns and skip counting}, strand: number, grade: 2, requires: [counting-to-20], skills: [pattern-finding]}
+  - {id: place-value-hundreds, label: {en: Place value to hundreds}, strand: number, grade: 2, requires: [place-value-tens-ones], skills: []}
+  - {id: place-value-thousands, label: {en: Place value to thousands}, strand: number, grade: 3, requires: [place-value-hundreds], skills: []}
+  - {id: rounding-estimating, label: {en: Rounding and estimating}, strand: number, grade: 3, requires: [place-value-hundreds], skills: [estimating-and-checking]}
+  - {id: place-value-large, label: {en: Place value to millions}, strand: number, grade: 4, requires: [place-value-thousands], skills: []}
+  - {id: factors-multiples, label: {en: Factors and multiples}, strand: number, grade: 5, requires: [multiplication-tables, division-basic], skills: [pattern-finding]}
+  - {id: decimals-place-value, label: {en: Decimal place value}, strand: number, grade: 5, requires: [place-value-large, fraction-concept], skills: []}
+  - {id: negative-numbers, label: {en: Negative numbers on the number line}, strand: number, grade: 6, requires: [place-value-large], skills: []}
+  - {id: squares-and-powers, label: {en: "Squares, cubes and powers"}, strand: number, grade: 7, requires: [multiplication-multi-digit, factors-multiples], skills: [pattern-finding]}
+  - {id: integer-operations, label: {en: Operations with negative numbers}, strand: number, grade: 7, requires: [negative-numbers, order-of-operations], skills: []}
+
+  # ------------------------------------------------------------ Operations
+  - {id: addition-basic, label: {en: Addition facts within 20}, strand: operations, grade: 1, requires: [number-bonds-10], skills: []}
+  - {id: subtraction-basic, label: {en: Subtraction facts within 20}, strand: operations, grade: 1, requires: [number-bonds-10], skills: []}
+  - {id: addition-two-digit, label: {en: Adding two-digit numbers}, strand: operations, grade: 2, requires: [addition-basic, place-value-tens-ones], skills: []}
+  - {id: subtraction-two-digit, label: {en: Subtracting two-digit numbers}, strand: operations, grade: 2, requires: [subtraction-basic, place-value-tens-ones], skills: []}
+  - {id: multiplication-basic, label: {en: Multiplication as repeated addition and arrays}, strand: operations, grade: 2, requires: [addition-basic, number-patterns], skills: []}
+  - {id: addition-multi-digit, label: {en: Adding multi-digit numbers}, strand: operations, grade: 3, requires: [addition-two-digit, place-value-hundreds], skills: []}
+  - {id: subtraction-multi-digit, label: {en: Subtracting multi-digit numbers}, strand: operations, grade: 3, requires: [subtraction-two-digit, place-value-hundreds], skills: []}
+  - {id: multiplication-tables, label: {en: Multiplication tables}, strand: operations, grade: 3, requires: [multiplication-basic], skills: []}
+  - {id: division-basic, label: {en: Division as sharing and grouping}, strand: operations, grade: 3, requires: [multiplication-basic, subtraction-basic], skills: []}
+  - {id: multiplication-multi-digit, label: {en: Multiplying multi-digit numbers}, strand: operations, grade: 4, requires: [multiplication-tables, place-value-thousands, addition-multi-digit], skills: []}
+  - {id: division-long, label: {en: Long division}, strand: operations, grade: 4, requires: [division-basic, multiplication-tables, subtraction-multi-digit], skills: [persistence-on-hard-problems]}
+  - {id: problem-solving-multistep, label: {en: Multi-step word problems}, strand: operations, grade: 5, requires: [multiplication-multi-digit, division-long, addition-multi-digit], skills: [explaining-reasoning, persistence-on-hard-problems]}
+  - {id: order-of-operations, label: {en: Order of operations}, strand: operations, grade: 6, requires: [multiplication-multi-digit, division-long], skills: []}
+
+  # ------------------------------------------------ Fractions, ratio, proportion
+  - {id: fraction-concept, label: {en: Fractions as equal parts of a whole}, strand: fractions-and-ratio, grade: 4, requires: [division-basic], skills: []}
+  - {id: equivalent-fractions, label: {en: Equivalent fractions}, strand: fractions-and-ratio, grade: 4, requires: [fraction-concept, multiplication-tables], skills: []}
+  - {id: comparing-fractions, label: {en: Comparing and ordering fractions}, strand: fractions-and-ratio, grade: 4, requires: [fraction-concept], skills: []}
+  - {id: fraction-of-quantity, label: {en: Finding a fraction of a quantity}, strand: fractions-and-ratio, grade: 5, requires: [fraction-concept, division-basic], skills: []}
+  - {id: adding-fractions-like, label: {en: Adding fractions with the same denominator}, strand: fractions-and-ratio, grade: 5, requires: [fraction-concept, addition-multi-digit], skills: []}
+  - {id: adding-fractions-unlike, label: {en: Adding fractions with different denominators}, strand: fractions-and-ratio, grade: 5, requires: [equivalent-fractions, adding-fractions-like], skills: []}
+  - {id: decimals-fractions, label: {en: Connecting fractions and decimals}, strand: fractions-and-ratio, grade: 6, requires: [decimals-place-value, equivalent-fractions], skills: []}
+  - {id: multiplying-fractions, label: {en: Multiplying fractions}, strand: fractions-and-ratio, grade: 6, requires: [fraction-of-quantity, multiplication-multi-digit], skills: []}
+  - {id: decimal-operations, label: {en: Calculating with decimals}, strand: fractions-and-ratio, grade: 6, requires: [decimals-place-value, multiplication-multi-digit, division-long], skills: [estimating-and-checking]}
+  - {id: percentages, label: {en: Percentages}, strand: fractions-and-ratio, grade: 6, requires: [decimals-fractions, equivalent-fractions], skills: []}
+  - {id: ratio-concept, label: {en: Ratio as a comparison}, strand: fractions-and-ratio, grade: 6, requires: [equivalent-fractions, multiplication-tables], skills: []}
+  - {id: ratio-sharing, label: {en: Sharing a quantity in a ratio}, strand: fractions-and-ratio, grade: 6, requires: [ratio-concept, division-long], skills: []}
+  - {id: unit-rates, label: {en: Unit rates}, strand: fractions-and-ratio, grade: 7, requires: [ratio-concept, division-long, decimal-operations], skills: [estimating-and-checking]}
+  - {id: proportional-reasoning, label: {en: Proportional reasoning}, strand: fractions-and-ratio, grade: 7, requires: [ratio-concept, unit-rates], skills: [explaining-reasoning]}
+  - {id: percent-change, label: {en: Percentage increase and decrease}, strand: fractions-and-ratio, grade: 8, requires: [percentages, proportional-reasoning], skills: []}
+
+  # ------------------------------------------------------------ Measurement
+  - {id: length-measure, label: {en: Measuring length}, strand: measurement, grade: 1, requires: [counting-to-20], skills: []}
+  - {id: time-reading, label: {en: Reading clocks and calendars}, strand: measurement, grade: 2, requires: [place-value-tens-ones], skills: []}
+  - {id: perimeter, label: {en: Perimeter}, strand: measurement, grade: 3, requires: [length-measure, addition-multi-digit], skills: []}
+  - {id: area-rectangles, label: {en: Area of rectangles}, strand: measurement, grade: 4, requires: [perimeter, multiplication-tables], skills: []}
+  - {id: units-conversion, label: {en: Converting between units}, strand: measurement, grade: 5, requires: [multiplication-multi-digit, place-value-large], skills: [estimating-and-checking]}
+  - {id: area-triangles-parallelograms, label: {en: Area of triangles and parallelograms}, strand: measurement, grade: 6, requires: [area-rectangles, classify-triangles-quads], skills: [spatial-reasoning]}
+  - {id: volume, label: {en: Volume of prisms}, strand: measurement, grade: 6, requires: [area-rectangles, multiplication-multi-digit, shapes-3d], skills: [spatial-reasoning]}
+  - {id: circles-circumference-area, label: {en: "Circles, circumference and area"}, strand: measurement, grade: 7, requires: [area-triangles-parallelograms, decimal-operations], skills: []}
+
+  # --------------------------------------------------------------- Geometry
+  - {id: shapes-2d, label: {en: Recognising 2D shapes}, strand: geometry, grade: 1, requires: [], skills: [spatial-reasoning]}
+  - {id: shapes-3d, label: {en: Recognising 3D solids}, strand: geometry, grade: 2, requires: [shapes-2d], skills: [spatial-reasoning]}
+  - {id: symmetry, label: {en: Lines of symmetry}, strand: geometry, grade: 3, requires: [shapes-2d], skills: [spatial-reasoning]}
+  - {id: angles, label: {en: Angles and turns}, strand: geometry, grade: 4, requires: [shapes-2d], skills: [spatial-reasoning]}
+  - {id: classify-triangles-quads, label: {en: Classifying triangles and quadrilaterals}, strand: geometry, grade: 5, requires: [angles], skills: [spatial-reasoning, explaining-reasoning]}
+  - {id: coordinates-first-quadrant, label: {en: Coordinates in the first quadrant}, strand: geometry, grade: 5, requires: [place-value-large], skills: [spatial-reasoning]}
+  - {id: transformations, label: {en: "Reflection, translation and rotation"}, strand: geometry, grade: 6, requires: [symmetry, coordinates-first-quadrant], skills: [spatial-reasoning]}
+  - {id: angle-sums, label: {en: Angle sums in triangles and polygons}, strand: geometry, grade: 7, requires: [classify-triangles-quads], skills: [spatial-reasoning, explaining-reasoning]}
+  - {id: coordinates-four-quadrants, label: {en: Coordinates in four quadrants}, strand: geometry, grade: 7, requires: [coordinates-first-quadrant, negative-numbers], skills: [spatial-reasoning]}
+  - {id: pythagoras, label: {en: Pythagoras theorem}, strand: geometry, grade: 8, requires: [squares-and-powers, angle-sums, area-triangles-parallelograms], skills: [explaining-reasoning]}
+
+  # ----------------------------------------------------------- Data and chance
+  - {id: pictographs-tallies, label: {en: Tallies and pictographs}, strand: data, grade: 1, requires: [counting-to-20], skills: [working-with-data]}
+  - {id: data-collection, label: {en: Collecting and organising data}, strand: data, grade: 3, requires: [pictographs-tallies], skills: [working-with-data]}
+  - {id: tables-and-charts, label: {en: Reading tables and bar charts}, strand: data, grade: 4, requires: [data-collection, addition-multi-digit], skills: [working-with-data]}
+  - {id: line-graphs, label: {en: Line graphs}, strand: data, grade: 5, requires: [tables-and-charts, coordinates-first-quadrant], skills: [working-with-data]}
+  - {id: mean-median-mode, label: {en: "Mean, median and mode"}, strand: data, grade: 5, requires: [addition-multi-digit, division-long], skills: [working-with-data]}
+  - {id: pie-charts, label: {en: Pie charts}, strand: data, grade: 6, requires: [fraction-concept, angles, tables-and-charts], skills: [working-with-data]}
+  - {id: probability-basic, label: {en: Simple probability}, strand: data, grade: 6, requires: [fraction-concept, comparing-fractions], skills: [working-with-data]}
+  - {id: misleading-data, label: {en: Judging whether a graph is misleading}, strand: data, grade: 7, requires: [pie-charts, mean-median-mode], skills: [working-with-data, explaining-reasoning]}
+  - {id: scatter-plots, label: {en: Scatter plots and trends}, strand: data, grade: 8, requires: [line-graphs, coordinates-four-quadrants], skills: [working-with-data, pattern-finding]}
+
+  # -------------------------------------------------------------- Algebra
+  - {id: missing-number-sentences, label: {en: Number sentences with a missing number}, strand: algebra, grade: 2, requires: [addition-basic, subtraction-basic], skills: []}
+  - {id: pattern-rules, label: {en: Describing pattern rules}, strand: algebra, grade: 3, requires: [number-patterns, multiplication-basic], skills: [pattern-finding]}
+  - {id: expressions-variables, label: {en: Expressions with letters}, strand: algebra, grade: 6, requires: [order-of-operations, pattern-rules], skills: []}
+  - {id: one-step-equations, label: {en: One-step equations}, strand: algebra, grade: 6, requires: [expressions-variables, division-long], skills: []}
+  - {id: two-step-equations, label: {en: Two-step equations}, strand: algebra, grade: 7, requires: [one-step-equations, integer-operations], skills: [persistence-on-hard-problems]}
+  - {id: linear-relations, label: {en: Linear relations and rules}, strand: algebra, grade: 7, requires: [proportional-reasoning, expressions-variables], skills: [pattern-finding]}
+  - {id: expanding-brackets, label: {en: Expanding brackets}, strand: algebra, grade: 8, requires: [integer-operations, expressions-variables], skills: []}
+  - {id: solving-linear-equations, label: {en: Solving linear equations}, strand: algebra, grade: 8, requires: [two-step-equations, expanding-brackets, linear-relations], skills: [persistence-on-hard-problems]}
+  - {id: graphing-linear, label: {en: Graphing linear equations}, strand: algebra, grade: 8, requires: [linear-relations, coordinates-four-quadrants], skills: [spatial-reasoning]}

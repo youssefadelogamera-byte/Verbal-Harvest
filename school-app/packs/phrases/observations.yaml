@@ -1,0 +1,151 @@
+# Synthetic teacher-note templates. Machine-written, not yet reviewed by native speakers.
+struggling:
+  en:
+    - "Counted on fingers for every {concept} question and lost track after ten."
+    - "Got stuck on the first step of {concept} and needed the worked example again."
+    - "Mixed up the steps in {concept} and ran out of time before the last two items."
+  sw:
+    - "Alihesabu kwa vidole kila swali la {concept} na akapoteza hesabu baada ya kumi."
+    - "Amekwama hatua ya kwanza ya {concept} na alihitaji mfano wa kazi tena."
+    - "Alichanganya hatua za {concept} na hakumaliza maswali mawili ya mwisho."
+  ar:
+    - "عدّ على أصابعه في كل سؤال من {concept} وفقد التسلسل بعد العشرة."
+    - "توقف عند الخطوة الأولى من {concept}، وأُعيد شرح المثال المحلول."
+    - "اختلطت خطوات {concept}، وبقيت آخر مسألتين دون حل."
+  fr:
+    - "Compte sur ses doigts à chaque question de {concept} et se perd après dix."
+    - "Bloqué dès la première étape de {concept}, a encore besoin d'un exemple guidé."
+    - "Confond les étapes de {concept} et n'a pas terminé les deux derniers exercices."
+  am:
+    - "በእያንዳንዱ {concept} ጥያቄ በጣት መቁጠር፤ ከአሥር በኋላ ቁጥር መሳት።"
+    - "በ{concept} የመጀመሪያ ደረጃ ላይ መቆም፤ የተሠራ ምሳሌ እንደገና ማየት ያስፈልጋል።"
+    - "የ{concept} ደረጃዎችን መቀላቀል፤ የመጨረሻዎቹን ሁለት ጥያቄዎች ሳይጨርስ መቅረት።"
+  ha:
+    - "Ƙidaya da yatsu ga kowace tambayar {concept}; ƙidaya ta ɓace bayan goma."
+    - "An makale a matakin farko na {concept}, ana buƙatar misali mai bayani."
+    - "Rikicewa tsakanin matakan {concept}, ba a kammala tambayoyi biyu na ƙarshe ba."
+improving:
+  en:
+    - "Now counts past twenty on fingers without losing place during {concept}."
+    - "Explained the steps of {concept} out loud before starting, which helped."
+    - "Attempts harder {concept} questions now and checks work without being asked."
+  sw:
+    - "Sasa anahesabu zaidi ya ishirini bila kupoteza mpangilio wakati wa {concept}."
+    - "Anaeleza hatua za {concept} kwa sauti kabla ya kuanza, jambo linalosaidia."
+    - "Sasa anajaribu maswali magumu ya {concept} na kukagua kazi yake bila kuambiwa."
+  ar:
+    - "أصبح يعد حتى العشرين وأكثر دون أن يفقد الترتيب أثناء {concept}."
+    - "شُرحت خطوات {concept} بصوت عالٍ قبل البدء، وكان ذلك مفيدًا."
+    - "ازدادت المحاولات في أسئلة {concept} الأصعب، وتُراجع الحلول دون تذكير."
+  fr:
+    - "Compte désormais au-delà de vingt sur ses doigts sans perdre le fil en {concept}."
+    - "A expliqué à voix haute les étapes de {concept} avant de commencer, ce qui a bien aidé."
+    - "Tente maintenant les exercices plus difficiles de {concept} et relit sa copie sans rappel."
+  am:
+    - "ከሃያ በላይ በጣት መቁጠር፤ በ{concept} ወቅት ቁጥር መሳት ቀርቷል።"
+    - "የ{concept} እርምጃዎችን በድምጽ ማብራራት ከመጀመሩ በፊት፤ ይህ ጠቃሚ ሆኗል።"
+    - "የ{concept} ከባድ ጥያቄዎችን መሞከር፤ ስራን በራስ መፈተሽ ተጀምሯል።"
+  ha:
+    - "Yanzu ƙidaya ta wuce ashirin ba tare da rasa wuri ba yayin {concept}."
+    - "An bayyana matakan {concept} da ƙarfi kafin a fara, hakan ya taimaka."
+    - "Yanzu ana gwada tambayoyin {concept} masu wahala kuma ana duba aiki ba tare da tunatarwa ba."
+strong:
+  en:
+    - "Solved every {concept} question on the board and explained the method clearly."
+    - "Explains the reasoning behind each {concept} step, even when the answer is different."
+    - "Chose a sensible strategy for the {concept} word problems, without help."
+  sw:
+    - "Alitatua maswali yote ya {concept} ubaoni na kueleza mbinu yake vizuri."
+    - "Anaeleza sababu ya kila hatua ya {concept}, hata jibu likiwa tofauti."
+    - "Alichagua mkakati mzuri wa matatizo ya maneno ya {concept} bila kuhimizwa."
+  ar:
+    - "حُلّت جميع أسئلة {concept} على السبورة وشُرحت الطريقة بوضوح."
+    - "شُرح سبب كل خطوة في {concept} بوضوح، حتى عند اختلاف الناتج."
+    - "كان أسلوب الحل لمسائل {concept} مناسبًا دون حاجة إلى توجيه."
+  fr:
+    - "Résout toutes les questions de {concept} au tableau et explique la méthode clairement."
+    - "Explique la logique de chaque étape de {concept}, même quand le résultat est différent."
+    - "Choisit une stratégie claire pour les problèmes de {concept}, sans aide."
+  am:
+    - "ሁሉም የ{concept} ጥያቄዎች በቦርድ ላይ ተፈትተዋል፤ ዘዴው በግልጽ ተብራርቷል።"
+    - "የእያንዳንዱ የ{concept} እርምጃ ምክንያት በግልጽ ይገለጻል፤ መልሱ የተለየ ቢሆንም።"
+    - "ለ{concept} የቃል ችግሮች ተገቢ ስልት በራስ ተመርጧል፤ መመሪያ አያስፈልግም።"
+  ha:
+    - "An warware dukan tambayoyin {concept} a allon, kuma an bayyana hanyar a sarari."
+    - "Ana bayyana dalilin kowane mataki na {concept}, ko da sakamakon ya bambanta."
+    - "An zaɓi dabara mai kyau don matsalolin kalmomi na {concept} ba tare da jagora ba."
+absent_often:
+  en:
+    - "Absent on several days this term, so the {concept} work is incomplete."
+    - "Missed the last few {concept} lessons; the catch-up sheet has not been returned."
+    - "Absences are frequent on Mondays, which has left gaps in {concept}."
+  sw:
+    - "Hakuwepo darasani siku kadhaa muhula huu, kwa hiyo kazi ya {concept} bado haijakamilika."
+    - "Amekosa masomo kadhaa ya mwisho ya {concept}; karatasi ya kurudia bado haijarudishwa."
+    - "Mara nyingi hayupo Jumatatu, na kumekuwa na mapengo katika {concept}."
+  ar:
+    - "الغياب عن الحصص عدة أيام هذا الفصل، ولذلك لم يكتمل عمل {concept}."
+    - "فاتت الحصص الأخيرة من {concept} دون تعويض، ولم تُسلَّم ورقة المراجعة بعد."
+    - "الغياب متكرر أيام الاثنين، وقد ترك فجوات في {concept}."
+  fr:
+    - "Absences répétées ce trimestre; le travail sur {concept} reste incomplet."
+    - "Manque les dernières séances de {concept}; la fiche de rattrapage n'a pas encore été rendue."
+    - "Absences fréquentes le lundi, ce qui laisse des trous en {concept}."
+  am:
+    - "በዚህ ሴሚስተር ብዙ ቀናት መቅረት፤ የ{concept} ስራ ገና አልተጠናቀቀም።"
+    - "የመጨረሻዎቹን የ{concept} ትምህርቶች ማጣት፤ የማካካሻ ወረቀት ገና አልተመለሰም።"
+    - "ብዙ ጊዜ ሰኞ መቅረት፤ በ{concept} ላይ ክፍተቶች ታይተዋል።"
+  ha:
+    - "Rashin zuwa aji kwana da dama a wannan zangon, aikin {concept} bai cika ba."
+    - "Rashin halartar darussan {concept} na ƙarshe; takardar gyara ba a dawo da ita ba tukuna."
+    - "Yawan rashi a ranar Litinin, wanda ya bar gibi a {concept}."
+engaged:
+  en:
+    - "Asked three questions about {concept} during the lesson, all relevant to the task."
+    - "Joined the {concept} group game and tried new approaches with a partner."
+    - "Volunteered to show the {concept} method on the board and listened to feedback."
+  sw:
+    - "Aliuliza maswali matatu kuhusu {concept} wakati wa somo, yote yakiwa yanahusiana na kazi."
+    - "Alishiriki mchezo wa kikundi wa {concept} na kujaribu mbinu mpya pamoja na mwenzake."
+    - "Alijitolea kuonyesha mbinu ya {concept} ubaoni na kusikiliza maoni."
+  ar:
+    - "طُرحت ثلاثة أسئلة حول {concept} أثناء الدرس، وكلها متصلة بالمهمة."
+    - "شارك في لعبة {concept} الجماعية، وجُرّبت طرق جديدة مع الشريك."
+    - "عُرض شرح طريقة {concept} على السبورة بمبادرة ذاتية، مع الاستماع للملاحظات."
+  fr:
+    - "A posé trois questions sur {concept} pendant la séance, toutes liées à la tâche."
+    - "Participe au jeu de groupe sur {concept} et essaie de nouvelles approches avec son binôme."
+    - "Se propose pour montrer la méthode de {concept} au tableau et écoute les remarques."
+  am:
+    - "በትምህርቱ ወቅት ስለ {concept} ሶስት ጥያቄዎች ቀርበዋል፤ ሁሉም ከተግባሩ ጋር የተያያዙ ናቸው።"
+    - "በ{concept} የቡድን ጨዋታ ተሳትፎ፤ ከጓደኛ ጋር አዳዲስ መንገዶችን መሞከር።"
+    - "የ{concept} ዘዴን በቦርድ ላይ ለማሳየት በፈቃድ መቅረብ፤ ግብረመልስን ማዳመጥ።"
+  ha:
+    - "An yi tambayoyi uku game da {concept} a lokacin darasi, dukansu suna da alaƙa da aikin."
+    - "Shiga wasan ƙungiya na {concept} da gwada sababbin hanyoyi tare da abokin aiki."
+    - "Neman a nuna hanyar {concept} a allo, da sauraron ra'ayoyi."
+needs_support:
+  en:
+    - "Needs a concrete object to model each step of {concept} before moving on."
+    - "Works best with a partner on {concept}; asked for the reading card twice."
+    - "Benefits from a short check-in at the start of each {concept} task."
+  sw:
+    - "Anahitaji kitu halisi cha kuonyesha kila hatua ya {concept} kabla ya kuendelea."
+    - "Anafanya vizuri zaidi akiwa na mwenzake katika {concept}; aliomba kadi ya kusoma mara mbili."
+    - "Anafaidika na kuangaliwa kwa muda mfupi mwanzoni mwa kila kazi ya {concept}."
+  ar:
+    - "يحتاج إلى أداة ملموسة لتمثيل كل خطوة من {concept} قبل الانتقال."
+    - "يعمل بشكل أفضل مع شريك في {concept}؛ طُلبت بطاقة القراءة مرتين."
+    - "يستفيد من متابعة قصيرة في بداية كل مهمة من {concept}."
+  fr:
+    - "A besoin d'un support concret pour illustrer chaque étape de {concept} avant de continuer."
+    - "Travaille mieux avec un binôme sur {concept}; la fiche de lecture a été demandée deux fois."
+    - "Profite d'un court point au début de chaque tâche sur {concept}."
+  am:
+    - "ለእያንዳንዱ የ{concept} እርምጃ ሞዴል የሚሆን ተጨባጭ ነገር ያስፈልጋል፤ ከዚያ በኋላ መቀጠል።"
+    - "በ{concept} ከባልንጀራ ጋር ሲሰራ የተሻለ ይሆናል፤ የንባብ ካርድ ሁለት ጊዜ ተጠይቋል።"
+    - "በእያንዳንዱ የ{concept} ስራ መጀመሪያ አጭር ክትትል ጠቃሚ ነው።"
+  ha:
+    - "Ana buƙatar abu na zahiri don nuna kowane mataki na {concept} kafin a ci gaba."
+    - "Ana aiki da kyau tare da abokin aiki a {concept}; an nemi katin karatu sau biyu."
+    - "Ana amfana da ɗan bincike a farkon kowane aiki na {concept}."

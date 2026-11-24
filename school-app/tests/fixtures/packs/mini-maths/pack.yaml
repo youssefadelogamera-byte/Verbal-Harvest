@@ -1,0 +1,34 @@
+# Small test pack. Number chain: counting -> addition -> multiplication -> division -> fractions -> ratios.
+# Geometry strand tagged with the spatial-reasoning skill.
+id: mini-maths
+name: Mini mathematics, grades 1 to 6 (test pack)
+subject: maths
+grades: [1, 6]
+languages: [en, fr]
+strands:
+  - {id: number, label: {en: Number, fr: Nombres}}
+  - {id: geometry, label: {en: Geometry, fr: Géométrie}}
+skills:
+  - {id: spatial-reasoning, label: {en: Spatial reasoning, fr: Raisonnement spatial}}
+  - {id: persistence, label: {en: Persistence on hard problems}, kind: disposition}
+approaches:
+  - {id: concrete_objects, label: {en: Hands-on objects}}
+  - {id: visual_models, label: {en: Visual models such as arrays and bar models}}
+  - {id: worked_examples, label: {en: Worked examples}}
+concepts:
+  - {id: counting, label: {en: Counting to 100}, strand: number, grade: 1, requires: [], skills: []}
+  - {id: addition, label: {en: Addition within 100}, strand: number, grade: 1, requires: [counting], skills: []}
+  - {id: subtraction, label: {en: Subtraction within 100}, strand: number, grade: 2, requires: [addition], skills: []}
+  - {id: multiplication, label: {en: Multiplication as repeated addition}, strand: number, grade: 2,
+     requires: [addition], skills: []}
+  - {id: division, label: {en: Division as sharing and grouping, fr: La division}, strand: number, grade: 3,
+     requires: [multiplication], skills: []}
+  - {id: fractions, label: {en: Fractions of a whole}, strand: number, grade: 4, requires: [division], skills: []}
+  - {id: ratios, label: {en: Ratios and proportion}, strand: number, grade: 5, requires: [fractions], skills: []}
+  - {id: shapes-2d, label: {en: 2D shapes}, strand: geometry, grade: 1, requires: [], skills: [spatial-reasoning]}
+  - {id: position-direction, label: {en: Position and direction}, strand: geometry, grade: 2,
+     requires: [shapes-2d], skills: [spatial-reasoning]}
+  - {id: area, label: {en: Area of rectangles}, strand: geometry, grade: 4,
+     requires: [shapes-2d, multiplication], skills: [spatial-reasoning]}
+  - {id: volume, label: {en: Volume of cuboids}, strand: geometry, grade: 6, requires: [area],
+     skills: [spatial-reasoning]}

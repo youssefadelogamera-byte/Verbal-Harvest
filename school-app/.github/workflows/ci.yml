@@ -1,0 +1,72 @@
+name: CI
+
+# Every push and pull request: install from the lock file, lint, and run the tests.
+# No model and no secret is needed: the tests run without a model, on synthetic data.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Tests (${{ matrix.os }}, Python ${{ matrix.python }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ["3.12"]
+        include:
+          - os: ubuntu-latest
+            python: "3.13"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ matrix.python }}
+          enable-cache: true
+      - name: Install from the lock file
+        run: uv sync --extra dev --locked
+      - name: Lint
+        run: uv run ruff check src tests
+      - name: Tests
+        run: uv run pytest -q
+
+  one-command:
+    name: One-command run on a fresh clone
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - run: uv sync --locked
+      - name: Seed, build the presenting state, and write a report (no model)
+        run: |
+          uv run athar story
+          uv run athar report --all
+          uv run athar export-graph
+          test -n "$(ls reports/*.html)" && test -s exports/school.graphml
+      - name: The teacher app starts and answers
+        run: |
+          uv run athar demo &
+          trap 'pkill -f "athar demo" || true' EXIT   # stop the app so the cache step after this job can finish
+          for i in $(seq 1 30); do
+            if curl -sf http://127.0.0.1:8765/api/overview > /dev/null; then break; fi
+            sleep 1
+          done
+          curl -sf http://127.0.0.1:8765/api/overview | grep -q '"learners"'
+          curl -sf http://127.0.0.1:8765/ | grep -q "Athar"
+          curl -sf http://127.0.0.1:8765/static/ar.json | grep -q '"exact"'
+          curl -sf http://127.0.0.1:8765/api/school/graph | grep -q '"nodes"'

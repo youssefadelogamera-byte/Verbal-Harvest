@@ -1,0 +1,33 @@
+# Egypt, the whole school: Mathematics, Science, English, Arabic and Social Studies, Primary 4 to Preparatory 2.
+#
+# It adds no topic of its own. It includes the five subject packs and then names a few places where one
+# subject needs another, so a difficulty can be traced across subjects.
+#
+# Every subject pack is a DRAFT. Each one says where its topic list comes from and how sure it is, and in
+# every one the "needs this first" links were drafted by the authors of this software and have not yet been
+# reviewed by a teacher. The cross-subject links below are a draft too.
+#
+# We graph the school's curriculum. We never change it.
+id: egypt-school
+name: Egypt, Primary 4 to Preparatory 2
+name_ar: "مصر، من الصف الرابع الابتدائي إلى الصف الثاني الإعدادي"
+subject: school
+grades: [4, 8]
+terms: 2
+languages: [en]
+generator: school
+status: draft
+links_reviewed_by: null
+
+includes:
+  - egypt-maths
+  - egypt-science
+  - egypt-english
+  - egypt-arabic
+  - egypt-social
+
+# Cross-subject "needs this first" links, added on top of each subject's own links. Draft.
+links:
+  - {concept: soc-g5-population-pyramid, requires: [g4-graphs-fractions]}            # reading a population chart needs reading graphs
+  - {concept: soc-g7-africa-population-traits, requires: [g6-percent]}               # population shares are given as percentages
+  - {concept: soc-g8-asia-europe-population-traits, requires: [g7-pie-charts]}       # and shown as pie charts

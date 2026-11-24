@@ -1,0 +1,181 @@
+# Egypt national curriculum, Science, Primary 4 to Preparatory 2 (grades 4 to 8). DRAFT.
+#
+# What is taken from the curriculum: the topics, their grade and their term, as listed in the unit, chapter
+# and lesson titles of the books in use. Titles are shortened into plain topic names. No textbook text is copied.
+# Each topic names its source below. None of the sources is the ministry's own website, and most are
+# secondary (workbooks, assessment books, review booklets and news articles that list the contents of the
+# ministry book), so check a topic against the current printed book before relying on it.
+#
+# Read this before trusting Primary 4 to 6. In 2026/27 the ministry replaced the Primary 4, 5 and 6 science
+# books with a new chapter-based curriculum. Term 1 of those three grades below follows the new books.
+# The term 2 books of the new curriculum were not published when this file was written (November 2026).
+# For Primary 4, 5 and 6 term 2 this file therefore lists the topics that were taught in term 2 up to 2025/26
+# (the earlier "Education 2.0" books). Every such topic is marked `verified: false`, 14 topics in all. They are
+# real topics from real books, but they are very likely to be replaced when the new term 2 books appear.
+# Preparatory 1 follows the curriculum introduced in 2024/25 and Preparatory 2 the one introduced in 2025/26.
+# Some chapters and lessons are split into two topics here. The split is ours, made from the lesson headings
+# and summaries that the sources show.
+#
+# What is NOT from the curriculum: the `requires` links. The curriculum does not publish which topic
+# depends on which. These links were drafted by the authors of this software and have not yet been
+# reviewed by a teacher. The trace-back is only as good as these links.
+#
+# We graph the school's curriculum. We never change it.
+id: egypt-science
+name: Egypt, Science, Primary 4 to Preparatory 2
+name_ar: "مصر، العلوم، من الصف الرابع الابتدائي إلى الصف الثاني الإعدادي"
+subject: science
+subject_label: {en: Science, ar: "العلوم"}
+grades: [4, 8]
+terms: 2
+languages: [en, ar]
+generator: school
+status: draft
+links_reviewed_by: null
+
+sources:
+  - {id: p4t1, covers: "Primary 4, term 1 (new 2026/27 curriculum)", kind: "Assessment book for the 2026/27 curriculum with a teacher's worked answers, English-language edition (scanned copy)", url: "https://archive.org/details/4-1_20261004", note: "secondary source; chapter headings 1 and 4 to 8 and some lesson headings read from the scanned text, there is no contents page"}
+  - {id: p4t1-news, covers: "Primary 4, term 1 (new 2026/27 curriculum)", kind: "News article describing the 2026/27 assessment book chapter by chapter (Arabic), titles translated", url: "https://shbabbek.com/show/281098", note: "secondary source; used for chapters 2 and 3 and for the lesson summaries. The month by month plan at https://shbabbek.com/show/281219 lists the same topics"}
+  - {id: p4t2-old, covers: "Primary 4, term 2 (earlier curriculum, taught up to 2025/26)", kind: "Ministry teacher guide, 2021/22 printing (scanned copy)", url: "https://archive.org/details/4-2_20220311", note: "contents read, and a 2024/25 workbook lists the same five concepts. This is NOT the 2026/27 book, which was not yet published. Topics from here are marked verified: false"}
+  - {id: p5t1, covers: "Primary 5, term 1 (new 2026/27 curriculum)", kind: "News article listing the nine chapters of a 2026/27 teacher's summary booklet (Arabic), titles translated", url: "https://shbabbek.com/show/284140", note: "secondary source. The month by month plan at https://shbabbek.com/show/281218 lists the same topics"}
+  - {id: p5t1-book, covers: "Primary 5, term 1 (new 2026/27 curriculum)", kind: "Teacher's worked answers to the 2026/27 assessment book, English-language edition (scanned copy)", url: "https://archive.org/details/5-1_20261012", note: "secondary source; some chapter and lesson headings read from the scanned text, there is no contents page"}
+  - {id: p5t2-old, covers: "Primary 5, term 2 (earlier curriculum, taught up to 2025/26)", kind: "Commercial workbook that follows the ministry book, 2024/25 (scanned copy)", url: "https://archive.org/details/5-2_20250128", note: "contents page read. This is NOT the 2026/27 book, which was not yet published. Topics from here are marked verified: false"}
+  - {id: p6t1, covers: "Primary 6, term 1 (new 2026/27 curriculum)", kind: "Commercial workbook for the new curriculum, 2026/27, English-language edition (scanned copy)", url: "https://archive.org/details/6-1_20260913_202609", note: "secondary source; contents page read (ten chapters)"}
+  - {id: p6t1-news, covers: "Primary 6, term 1 (new 2026/27 curriculum)", kind: "News article listing the month by month plan for 2026/27 (Arabic), titles translated", url: "https://shbabbek.com/show/281217", note: "secondary source; agrees with the workbook. A summary of chapters 1 to 4 is at https://shbabbek.com/show/281432"}
+  - {id: p6t2-old, covers: "Primary 6, term 2 (earlier curriculum, taught up to 2025/26)", kind: "Commercial review booklets, March and April 2026 (scanned copies)", url: "https://archive.org/details/6_20260422", note: "unit and concept headings read; the March booklet is at https://archive.org/details/6_20260322_202603. The names of concepts 3.1, 3.2 and 4.1 were not legible and are worded from the questions. This is NOT the 2026/27 book. Topics from here are marked verified: false"}
+  - {id: s1t1, covers: "Preparatory 1, term 1", kind: "News article listing the units and lessons of the curriculum introduced in 2024/25 (Arabic), titles translated", url: "https://www.egypttelegraph.com/article/69189/", note: "secondary source. A November 2025 review booklet at https://archive.org/details/1_20251116_20251116_1930 shows the same lesson names for units 1 and 2"}
+  - {id: s1t2, covers: "Preparatory 1, term 2", kind: "News article describing a 2025/26 commercial workbook unit by unit (Arabic), titles translated", url: "https://shbabbek.com/show/266098", note: "secondary source; four unit titles and the three lessons of unit 1. https://shbabbek.com/show/264707 agrees"}
+  - {id: s1t2-review, covers: "Preparatory 1, term 2, units 2 to 4", kind: "Commercial review booklet, April 2026, English-language edition (scanned copy)", url: "https://archive.org/details/1_20260430_20260430_1901", note: "secondary source; unit titles and the two lesson titles of unit 3 read. Lesson titles for units 2 and 4 were not legible, so those topics are worded from the unit titles and the review questions"}
+  - {id: s2t1, covers: "Preparatory 2, term 1", kind: "News article listing the units and lessons of the ministry book for the new 2025/26 curriculum (Arabic), titles translated", url: "https://shbabbek.com/show/253978", note: "single secondary source"}
+  - {id: s2t2, covers: "Preparatory 2, term 2", kind: "News article describing a 2025/26 commercial workbook unit by unit (Arabic), titles translated", url: "https://shbabbek.com/show/266942", note: "secondary source; lesson topics for units 2 to 4 are summaries, not exact lesson titles. https://shbabbek.com/show/265437 describes the ministry book and gives the same four units and the three lessons of unit 1"}
+
+strands:
+  - {id: sci-life, label: {en: Living things and the human body, ar: "الكائنات الحية وجسم الإنسان"}}
+  - {id: sci-ecology, label: {en: Ecosystems and the environment, ar: "الأنظمة البيئية والبيئة"}}
+  - {id: sci-matter, label: {en: Matter and chemical change, ar: "المادة والتغيرات الكيميائية"}}
+  - {id: sci-energy, label: {en: "Energy, heat, light and sound", ar: "الطاقة والحرارة والضوء والصوت"}}
+  - {id: sci-forces, label: {en: Forces and motion, ar: "القوى والحركة"}}
+  - {id: sci-earth, label: {en: "Earth, weather and space", ar: "الأرض والطقس والفضاء"}}
+
+skills:
+  - {id: observing-and-questioning, label: {en: Observing and asking questions, ar: "الملاحظة وطرح الأسئلة"}}
+  - {id: planning-investigations, label: {en: Planning and carrying out fair tests, ar: "تخطيط التجارب العادلة وتنفيذها"}}
+  - {id: working-with-data, label: {en: Working with data, ar: "التعامل مع البيانات"}}
+  - {id: explaining-reasoning, label: {en: Explaining reasoning, ar: "شرح طريقة التفكير"}}
+  - {id: pattern-finding, label: {en: Pattern finding, ar: "اكتشاف الأنماط"}}
+
+approaches:
+  - {id: concrete_objects, label: {en: Hands-on objects, ar: "وسائل محسوسة"}}
+  - {id: visual_models, label: {en: Diagrams and visual models, ar: "رسومات ونماذج بصرية"}}
+  - {id: worked_examples, label: {en: Worked examples, ar: "أمثلة محلولة"}}
+  - {id: peer_groups, label: {en: Group work with peers, ar: "العمل في مجموعات"}}
+  - {id: story_problems, label: {en: Story and real-life problems, ar: "مسائل من الحياة اليومية"}}
+  - {id: drill_practice, label: {en: Drill and practice, ar: "التدريب والتكرار"}}
+
+concepts:
+  # ---------------------------------------------------------------- Primary 4, term 1 (new 2026/27 curriculum)
+  - {id: sci-g4-living-nonliving, label: {en: "Living organisms and non-living things", ar: "الكائنات الحية والأشياء غير الحية"}, strand: sci-life, grade: 4, term: 1, requires: [], skills: [observing-and-questioning], source: p4t1}
+  - {id: sci-g4-observing-nature, label: {en: "Observing living things closely: colours, shapes and the magnifying glass", ar: "ملاحظة الكائنات الحية عن قرب: الألوان والأشكال والعدسة المكبرة"}, strand: sci-life, grade: 4, term: 1, requires: [sci-g4-living-nonliving], skills: [observing-and-questioning], source: p4t1}
+  - {id: sci-g4-habitats, label: {en: "Different places, different organisms", ar: "أماكن مختلفة وكائنات حية مختلفة"}, strand: sci-ecology, grade: 4, term: 1, requires: [sci-g4-observing-nature], skills: [pattern-finding], source: p4t1}
+  - {id: sci-g4-desert-organisms, label: {en: "Organisms suited to the desert", ar: "الكائنات الحية الملائمة للصحراء"}, strand: sci-ecology, grade: 4, term: 1, requires: [sci-g4-habitats], skills: [explaining-reasoning], source: p4t1}
+  - {id: sci-g4-insect-life-cycle, label: {en: "How insects grow: the life cycle of a butterfly", ar: "كيف تنمو الحشرات: دورة حياة الفراشة"}, strand: sci-life, grade: 4, term: 1, requires: [sci-g4-observing-nature], skills: [observing-and-questioning], source: p4t1-news}
+  - {id: sci-g4-insect-body, label: {en: "Body parts of an adult insect, compared with a spider", ar: "أجزاء جسم الحشرة البالغة مقارنة بالعنكبوت"}, strand: sci-life, grade: 4, term: 1, requires: [sci-g4-insect-life-cycle], skills: [pattern-finding], source: p4t1-news}
+  - {id: sci-g4-seed-germination, label: {en: "How plants grow: from seed to seedling", ar: "كيف تنمو النباتات: من البذرة إلى البادرة"}, strand: sci-life, grade: 4, term: 1, requires: [sci-g4-living-nonliving], skills: [observing-and-questioning], source: p4t1}
+  - {id: sci-g4-plant-parts, label: {en: "Parts of a plant and what each one does", ar: "أجزاء النبات ووظيفة كل جزء"}, strand: sci-life, grade: 4, term: 1, requires: [sci-g4-seed-germination], skills: [], source: p4t1-news}
+  - {id: sci-g4-light-straight-lines, label: {en: "How light travels", ar: "كيف ينتقل الضوء"}, strand: sci-energy, grade: 4, term: 1, requires: [], skills: [observing-and-questioning], source: p4t1}
+  - {id: sci-g4-light-mirrors-lenses, label: {en: "Reflecting light with mirrors and gathering it with a lens", ar: "انعكاس الضوء بالمرايا وتجميعه بالعدسة"}, strand: sci-energy, grade: 4, term: 1, requires: [sci-g4-light-straight-lines], skills: [planning-investigations], source: p4t1-news}
+  - {id: sci-g4-shadows-sun, label: {en: "Shadows and the position of the Sun", ar: "الظلال وموقع الشمس"}, strand: sci-earth, grade: 4, term: 1, requires: [sci-g4-light-straight-lines], skills: [working-with-data], source: p4t1-news}
+  - {id: sci-g4-sound, label: {en: "How sound is made and how it travels", ar: "كيف ينشأ الصوت وكيف ينتقل"}, strand: sci-energy, grade: 4, term: 1, requires: [], skills: [observing-and-questioning], source: p4t1}
+  - {id: sci-g4-wind-power, label: {en: "Wind power: moving things with wind", ar: "قوة الرياح: تحريك الأشياء بالرياح"}, strand: sci-forces, grade: 4, term: 1, requires: [], skills: [planning-investigations], source: p4t1}
+  - {id: sci-g4-rubber-force, label: {en: "The force of stretched rubber", ar: "قوة المطاط المشدود"}, strand: sci-forces, grade: 4, term: 1, requires: [sci-g4-wind-power], skills: [planning-investigations], source: p4t1}
+  - {id: sci-g4-soil-water, label: {en: "Soil, water and life in Egypt", ar: "التربة والماء والحياة في مصر"}, strand: sci-earth, grade: 4, term: 1, requires: [sci-g4-habitats], skills: [], source: p4t1}
+  # ---------------------------------------------------------------- Primary 4, term 2 (earlier curriculum, not verified for 2026/27)
+  - {id: sci-g4-devices-energy, label: {en: "Devices and the energy they use", ar: "الأجهزة والطاقة التي تستخدمها"}, strand: sci-energy, grade: 4, term: 2, requires: [sci-g4-wind-power], skills: [], source: p4t2-old, verified: false}
+  - {id: sci-g4-fuels, label: {en: "Fuels as a source of energy", ar: "الوقود مصدر للطاقة"}, strand: sci-energy, grade: 4, term: 2, requires: [sci-g4-devices-energy], skills: [], source: p4t2-old, verified: false}
+  - {id: sci-g4-renewable-energy, label: {en: "Renewable energy resources", ar: "مصادر الطاقة المتجددة"}, strand: sci-energy, grade: 4, term: 2, requires: [sci-g4-fuels, sci-g4-wind-power], skills: [explaining-reasoning], source: p4t2-old, verified: false}
+  - {id: sci-g4-weathering-erosion, label: {en: "Breaking down and moving rocks", ar: "تفتيت الصخور ونقلها"}, strand: sci-earth, grade: 4, term: 2, requires: [sci-g4-soil-water], skills: [], source: p4t2-old, verified: false}
+  - {id: sci-g4-changing-landscapes, label: {en: "How landscapes change", ar: "كيف تتغير المعالم الطبيعية"}, strand: sci-earth, grade: 4, term: 2, requires: [sci-g4-weathering-erosion], skills: [explaining-reasoning], source: p4t2-old, verified: false}
+  # ---------------------------------------------------------------- Primary 5, term 1 (new 2026/27 curriculum)
+  - {id: sci-g5-bones-joints, label: {en: "Bones, joints and the skeleton", ar: "العظام والمفاصل والهيكل العظمي"}, strand: sci-life, grade: 5, term: 1, requires: [sci-g4-insect-body], skills: [], source: p5t1-book}
+  - {id: sci-g5-muscles-movement, label: {en: "How muscles move the body", ar: "كيف تحرك العضلات الجسم"}, strand: sci-life, grade: 5, term: 1, requires: [sci-g5-bones-joints], skills: [explaining-reasoning], source: p5t1-book}
+  - {id: sci-g5-seasonal-changes, label: {en: "Living things through the seasons of a year", ar: "الكائنات الحية خلال فصول السنة"}, strand: sci-ecology, grade: 5, term: 1, requires: [sci-g4-habitats, sci-g4-shadows-sun], skills: [pattern-finding], source: p5t1-book}
+  - {id: sci-g5-animals-temperature, label: {en: "Animals and temperature: migration and winter sleep", ar: "الحيوانات ودرجة الحرارة: الهجرة والبيات الشتوي"}, strand: sci-ecology, grade: 5, term: 1, requires: [sci-g5-seasonal-changes, sci-g4-desert-organisms], skills: [explaining-reasoning], source: p5t1-book}
+  - {id: sci-g5-seed-structure, label: {en: "Inside a seed", ar: "تركيب البذرة من الداخل"}, strand: sci-life, grade: 5, term: 1, requires: [sci-g4-seed-germination], skills: [observing-and-questioning], source: p5t1-book}
+  - {id: sci-g5-germination-conditions, label: {en: "Conditions a seed needs to germinate", ar: "شروط إنبات البذور"}, strand: sci-life, grade: 5, term: 1, requires: [sci-g5-seed-structure], skills: [planning-investigations], source: p5t1}
+  - {id: sci-g5-growth-conditions, label: {en: "Conditions a plant needs to grow well", ar: "شروط النمو الجيد للنبات"}, strand: sci-life, grade: 5, term: 1, requires: [sci-g5-germination-conditions, sci-g4-plant-parts], skills: [planning-investigations], source: p5t1}
+  - {id: sci-g5-flower-structure, label: {en: "Structure of a flower", ar: "تركيب الزهرة"}, strand: sci-life, grade: 5, term: 1, requires: [sci-g4-plant-parts], skills: [observing-and-questioning], source: p5t1-book}
+  - {id: sci-g5-pollination-fruit, label: {en: "Pollination and how fruits form", ar: "التلقيح وتكوين الثمار"}, strand: sci-life, grade: 5, term: 1, requires: [sci-g5-flower-structure], skills: [], source: p5t1-book}
+  - {id: sci-g5-human-growth, label: {en: "Human growth and reproduction", ar: "نمو الإنسان وتكاثره"}, strand: sci-life, grade: 5, term: 1, requires: [sci-g5-bones-joints, sci-g4-insect-life-cycle], skills: [], source: p5t1-book}
+  - {id: sci-g5-animal-reproduction, label: {en: "How animals grow and reproduce: eggs and live birth", ar: "كيف تنمو الحيوانات وتتكاثر: البيض والولادة"}, strand: sci-life, grade: 5, term: 1, requires: [sci-g4-insect-life-cycle, sci-g5-human-growth], skills: [pattern-finding], source: p5t1}
+  - {id: sci-g5-weather-changes, label: {en: "Weather changes and the movement of clouds", ar: "تغيرات الطقس وحركة السحب"}, strand: sci-earth, grade: 5, term: 1, requires: [sci-g4-shadows-sun], skills: [working-with-data], source: p5t1}
+  - {id: sci-g5-evaporation-condensation, label: {en: "Evaporation and condensation of water", ar: "تبخر الماء وتكثفه"}, strand: sci-matter, grade: 5, term: 1, requires: [sci-g4-soil-water], skills: [planning-investigations], source: p5t1-book}
+  - {id: sci-g5-water-cycle, label: {en: "The water cycle", ar: "دورة الماء"}, strand: sci-earth, grade: 5, term: 1, requires: [sci-g5-evaporation-condensation, sci-g5-weather-changes], skills: [explaining-reasoning], source: p5t1}
+  # ---------------------------------------------------------------- Primary 5, term 2 (earlier curriculum, not verified for 2026/27)
+  - {id: sci-g5-earth-spheres, label: {en: "Earth's systems: how water and living things interact", ar: "أنظمة الأرض: التفاعل بين الماء والكائنات الحية"}, strand: sci-earth, grade: 5, term: 2, requires: [sci-g5-water-cycle], skills: [], source: p5t2-old, verified: false}
+  - {id: sci-g5-aquatic-ecosystems, label: {en: "Types of water ecosystems", ar: "أنواع الأنظمة البيئية المائية"}, strand: sci-ecology, grade: 5, term: 2, requires: [sci-g5-earth-spheres, sci-g5-seasonal-changes], skills: [pattern-finding], source: p5t2-old, verified: false}
+  - {id: sci-g5-water-resource, label: {en: "Fresh water as a natural resource and how to protect it", ar: "الماء العذب مورد طبيعي وطرق حمايته"}, strand: sci-earth, grade: 5, term: 2, requires: [sci-g5-earth-spheres], skills: [working-with-data], source: p5t2-old, verified: false}
+  - {id: sci-g5-gravity-effects, label: {en: "Effects of gravity", ar: "تأثيرات الجاذبية"}, strand: sci-forces, grade: 5, term: 2, requires: [sci-g4-rubber-force], skills: [], source: p5t2-old, verified: false}
+  - {id: sci-g5-sky-patterns, label: {en: "Patterns of motion in the sky", ar: "أنماط الحركة في السماء"}, strand: sci-earth, grade: 5, term: 2, requires: [sci-g4-shadows-sun, sci-g5-gravity-effects], skills: [pattern-finding], source: p5t2-old, verified: false}
+  # ---------------------------------------------------------------- Primary 6, term 1 (new 2026/27 curriculum)
+  - {id: sci-g6-burning-conditions, label: {en: "Conditions for burning: the need for fresh air", ar: "شروط الاحتراق: الحاجة إلى هواء متجدد"}, strand: sci-matter, grade: 6, term: 1, requires: [], skills: [planning-investigations], source: p6t1}
+  - {id: sci-g6-air-gases-burning, label: {en: "Gases in the air and how burning changes them", ar: "غازات الهواء وتأثير الاحتراق فيها"}, strand: sci-matter, grade: 6, term: 1, requires: [sci-g6-burning-conditions], skills: [working-with-data], source: p6t1-news}
+  - {id: sci-g6-respiration, label: {en: "Breathing and the respiratory system", ar: "التنفس والجهاز التنفسي"}, strand: sci-life, grade: 6, term: 1, requires: [sci-g6-air-gases-burning, sci-g5-muscles-movement], skills: [], source: p6t1}
+  - {id: sci-g6-digestion, label: {en: "Digestion: the path of food and the digestive juices", ar: "الهضم: مسار الطعام والعصارات الهاضمة"}, strand: sci-life, grade: 6, term: 1, requires: [sci-g5-muscles-movement], skills: [], source: p6t1}
+  - {id: sci-g6-absorption-liver, label: {en: "Absorbing nutrients and the work of the liver", ar: "امتصاص المواد الغذائية ووظيفة الكبد"}, strand: sci-life, grade: 6, term: 1, requires: [sci-g6-digestion], skills: [explaining-reasoning], source: p6t1-news}
+  - {id: sci-g6-circulation, label: {en: "The heart and blood circulation", ar: "القلب والدورة الدموية"}, strand: sci-life, grade: 6, term: 1, requires: [sci-g6-respiration, sci-g6-absorption-liver], skills: [], source: p6t1}
+  - {id: sci-g6-excretion, label: {en: "The kidneys and excretion", ar: "الكليتان والإخراج"}, strand: sci-life, grade: 6, term: 1, requires: [sci-g6-circulation], skills: [], source: p6t1}
+  - {id: sci-g6-photosynthesis, label: {en: "Photosynthesis: how plants make food", ar: "البناء الضوئي: كيف يصنع النبات غذاءه"}, strand: sci-life, grade: 6, term: 1, requires: [sci-g5-growth-conditions, sci-g6-air-gases-burning], skills: [planning-investigations], source: p6t1}
+  - {id: sci-g6-water-transport-plants, label: {en: "How water moves through a plant", ar: "كيف ينتقل الماء في النبات"}, strand: sci-life, grade: 6, term: 1, requires: [sci-g4-plant-parts, sci-g5-growth-conditions], skills: [observing-and-questioning], source: p6t1}
+  - {id: sci-g6-food-chains, label: {en: "Food chains", ar: "السلاسل الغذائية"}, strand: sci-ecology, grade: 6, term: 1, requires: [sci-g6-photosynthesis, sci-g4-habitats], skills: [pattern-finding], source: p6t1}
+  - {id: sci-g6-food-chains-egypt, label: {en: "Food chains in Egypt", ar: "السلاسل الغذائية في مصر"}, strand: sci-ecology, grade: 6, term: 1, requires: [sci-g6-food-chains, sci-g4-desert-organisms], skills: [explaining-reasoning], source: p6t1}
+  - {id: sci-g6-solutions-properties, label: {en: "Properties of solutions", ar: "خواص المحاليل"}, strand: sci-matter, grade: 6, term: 1, requires: [sci-g5-evaporation-condensation], skills: [planning-investigations], source: p6t1}
+  - {id: sci-g6-solutions-metals, label: {en: "How solutions react with metals", ar: "تفاعل المحاليل مع الفلزات"}, strand: sci-matter, grade: 6, term: 1, requires: [sci-g6-solutions-properties], skills: [observing-and-questioning], source: p6t1}
+  # ---------------------------------------------------------------- Primary 6, term 2 (earlier curriculum, not verified for 2026/27)
+  - {id: sci-g6-water-cycle-energy, label: {en: "Heat energy and the water cycle", ar: "الطاقة الحرارية ودورة الماء"}, strand: sci-earth, grade: 6, term: 2, requires: [sci-g5-water-cycle], skills: [], source: p6t2-old, verified: false}
+  - {id: sci-g6-weather-climate, label: {en: "Weather and climate: moving air and rain", ar: "الطقس والمناخ: حركة الهواء والمطر"}, strand: sci-earth, grade: 6, term: 2, requires: [sci-g6-water-cycle-energy, sci-g5-weather-changes], skills: [working-with-data], source: p6t2-old, verified: false}
+  - {id: sci-g6-adaptation-traits, label: {en: "Adaptation: inherited and environmental factors", ar: "التكيف: العوامل الوراثية والبيئية"}, strand: sci-ecology, grade: 6, term: 2, requires: [sci-g5-animals-temperature, sci-g6-food-chains-egypt], skills: [explaining-reasoning], source: p6t2-old, verified: false}
+  - {id: sci-g6-soil-environment, label: {en: "Soil and environmental change", ar: "التربة والتغيرات البيئية"}, strand: sci-earth, grade: 6, term: 2, requires: [sci-g4-soil-water], skills: [], source: p6t2-old, verified: false}
+  # ---------------------------------------------------------------- Preparatory 1, term 1
+  - {id: sci-g7-atom-structure, label: {en: "Structure of the atom", ar: "تركيب الذرة"}, strand: sci-matter, grade: 7, term: 1, requires: [sci-g6-air-gases-burning], skills: [], source: s1t1}
+  - {id: sci-g7-periodic-table, label: {en: "The periodic table of the elements", ar: "الجدول الدوري للعناصر"}, strand: sci-matter, grade: 7, term: 1, requires: [sci-g7-atom-structure], skills: [pattern-finding], source: s1t1}
+  - {id: sci-g7-matter-properties, label: {en: "Matter and its properties", ar: "المادة وخواصها"}, strand: sci-matter, grade: 7, term: 1, requires: [sci-g7-atom-structure, sci-g6-solutions-properties], skills: [], source: s1t1}
+  - {id: sci-g7-chemical-bonds, label: {en: "Chemical bonds", ar: "الروابط الكيميائية"}, strand: sci-matter, grade: 7, term: 1, requires: [sci-g7-periodic-table], skills: [explaining-reasoning], source: s1t1}
+  - {id: sci-g7-electric-forces, label: {en: "Electric forces", ar: "القوى الكهربية"}, strand: sci-forces, grade: 7, term: 1, requires: [sci-g7-atom-structure], skills: [], source: s1t1}
+  - {id: sci-g7-magnetic-forces, label: {en: "Magnetic forces", ar: "القوى المغناطيسية"}, strand: sci-forces, grade: 7, term: 1, requires: [sci-g7-electric-forces], skills: [planning-investigations], source: s1t1}
+  - {id: sci-g7-gravitational-forces, label: {en: "Gravitational forces", ar: "قوى الجاذبية"}, strand: sci-forces, grade: 7, term: 1, requires: [sci-g4-rubber-force, sci-g7-electric-forces], skills: [], source: s1t1}
+  - {id: sci-g7-cells, label: {en: "Cells and life", ar: "الخلايا والحياة"}, strand: sci-life, grade: 7, term: 1, requires: [sci-g6-circulation, sci-g6-photosynthesis], skills: [observing-and-questioning], source: s1t1}
+  - {id: sci-g7-living-characteristics, label: {en: "General characteristics of living organisms", ar: "الخصائص العامة للكائنات الحية"}, strand: sci-life, grade: 7, term: 1, requires: [sci-g7-cells, sci-g6-respiration], skills: [pattern-finding], source: s1t1}
+  - {id: sci-g7-microbes, label: {en: "Microbes", ar: "الميكروبات"}, strand: sci-life, grade: 7, term: 1, requires: [sci-g7-cells], skills: [], source: s1t1}
+  - {id: sci-g7-solar-system, label: {en: "Earth and the solar system", ar: "الأرض والنظام الشمسي"}, strand: sci-earth, grade: 7, term: 1, requires: [sci-g7-gravitational-forces, sci-g4-shadows-sun], skills: [], source: s1t1}
+  - {id: sci-g7-lunar-eclipse, label: {en: "Lunar eclipse", ar: "خسوف القمر"}, strand: sci-earth, grade: 7, term: 1, requires: [sci-g7-solar-system], skills: [explaining-reasoning], source: s1t1}
+  # ---------------------------------------------------------------- Preparatory 1, term 2
+  - {id: sci-g7-metals-nonmetals, label: {en: "Metals and non-metals", ar: "الفلزات واللافلزات"}, strand: sci-matter, grade: 7, term: 2, requires: [sci-g7-periodic-table, sci-g7-chemical-bonds], skills: [pattern-finding], source: s1t2}
+  - {id: sci-g7-acids-alkalis, label: {en: "Acids and alkalis", ar: "الأحماض والقلويات"}, strand: sci-matter, grade: 7, term: 2, requires: [sci-g7-chemical-bonds, sci-g6-solutions-properties], skills: [], source: s1t2}
+  - {id: sci-g7-indicators-salts, label: {en: "Chemical indicators and salts", ar: "الكواشف الكيميائية والأملاح"}, strand: sci-matter, grade: 7, term: 2, requires: [sci-g7-acids-alkalis], skills: [planning-investigations], source: s1t2}
+  - {id: sci-g7-potential-kinetic, label: {en: "Potential energy and kinetic energy", ar: "طاقة الوضع وطاقة الحركة"}, strand: sci-energy, grade: 7, term: 2, requires: [sci-g7-gravitational-forces], skills: [working-with-data], source: s1t2-review}
+  - {id: sci-g7-mechanical-energy, label: {en: "Mechanical energy and energy changes", ar: "الطاقة الميكانيكية وتحولات الطاقة"}, strand: sci-energy, grade: 7, term: 2, requires: [sci-g7-potential-kinetic], skills: [explaining-reasoning], source: s1t2-review}
+  - {id: sci-g7-feeding-relationships, label: {en: "Feeding relationships in biological communities", ar: "العلاقات الغذائية في المجتمعات الحيوية"}, strand: sci-ecology, grade: 7, term: 2, requires: [sci-g6-food-chains, sci-g7-microbes], skills: [working-with-data], source: s1t2-review}
+  - {id: sci-g7-traits-mutations, label: {en: "Inherited traits and mutations", ar: "الصفات الوراثية والطفرات"}, strand: sci-life, grade: 7, term: 2, requires: [sci-g7-cells, sci-g7-living-characteristics], skills: [pattern-finding], source: s1t2-review}
+  - {id: sci-g7-natural-cycles, label: {en: "Natural cycles: the water cycle", ar: "الدورات الطبيعية: دورة الماء"}, strand: sci-earth, grade: 7, term: 2, requires: [sci-g5-water-cycle, sci-g7-feeding-relationships], skills: [explaining-reasoning], source: s1t2-review}
+  # ---------------------------------------------------------------- Preparatory 2, term 1
+  - {id: sci-g8-states-of-matter, label: {en: "States of matter and the particle model", ar: "حالات المادة ونموذج الجسيمات"}, strand: sci-matter, grade: 8, term: 1, requires: [sci-g7-matter-properties], skills: [], source: s2t1}
+  - {id: sci-g8-changes-of-state, label: {en: "Changes of state", ar: "تغيرات حالة المادة"}, strand: sci-matter, grade: 8, term: 1, requires: [sci-g8-states-of-matter, sci-g5-evaporation-condensation], skills: [explaining-reasoning], source: s2t1}
+  - {id: sci-g8-internal-energy-temperature, label: {en: "Internal energy and temperature", ar: "الطاقة الداخلية ودرجة الحرارة"}, strand: sci-energy, grade: 8, term: 1, requires: [sci-g8-changes-of-state, sci-g7-potential-kinetic], skills: [working-with-data], source: s2t1}
+  - {id: sci-g8-heat-transfer, label: {en: "Ways heat is transferred", ar: "طرق انتقال الحرارة"}, strand: sci-energy, grade: 8, term: 1, requires: [sci-g8-internal-energy-temperature], skills: [planning-investigations], source: s2t1}
+  - {id: sci-g8-chemical-reactions, label: {en: "Chemical reactions", ar: "التفاعلات الكيميائية"}, strand: sci-matter, grade: 8, term: 1, requires: [sci-g7-chemical-bonds, sci-g7-indicators-salts], skills: [observing-and-questioning], source: s2t1}
+  - {id: sci-g8-chemical-equations, label: {en: "Chemical equations", ar: "المعادلات الكيميائية"}, strand: sci-matter, grade: 8, term: 1, requires: [sci-g8-chemical-reactions], skills: [], source: s2t1}
+  - {id: sci-g8-nutrition-chemistry, label: {en: "The chemistry of nutrition", ar: "كيمياء التغذية"}, strand: sci-matter, grade: 8, term: 1, requires: [sci-g8-chemical-reactions, sci-g6-digestion], skills: [], source: s2t1}
+  - {id: sci-g8-photosynthesis-process, label: {en: "Energy flow in photosynthesis", ar: "تدفق الطاقة في البناء الضوئي"}, strand: sci-life, grade: 8, term: 1, requires: [sci-g6-photosynthesis, sci-g7-cells, sci-g8-chemical-equations], skills: [explaining-reasoning], source: s2t1}
+  - {id: sci-g8-cellular-respiration, label: {en: "Cellular respiration", ar: "التنفس الخلوي"}, strand: sci-life, grade: 8, term: 1, requires: [sci-g8-photosynthesis-process, sci-g6-respiration], skills: [explaining-reasoning], source: s2t1}
+  - {id: sci-g8-earth-surface-change, label: {en: "How the surface of the Earth changes", ar: "كيف يتغير سطح الأرض"}, strand: sci-earth, grade: 8, term: 1, requires: [sci-g4-soil-water, sci-g7-solar-system], skills: [], source: s2t1}
+  - {id: sci-g8-minerals-soil, label: {en: "How minerals and soil form", ar: "كيف تتكون المعادن والتربة"}, strand: sci-earth, grade: 8, term: 1, requires: [sci-g8-earth-surface-change], skills: [observing-and-questioning], source: s2t1}
+  # ---------------------------------------------------------------- Preparatory 2, term 2
+  - {id: sci-g8-heat-physical-changes, label: {en: "Heat changes that go with physical changes", ar: "التغيرات الحرارية المصاحبة للتغيرات الفيزيائية"}, strand: sci-energy, grade: 8, term: 2, requires: [sci-g8-changes-of-state, sci-g8-heat-transfer], skills: [working-with-data], source: s2t2}
+  - {id: sci-g8-heat-chemical-changes, label: {en: "Heat changes that go with chemical changes", ar: "التغيرات الحرارية المصاحبة للتغيرات الكيميائية"}, strand: sci-energy, grade: 8, term: 2, requires: [sci-g8-heat-physical-changes, sci-g8-chemical-equations], skills: [working-with-data], source: s2t2}
+  - {id: sci-g8-combustion-redox, label: {en: "Combustion, oxidation and reduction", ar: "الاحتراق والأكسدة والاختزال"}, strand: sci-matter, grade: 8, term: 2, requires: [sci-g8-heat-chemical-changes, sci-g6-burning-conditions], skills: [explaining-reasoning], source: s2t2}
+  - {id: sci-g8-newtons-laws, label: {en: "Newton's laws of motion", ar: "قوانين نيوتن للحركة"}, strand: sci-forces, grade: 8, term: 2, requires: [sci-g7-gravitational-forces, sci-g7-mechanical-energy], skills: [working-with-data], source: s2t2}
+  - {id: sci-g8-levers, label: {en: "Levers", ar: "الروافع"}, strand: sci-forces, grade: 8, term: 2, requires: [sci-g8-newtons-laws], skills: [planning-investigations], source: s2t2}
+  - {id: sci-g8-cell-division, label: {en: "Cell division", ar: "انقسام الخلية"}, strand: sci-life, grade: 8, term: 2, requires: [sci-g7-cells, sci-g7-traits-mutations], skills: [], source: s2t2}
+  - {id: sci-g8-flowering-plant-reproduction, label: {en: "Reproduction in flowering plants", ar: "التكاثر في النباتات الزهرية"}, strand: sci-life, grade: 8, term: 2, requires: [sci-g8-cell-division, sci-g5-pollination-fruit], skills: [], source: s2t2}
+  - {id: sci-g8-heat-pressure-climate, label: {en: "How heat and air pressure shape the climate", ar: "تأثير الحرارة والضغط الجوي في المناخ"}, strand: sci-earth, grade: 8, term: 2, requires: [sci-g8-heat-transfer, sci-g5-weather-changes], skills: [explaining-reasoning], source: s2t2}
+  - {id: sci-g8-winds-forecasting, label: {en: "Winds and weather forecasting", ar: "الرياح والتنبؤ بالطقس"}, strand: sci-earth, grade: 8, term: 2, requires: [sci-g8-heat-pressure-climate], skills: [working-with-data], source: s2t2}

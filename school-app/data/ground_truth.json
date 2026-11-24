@@ -1,0 +1,110 @@
+{
+  "seed": 11,
+  "pack_id": "egypt-school",
+  "school": "مدرسة النهضة التجريبية (بيانات غير حقيقية)",
+  "language": "ar",
+  "current_period": "2026-T1",
+  "note": "Synthetic data. Planted patterns are what an honest analysis should find.",
+  "planted": [
+    {
+      "learner_id": "lrn_94571b0915",
+      "alias": "Learner V-25",
+      "case": "new_arrival"
+    },
+    {
+      "learner_id": "lrn_7efaee51db",
+      "alias": "Learner F-13",
+      "case": "what_worked",
+      "approach": "story_problems"
+    },
+    {
+      "learner_id": "lrn_f8e777f99f",
+      "alias": "Learner W-84",
+      "case": "root_gap",
+      "root": "soc-g4-heritage-sites",
+      "later": [
+        "soc-g4-tourism-economy",
+        "soc-g4-protecting-heritage",
+        "soc-g5-architecture-arts",
+        "soc-g6-arab-tourism"
+      ],
+      "period": "2023-T2"
+    },
+    {
+      "learner_id": "lrn_41494b1684",
+      "alias": "Learner A-68",
+      "case": "root_gap",
+      "root": "soc-g5-victories",
+      "later": [
+        "soc-g5-links-world",
+        "soc-g7-new-kingdom",
+        "soc-g6-arab-integration",
+        "soc-g8-ancient-near-east-yemen",
+        "soc-g7-egypt-african-organizations"
+      ],
+      "period": "2023-T2"
+    },
+    {
+      "learner_id": "lrn_cd7bf1e6fc",
+      "alias": "Learner G-67",
+      "case": "no_pattern"
+    },
+    {
+      "learner_id": "lrn_a5b3fc4221",
+      "alias": "Learner H-66",
+      "case": "no_pattern"
+    },
+    {
+      "learner_id": "lrn_1ec216caa3",
+      "alias": "Learner C-73",
+      "case": "strand_strength",
+      "strand": "sci-matter"
+    },
+    {
+      "learner_id": "lrn_3fc5ede45f",
+      "alias": "Learner P-98",
+      "case": "strand_strength",
+      "strand": "eng-vocabulary"
+    },
+    {
+      "learner_id": "lrn_51ef7551cd",
+      "alias": "Learner E-32",
+      "case": "unknown_root",
+      "root": "soc-g5-victories",
+      "later": [
+        "soc-g5-links-world",
+        "soc-g7-new-kingdom",
+        "soc-g6-arab-integration",
+        "soc-g8-ancient-near-east-yemen",
+        "soc-g7-egypt-african-organizations"
+      ],
+      "period": "2023-T2"
+    },
+    {
+      "learner_id": "lrn_fa37ab8c02",
+      "alias": "Learner D-51",
+      "case": "root_gap",
+      "root": "soc-g5-victories",
+      "later": [
+        "soc-g5-links-world",
+        "soc-g7-new-kingdom",
+        "soc-g6-arab-integration",
+        "soc-g8-ancient-near-east-yemen",
+        "soc-g7-egypt-african-organizations"
+      ],
+      "period": "2023-T2"
+    },
+    {
+      "learner_id": "lrn_87b2868004",
+      "alias": "Learner W-83",
+      "case": "strand_strength",
+      "strand": "geometry"
+    },
+    {
+      "learner_id": "lrn_943463a850",
+      "alias": "Learner B-19",
+      "case": "what_worked",
+      "approach": "story_problems"
+    }
+  ]
+}

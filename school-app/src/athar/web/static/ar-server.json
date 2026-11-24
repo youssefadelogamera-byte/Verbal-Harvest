@@ -1,0 +1,1263 @@
+{
+ "exact": {
+  "The topics it builds on do not show low results in the records, so the difficulty seems to start here.": "الموضوعات التي يعتمد عليها لا تظهر فيها نتائج منخفضة في السجلات، لذلك يبدو أن الصعوبة تبدأ من هنا.",
+  "The finding compares results before and after units taught this way, against this learner's own earlier average.": "يقارن الاستنتاج بين النتائج قبل الوحدات التي تم تدريسها بهذه الطريقة وبعدها، قياسا على متوسط التلميذ نفسه في الفترة السابقة.",
+  "Offer harder or wider work in this area, and consider letting this learner explain it to others.": "يمكن تقديم أعمال أصعب أو أوسع في هذا المجال، مع التفكير في أن يشرحه هذا التلميذ لغيره.",
+  "Check the topics this area builds on, and trace back on the learning map to see where it starts.": "من المفيد مراجعة الموضوعات التي يعتمد عليها هذا المجال، وتتبع البداية على خريطة التعلم لمعرفة من أين تبدأ الصعوبة.",
+  "Try the same approach when the next new topic is introduced, and see whether the gain repeats.": "يمكن تجربة طريقة التدريس نفسها عند تقديم الموضوع الجديد التالي، وملاحظة هل يتكرر التحسن.",
+  "Counts are small and topic difficulty also plays a part. This describes what followed, not what caused it, and it does not rate anyone.": "الأعداد صغيرة، ولصعوبة الموضوع نفسه دور أيضا. هذا وصف لما حدث بعد التدريس، وليس لسببه، وهو لا يقيم أحدا.",
+  "No scored evidence for this concept yet, so there is nothing to trace.": "لا توجد درجات مسجلة لهذا الموضوع حتى الآن، لذلك لا يوجد ما يمكن تتبعه.",
+  "no scored items recorded": "لا توجد درجات مسجلة",
+  "Describes teaching approaches for this learner. It does not rate teachers. Gains are measured against the learner's own recent average, so topic difficulty also plays a part.": "هذا وصف لطرق التدريس مع هذا التلميذ، وليس تقييما للمدرسين. يقاس التحسن مقارنة بمتوسط التلميذ نفسه في الفترة الأخيرة، ولذلك لصعوبة الموضوع دور أيضا.",
+  "No new document. Reviewing existing records only.": "مفيش مستند جديد. المراجعة على السجلات الموجودة بس.",
+  "The document has no year and term. Nothing recorded; a teacher should add them.": "المستند مفيهوش السنة والترم. ما اتسجلش حاجة، ولازم مدرس يضيفهم.",
+  "No approved findings, so no notes were drafted.": "مفيش استنتاجات معتمدة، فما اتكتبتش أي رسائل أو مذكرات.",
+  "statement is empty": "النص فاضي",
+  "Sign in first.": "سجّل الدخول الأول.",
+  "This learner is not in one of your classes. Ask the school admin.": "التلميذ ده مش في فصل من فصولك. اسأل مسؤول المدرسة.",
+  "Choose your name first, so the record shows who did this.": "اختار اسمك الأول، عشان السجل يبيّن مين اللي عمل ده.",
+  "Only the school admin can do this.": "مسؤول المدرسة بس هو اللي يقدر يعمل ده.",
+  "Create the school admin account first.": "اعمل حساب مسؤول المدرسة الأول.",
+  "A teacher describes their own way of teaching. Nobody else can change it.": "كل مدرس بيوصف طريقة تدريسه بنفسه. محدش غيره يقدر يغيّرها.",
+  "That model id has characters a model id cannot have.": "اسم النموذج ده فيه حروف ما ينفعش تكون في اسم نموذج.",
+  "This school already has an admin. Ask them for an account.": "المدرسة دي ليها مسؤول بالفعل. اطلب منه يعمل لك حساب.",
+  "Create the school admin account first, then sign in to add learners.": "اعمل حساب مسؤول المدرسة الأول، وبعدين سجّل الدخول عشان تضيف تلاميذ.",
+  "You have no class yet. Ask the school admin to give you one.": "لسه مفيش فصل باسمك. اطلب من مسؤول المدرسة يضيف لك فصل.",
+  "Choose one of your classes for this learner.": "اختار فصل من فصولك للتلميذ ده.",
+  "No backup with that name.": "مفيش نسخة احتياطية بالاسم ده.",
+  "On this computer (open weights)": "على الجهاز ده (نموذج مفتوح)",
+  "OpenAI (cloud)": "OpenAI (على الإنترنت)",
+  "Claude (cloud)": "Claude (على الإنترنت)",
+  "typed in this session": "اتكتب في الجلسة دي",
+  "That does not look like an API key.": "ده مش شكل مفتاح صحيح.",
+  "A username is 3 to 40 letters, digits, dots, dashes or underscores.": "اسم المستخدم من 3 ل 40 حرف: حروف إنجليزي أو أرقام أو نقطة أو شرطة (-) أو شرطة سفلية (_).",
+  "A role is one of: admin, teacher.": "نوع الحساب لازم يكون مسؤول المدرسة أو مدرس.",
+  "The first account must be the school admin.": "أول حساب لازم يكون حساب مسؤول المدرسة.",
+  "Give the teacher's name (2 to 80 characters).": "اكتب اسم المدرس (من 2 ل 80 حرف).",
+  "That teacher has no account.": "المدرس ده مالوش حساب.",
+  "Too many wrong passwords. Wait ten minutes, or ask the school admin to reset it.": "كلمة السر اتكتبت غلط مرات كتير. استنى عشر دقايق، أو اطلب من مسؤول المدرسة يغيّرها.",
+  "That username and password do not match.": "اسم المستخدم أو كلمة السر مش صح.",
+  "Give the class a short name, for example 5A.": "اكتب اسم قصير للفصل، مثلا 5A.",
+  "Give the grade and the year the school year starts in.": "اكتب الصف والسنة اللي بتبدأ فيها السنة الدراسية.",
+  "There is no database to back up yet.": "لسه مفيش بيانات تتعمل لها نسخة احتياطية.",
+  "That file is not a database backup.": "الملف ده مش نسخة احتياطية.",
+  "That file is not a backup of this product.": "الملف ده مش نسخة احتياطية من البرنامج ده.",
+  "Say in a few words why this record is wrong.": "اكتب في كلمتين ليه السجل ده غلط.",
+  "Only a named teacher can withdraw a record. Choose your name first.": "سحب السجل لازم يعمله مدرس باسمه. اختار اسمك الأول.",
+  "This record was already withdrawn.": "السجل ده اتسحب قبل كده.",
+  "Decision must be one of: approved, edited, rejected.": "القرار لازم يكون اعتماد أو تعديل أو رفض.",
+  "Decision must be one of: approved, rejected.": "القرار لازم يكون اعتماد أو رفض.",
+  "An 'edited' decision needs the edited_statement.": "قرار التعديل محتاج النص بعد التعديل.",
+  "Answer must be one of: provided, no_record.": "الرد لازم يكون إن السجل موجود أو إن مفيش سجل.",
+  "A 'provided' answer needs the record: type it, or choose a file from the inbox.": "عشان ترد بإن السجل موجود لازم تضيفه: اكتبه، أو اختار ملف من الوارد.",
+  "Recorded by the demo setup, not by a real teacher.": "اتسجل من إعداد العرض التجريبي، مش من مدرس حقيقي.",
+  "A finding must cite at least one evidence id. No evidence, no finding.": "الاستنتاج لازم يستند لسجل واحد على الأقل من الأدلة. من غير أدلة مفيش استنتاج.",
+  "A summary must be built from at least one approved finding.": "الرسالة أو المذكرة لازم تتبني على استنتاج معتمد واحد على الأقل.",
+  "Already asked and still waiting for a teacher; returned the existing request.": "السؤال اتسأل قبل كده ولسه مستني رد مدرس، فرجع الطلب الموجود.",
+  "That file is too large for a marks sheet (the limit is 2 MB).": "الملف ده كبير على كشف درجات (الحد الأقصى 2 ميجابايت).",
+  "That Excel file could not be read. Save it again as .xlsx or as CSV.": "ملف الإكسل ده ما اتقراش. احفظه تاني بصيغة .xlsx أو CSV.",
+  "Upload the marks template as an Excel file (.xlsx) or a CSV file.": "ارفع نموذج كشف الدرجات كملف إكسل (.xlsx) أو ملف CSV.",
+  "Give the quiz a name, for example 'Fractions quiz, week 6'.": "اكتب اسم للاختبار القصير، مثلا 'اختبار الكسور، الأسبوع 6'.",
+  "The term must be 1, 2 or 3.": "الترم لازم يكون 1 أو 2 أو 3.",
+  "This does not look like the marks template. It needs a 'Learner code' row, a 'Topic' row and an 'Out of' row. Download a fresh template and fill that in.": "الملف ده مش شبه نموذج كشف الدرجات. لازم يكون فيه صف 'Learner code' وصف 'Topic' وصف 'Out of'. نزّل نموذج جديد واملاه.",
+  "The sheet has no question columns.": "الكشف مفيهوش أعمدة أسئلة.",
+  "The sheet has no learner rows.": "الكشف مفيهوش صفوف تلاميذ.",
+  "Only a named teacher can add records. Choose your name first.": "إضافة السجلات لازم يعملها مدرس باسمه. اختار اسمك الأول.",
+  "Give the learner's name as the class list shows it (2 to 60 characters).": "اكتب اسم التلميذ زي ما هو في كشف الفصل (من 2 ل 60 حرف).",
+  "No free record code is left. Tell the person who looks after this system.": "مفيش أكواد تلاميذ فاضية. بلّغ المسؤول عن النظام.",
+  "The agent reads text files: .md, .txt or .csv.": "المساعد الآلي بيقرا ملفات نصية بس: .md أو .txt أو .csv.",
+  "That file is too large (the limit is 1 MB).": "الملف ده كبير (الحد الأقصى 1 ميجابايت).",
+  "That file is not plain text. Save it as UTF-8 text and try again.": "الملف ده مش نص عادي. احفظه كنص بترميز UTF-8 وجرّب تاني.",
+  "The process running this run stopped before it finished.": "التشغيل ده وقف قبل ما يخلص.",
+  "task needs a learner_id": "لازم تختار تلميذ للتشغيل.",
+  "Only the school admin can add to the curriculum.": "مسؤول المدرسة بس هو اللي يقدر يضيف للمنهج.",
+  "Adding to the curriculum is done on the school side.": "الإضافة للمنهج بتتعمل من ناحية المدرسة.",
+  "Tick the box to say you checked every topic and every link.": "علّم على المربع عشان تأكد إنك راجعت كل موضوع وكل ربط.",
+  "Choose your name first, so the record shows who approved this.": "اختار اسمك الأول، عشان السجل يبيّن مين اللي اعتمد ده.",
+  "That file is empty.": "الملف ده فاضي.",
+  "That file is too large (the limit is 8 MB).": "الملف ده كبير أوي (الحد 8 ميجا).",
+  "That picture is too large (the limit is 8 MB).": "الصورة دي كبيرة أوي (الحد 8 ميجا).",
+  "That Word file could not be opened. Paste the list of topics in instead.": "ملف الوورد ده ما اتفتحش. الصق قايمة الموضوعات بدل كده.",
+  "That Excel file could not be opened. Paste the list of topics in instead.": "ملف الإكسل ده ما اتفتحش. الصق قايمة الموضوعات بدل كده.",
+  "Athar does not read PDF files here. Take a screenshot or a photo of the contents page and upload that, or paste the list of topics in.": "أثر ما بيقراش ملفات PDF هنا. خد لقطة شاشة أو صورة لصفحة الفهرس وارفعها، أو الصق قايمة الموضوعات.",
+  "Use a text file (.txt, .md, .csv), a Word file (.docx), an Excel file (.xlsx), or a photo of the contents page (JPEG or PNG).": "استخدم ملف نصي (.txt أو .md أو .csv)، أو ملف وورد (.docx)، أو ملف إكسل (.xlsx)، أو صورة لصفحة الفهرس (JPEG أو PNG).",
+  "The model did not answer. Start it and try again, or type the topics in.": "النموذج ما ردش. شغله وجرب تاني، أو اكتب الموضوعات بنفسك.",
+  "The model could not read that. If it is a photo, the model may not be one that can see pictures. Paste the list of topics in instead.": "النموذج ما قدرش يقرا ده. لو دي صورة، ممكن النموذج مش من النوع اللي بيشوف الصور. الصق قايمة الموضوعات بدل كده.",
+  "The model did not return anything Athar could read. Type the topics in instead.": "النموذج ما رجعش حاجة أثر يقدر يقراها. اكتب الموضوعات بنفسك.",
+  "Choose the subject, or type the name of a new one.": "اختار المادة، أو اكتب اسم مادة جديدة.",
+  "There is no topic to add yet.": "مفيش موضوع يتضاف لسه.",
+  "Choose an area for every topic.": "اختار مجال لكل موضوع.",
+  "Two topics need each other, directly or through other topics. Remove one of the links and try again.": "فيه موضوعين محتاجين بعض، مباشرة أو عن طريق موضوعات تانية. شيل ربط منهم وجرب تاني.",
+  "That addition was not found.": "الإضافة دي مش موجودة.",
+  "That draft has already been decided.": "المسودة دي اتاخد فيها قرار قبل كده.",
+  "Only an approved addition can be withdrawn.": "الإضافة المعتمدة بس هي اللي ينفع تتسحب.",
+  "That picture is not one Athar can read. Use a JPEG or PNG picture.": "الصورة دي أثر مش قادر يقراها. استخدم صورة JPEG أو PNG.",
+  "A picture can only be read by the model. Turn that on, or type the topics in.": "الصورة النموذج بس هو اللي يقدر يقراها. شغل الاختيار ده، أو اكتب الموضوعات بنفسك.",
+  "Paste the list of topics, or choose a file or a picture of the contents page.": "الصق قايمة الموضوعات، أو اختار ملف أو صورة لصفحة الفهرس.",
+  "No topic was found in that. Type the topics in, one on each line.": "ما لقيناش أي موضوع في ده. اكتب الموضوعات، كل موضوع في سطر.",
+  "The model listed the topics but could not suggest links. Add them yourself below.": "النموذج كتب الموضوعات بس ما قدرش يقترح روابط. ضيفها بنفسك تحت.",
+  "The model is still starting. Wait a minute and try again.": "النموذج لسه بيشتغل. استنى دقيقة وجرب تاني."
+ },
+ "patterns": [
+  {
+   "re": "^The term is 1 to (\\d+)\\.$",
+   "ar": "الترم من 1 إلى $1."
+  },
+  {
+   "re": "^A family record holds up to (\\d+) children\\.$",
+   "ar": "ملف الأسرة بياخد لحد $1 أولاد."
+  },
+  {
+   "re": "^Line (\\d+): the mark is outside 0 to (.+)\\.$",
+   "ar": "السطر $1: الدرجة بره المدى من 0 إلى $2."
+  },
+  {
+   "re": "^Line (\\d+): write the mark and what it was out of, as numbers\\.$",
+   "ar": "السطر $1: اكتب الدرجة والدرجة من كام، بالأرقام."
+  },
+  {
+   "re": "^Line (\\d+): choose a topic from the list\\.$",
+   "ar": "السطر $1: اختار موضوع من القايمة."
+  },
+  {
+   "re": "^Results in (.+?) are low now: (\\d+)% over (\\d+) records?\\.$",
+   "ar": "النتائج في $1 منخفضة حاليا: $2% (عدد السجلات: $3)."
+  },
+  {
+   "re": "^Results in (.+?) are low: (\\d+)% over (\\d+) records?\\.$",
+   "ar": "النتائج في $1 منخفضة: $2% (عدد السجلات: $3)."
+  },
+  {
+   "re": "^Results in (.+?) were (\\d+)% over (\\d+) records?, first recorded in (.+?)\\.$",
+   "ar": "النتائج في $1 كانت $2% (عدد السجلات: $3)، وأول تسجيل لها في $4."
+  },
+  {
+   "re": "^(.+?) builds on (.+?), through (.+?) and (.+?) and (.+?) and (.+?)\\.$",
+   "ar": "موضوع $1 يعتمد على موضوع $2، عبر $3 ثم $4 ثم $5 ثم $6."
+  },
+  {
+   "re": "^(.+?) builds on (.+?), through (.+?) and (.+?) and (.+?)\\.$",
+   "ar": "موضوع $1 يعتمد على موضوع $2، عبر $3 ثم $4 ثم $5."
+  },
+  {
+   "re": "^(.+?) builds on (.+?), through (.+?) and (.+?)\\.$",
+   "ar": "موضوع $1 يعتمد على موضوع $2، عبر $3 ثم $4."
+  },
+  {
+   "re": "^(.+?) builds on (.+?), through (.+?)\\.$",
+   "ar": "موضوع $1 يعتمد على موضوع $2، عبر $3."
+  },
+  {
+   "re": "^(.+?) builds on (.+?)\\.$",
+   "ar": "موضوع $1 يعتمد على موضوع $2."
+  },
+  {
+   "re": "^(\\d+) days? of absence (?:was|were) recorded in (.+)\\.$",
+   "ar": "أيام الغياب المسجلة في $2: $1."
+  },
+  {
+   "re": "^So (.+?) is the earliest low point the records show\\. It is a place to check, not a verdict\\.$",
+   "ar": "إذن $1 هو أقدم موضع منخفض النتائج تظهره السجلات. هذا موضع يستحق المراجعة، وليس حكما."
+  },
+  {
+   "re": "^(\\d+) records? across (\\d+) terms?, from (.+?) to (.+?)\\.$",
+   "ar": "عدد السجلات $1 وعدد الترمات $2، من $3 إلى $4."
+  },
+  {
+   "re": "^They average (\\d+)%\\. Term averages ran from (\\d+)% to (\\d+)%\\.$",
+   "ar": "متوسطها $1%. تراوحت متوسطات الترمات بين $2% و$3%."
+  },
+  {
+   "re": "^They average (\\d+)%\\.$",
+   "ar": "متوسطها $1%."
+  },
+  {
+   "re": "^Topics: (.+) and (\\d+) more\\.$",
+   "ar": "الموضوعات: $1، إضافة إلى موضوعات أخرى عددها $2."
+  },
+  {
+   "re": "^Topics: (.+)\\.$",
+   "ar": "الموضوعات: $1."
+  },
+  {
+   "re": "^Before moving on with (.+?), revisit (.+?)\\. A short check on (.+?) would confirm whether the gap is still there\\.$",
+   "ar": "قبل الاستمرار في $1، من المفيد الرجوع إلى $2. اختبار قصير في $3 يوضح هل ما زالت الفجوة موجودة."
+  },
+  {
+   "re": "^Spend time on (.+?) itself: the topics it builds on look secure\\.$",
+   "ar": "من المفيد تخصيص وقت لموضوع $1 نفسه: الموضوعات التي يعتمد عليها تبدو مستقرة."
+  },
+  {
+   "re": "^(.+?) was followed by gains (\\d+) of (\\d+) times for this learner\\. You said you teach this way rarely, so it may be worth trying here\\.$",
+   "ar": "طريقة $1 تبعها تحسن في النتائج مع هذا التلميذ (عدد المرات: $2 من $3). ذكرت أنك نادرا ما تدرس بهذه الطريقة، فقد يكون من المفيد تجربتها هنا."
+  },
+  {
+   "re": "^(.+?) was followed by gains (\\d+) of (\\d+) times for this learner, and it is a way you often teach\\.$",
+   "ar": "طريقة $1 تبعها تحسن في النتائج مع هذا التلميذ (عدد المرات: $2 من $3)، وهي طريقة ذكرت أنك تدرس بها كثيرا."
+  },
+  {
+   "re": "^This concept is not low \\(mean ([\\d.]+)\\), so there is no struggle to trace\\.$",
+   "ar": "نتائج هذا الموضوع ليست منخفضة (المتوسط $1)، لذلك لا توجد صعوبة يمكن تتبعها."
+  },
+  {
+   "re": "^(.+?) is low, but there are no records for (.+?) \\(its prerequisites?\\), so where the difficulty began cannot be told from the records\\.$",
+   "ar": "النتائج في $1 منخفضة، لكن لا توجد سجلات عن $2 (من الموضوعات السابقة التي يعتمد عليها)، لذلك لا يمكن تحديد بداية الصعوبة من السجلات."
+  },
+  {
+   "re": "^only (\\d+) period\\(s\\) have scored items; a pattern needs at least (\\d+)$",
+   "ar": "عدد الترمات التي بها درجات مسجلة $1 فقط، والنمط يحتاج إلى $2 على الأقل"
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Walking back through prerequisites, (.+?) \\(grade (\\d+), first seen (.+?)\\) is the deepest low concept on the way\\. (\\d+) days? of absence (?:was|were) recorded in (.+?), when \\4 was taught\\. There are no records for (.+?) between them; this was not guessed\\. Records begin in grade (\\d+), so (.+?) (?:was|were) taught before the record\\. The difficulty may begin earlier: there are no records for (.+?), although the learner was enrolled when (?:it was|they were) taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). عند تتبع الموضوعات السابقة التي يعتمد عليها، يظهر أن $4 (الصف $5، أول ظهور في $6) هو أبعد موضوع منخفض النتائج في هذا المسار. عدد أيام الغياب المسجلة في $8 هو $7، وهو الترم الذي تم فيه تدريس $4. لا توجد سجلات عن $9 بينهما، ولم يتم تخمين ذلك. السجلات تبدأ من الصف $10، أي أن تدريس $11 كان قبل بداية السجلات. قد تبدأ الصعوبة قبل ذلك: لا توجد سجلات عن $12، مع أن التلميذ كان مقيدا بالمدرسة وقت تدريس ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Walking back through prerequisites, (.+?) \\(grade (\\d+), first seen (.+?)\\) is the deepest low concept on the way\\. (\\d+) days? of absence (?:was|were) recorded in (.+?), when \\4 was taught\\. There are no records for (.+?) between them; this was not guessed\\. Records begin in grade (\\d+), so (.+?) (?:was|were) taught before the record\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). عند تتبع الموضوعات السابقة التي يعتمد عليها، يظهر أن $4 (الصف $5، أول ظهور في $6) هو أبعد موضوع منخفض النتائج في هذا المسار. عدد أيام الغياب المسجلة في $8 هو $7، وهو الترم الذي تم فيه تدريس $4. لا توجد سجلات عن $9 بينهما، ولم يتم تخمين ذلك. السجلات تبدأ من الصف $10، أي أن تدريس $11 كان قبل بداية السجلات."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Walking back through prerequisites, (.+?) \\(grade (\\d+), first seen (.+?)\\) is the deepest low concept on the way\\. (\\d+) days? of absence (?:was|were) recorded in (.+?), when \\4 was taught\\. There are no records for (.+?) between them; this was not guessed\\. The difficulty may begin earlier: there are no records for (.+?), although the learner was enrolled when (?:it was|they were) taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). عند تتبع الموضوعات السابقة التي يعتمد عليها، يظهر أن $4 (الصف $5، أول ظهور في $6) هو أبعد موضوع منخفض النتائج في هذا المسار. عدد أيام الغياب المسجلة في $8 هو $7، وهو الترم الذي تم فيه تدريس $4. لا توجد سجلات عن $9 بينهما، ولم يتم تخمين ذلك. قد تبدأ الصعوبة قبل ذلك: لا توجد سجلات عن $10، مع أن التلميذ كان مقيدا بالمدرسة وقت تدريس ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Walking back through prerequisites, (.+?) \\(grade (\\d+), first seen (.+?)\\) is the deepest low concept on the way\\. (\\d+) days? of absence (?:was|were) recorded in (.+?), when \\4 was taught\\. Records begin in grade (\\d+), so (.+?) (?:was|were) taught before the record\\. The difficulty may begin earlier: there are no records for (.+?), although the learner was enrolled when (?:it was|they were) taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). عند تتبع الموضوعات السابقة التي يعتمد عليها، يظهر أن $4 (الصف $5، أول ظهور في $6) هو أبعد موضوع منخفض النتائج في هذا المسار. عدد أيام الغياب المسجلة في $8 هو $7، وهو الترم الذي تم فيه تدريس $4. السجلات تبدأ من الصف $9، أي أن تدريس $10 كان قبل بداية السجلات. قد تبدأ الصعوبة قبل ذلك: لا توجد سجلات عن $11، مع أن التلميذ كان مقيدا بالمدرسة وقت تدريس ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Walking back through prerequisites, (.+?) \\(grade (\\d+), first seen (.+?)\\) is the deepest low concept on the way\\. There are no records for (.+?) between them; this was not guessed\\. Records begin in grade (\\d+), so (.+?) (?:was|were) taught before the record\\. The difficulty may begin earlier: there are no records for (.+?), although the learner was enrolled when (?:it was|they were) taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). عند تتبع الموضوعات السابقة التي يعتمد عليها، يظهر أن $4 (الصف $5، أول ظهور في $6) هو أبعد موضوع منخفض النتائج في هذا المسار. لا توجد سجلات عن $7 بينهما، ولم يتم تخمين ذلك. السجلات تبدأ من الصف $8، أي أن تدريس $9 كان قبل بداية السجلات. قد تبدأ الصعوبة قبل ذلك: لا توجد سجلات عن $10، مع أن التلميذ كان مقيدا بالمدرسة وقت تدريس ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Walking back through prerequisites, (.+?) \\(grade (\\d+), first seen (.+?)\\) is the deepest low concept on the way\\. (\\d+) days? of absence (?:was|were) recorded in (.+?), when \\4 was taught\\. There are no records for (.+?) between them; this was not guessed\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). عند تتبع الموضوعات السابقة التي يعتمد عليها، يظهر أن $4 (الصف $5، أول ظهور في $6) هو أبعد موضوع منخفض النتائج في هذا المسار. عدد أيام الغياب المسجلة في $8 هو $7، وهو الترم الذي تم فيه تدريس $4. لا توجد سجلات عن $9 بينهما، ولم يتم تخمين ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Walking back through prerequisites, (.+?) \\(grade (\\d+), first seen (.+?)\\) is the deepest low concept on the way\\. (\\d+) days? of absence (?:was|were) recorded in (.+?), when \\4 was taught\\. Records begin in grade (\\d+), so (.+?) (?:was|were) taught before the record\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). عند تتبع الموضوعات السابقة التي يعتمد عليها، يظهر أن $4 (الصف $5، أول ظهور في $6) هو أبعد موضوع منخفض النتائج في هذا المسار. عدد أيام الغياب المسجلة في $8 هو $7، وهو الترم الذي تم فيه تدريس $4. السجلات تبدأ من الصف $9، أي أن تدريس $10 كان قبل بداية السجلات."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Walking back through prerequisites, (.+?) \\(grade (\\d+), first seen (.+?)\\) is the deepest low concept on the way\\. (\\d+) days? of absence (?:was|were) recorded in (.+?), when \\4 was taught\\. The difficulty may begin earlier: there are no records for (.+?), although the learner was enrolled when (?:it was|they were) taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). عند تتبع الموضوعات السابقة التي يعتمد عليها، يظهر أن $4 (الصف $5، أول ظهور في $6) هو أبعد موضوع منخفض النتائج في هذا المسار. عدد أيام الغياب المسجلة في $8 هو $7، وهو الترم الذي تم فيه تدريس $4. قد تبدأ الصعوبة قبل ذلك: لا توجد سجلات عن $9، مع أن التلميذ كان مقيدا بالمدرسة وقت تدريس ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Walking back through prerequisites, (.+?) \\(grade (\\d+), first seen (.+?)\\) is the deepest low concept on the way\\. There are no records for (.+?) between them; this was not guessed\\. Records begin in grade (\\d+), so (.+?) (?:was|were) taught before the record\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). عند تتبع الموضوعات السابقة التي يعتمد عليها، يظهر أن $4 (الصف $5، أول ظهور في $6) هو أبعد موضوع منخفض النتائج في هذا المسار. لا توجد سجلات عن $7 بينهما، ولم يتم تخمين ذلك. السجلات تبدأ من الصف $8، أي أن تدريس $9 كان قبل بداية السجلات."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Walking back through prerequisites, (.+?) \\(grade (\\d+), first seen (.+?)\\) is the deepest low concept on the way\\. There are no records for (.+?) between them; this was not guessed\\. The difficulty may begin earlier: there are no records for (.+?), although the learner was enrolled when (?:it was|they were) taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). عند تتبع الموضوعات السابقة التي يعتمد عليها، يظهر أن $4 (الصف $5، أول ظهور في $6) هو أبعد موضوع منخفض النتائج في هذا المسار. لا توجد سجلات عن $7 بينهما، ولم يتم تخمين ذلك. قد تبدأ الصعوبة قبل ذلك: لا توجد سجلات عن $8، مع أن التلميذ كان مقيدا بالمدرسة وقت تدريس ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Walking back through prerequisites, (.+?) \\(grade (\\d+), first seen (.+?)\\) is the deepest low concept on the way\\. Records begin in grade (\\d+), so (.+?) (?:was|were) taught before the record\\. The difficulty may begin earlier: there are no records for (.+?), although the learner was enrolled when (?:it was|they were) taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). عند تتبع الموضوعات السابقة التي يعتمد عليها، يظهر أن $4 (الصف $5، أول ظهور في $6) هو أبعد موضوع منخفض النتائج في هذا المسار. السجلات تبدأ من الصف $7، أي أن تدريس $8 كان قبل بداية السجلات. قد تبدأ الصعوبة قبل ذلك: لا توجد سجلات عن $9، مع أن التلميذ كان مقيدا بالمدرسة وقت تدريس ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Walking back through prerequisites, (.+?) \\(grade (\\d+), first seen (.+?)\\) is the deepest low concept on the way\\. (\\d+) days? of absence (?:was|were) recorded in (.+?), when \\4 was taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). عند تتبع الموضوعات السابقة التي يعتمد عليها، يظهر أن $4 (الصف $5، أول ظهور في $6) هو أبعد موضوع منخفض النتائج في هذا المسار. عدد أيام الغياب المسجلة في $8 هو $7، وهو الترم الذي تم فيه تدريس $4."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Walking back through prerequisites, (.+?) \\(grade (\\d+), first seen (.+?)\\) is the deepest low concept on the way\\. There are no records for (.+?) between them; this was not guessed\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). عند تتبع الموضوعات السابقة التي يعتمد عليها، يظهر أن $4 (الصف $5، أول ظهور في $6) هو أبعد موضوع منخفض النتائج في هذا المسار. لا توجد سجلات عن $7 بينهما، ولم يتم تخمين ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Walking back through prerequisites, (.+?) \\(grade (\\d+), first seen (.+?)\\) is the deepest low concept on the way\\. Records begin in grade (\\d+), so (.+?) (?:was|were) taught before the record\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). عند تتبع الموضوعات السابقة التي يعتمد عليها، يظهر أن $4 (الصف $5، أول ظهور في $6) هو أبعد موضوع منخفض النتائج في هذا المسار. السجلات تبدأ من الصف $7، أي أن تدريس $8 كان قبل بداية السجلات."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Walking back through prerequisites, (.+?) \\(grade (\\d+), first seen (.+?)\\) is the deepest low concept on the way\\. The difficulty may begin earlier: there are no records for (.+?), although the learner was enrolled when (?:it was|they were) taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). عند تتبع الموضوعات السابقة التي يعتمد عليها، يظهر أن $4 (الصف $5، أول ظهور في $6) هو أبعد موضوع منخفض النتائج في هذا المسار. قد تبدأ الصعوبة قبل ذلك: لا توجد سجلات عن $7، مع أن التلميذ كان مقيدا بالمدرسة وقت تدريس ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Walking back through prerequisites, (.+?) \\(grade (\\d+), first seen (.+?)\\) is the deepest low concept on the way\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). عند تتبع الموضوعات السابقة التي يعتمد عليها، يظهر أن $4 (الصف $5، أول ظهور في $6) هو أبعد موضوع منخفض النتائج في هذا المسار."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Its recorded prerequisites are fine, so the difficulty starts here\\. (\\d+) days? of absence (?:was|were) recorded in (.+?), when \\1 was taught\\. There are no records for (.+?) between them; this was not guessed\\. Records begin in grade (\\d+), so (.+?) (?:was|were) taught before the record\\. The difficulty may begin earlier: there are no records for (.+?), although the learner was enrolled when (?:it was|they were) taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). الموضوعات السابقة المسجلة التي يعتمد عليها نتائجها غير منخفضة، لذلك تبدأ الصعوبة من هنا. عدد أيام الغياب المسجلة في $5 هو $4، وهو الترم الذي تم فيه تدريس $1. لا توجد سجلات عن $6 بينهما، ولم يتم تخمين ذلك. السجلات تبدأ من الصف $7، أي أن تدريس $8 كان قبل بداية السجلات. قد تبدأ الصعوبة قبل ذلك: لا توجد سجلات عن $9، مع أن التلميذ كان مقيدا بالمدرسة وقت تدريس ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Its recorded prerequisites are fine, so the difficulty starts here\\. (\\d+) days? of absence (?:was|were) recorded in (.+?), when \\1 was taught\\. There are no records for (.+?) between them; this was not guessed\\. Records begin in grade (\\d+), so (.+?) (?:was|were) taught before the record\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). الموضوعات السابقة المسجلة التي يعتمد عليها نتائجها غير منخفضة، لذلك تبدأ الصعوبة من هنا. عدد أيام الغياب المسجلة في $5 هو $4، وهو الترم الذي تم فيه تدريس $1. لا توجد سجلات عن $6 بينهما، ولم يتم تخمين ذلك. السجلات تبدأ من الصف $7، أي أن تدريس $8 كان قبل بداية السجلات."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Its recorded prerequisites are fine, so the difficulty starts here\\. (\\d+) days? of absence (?:was|were) recorded in (.+?), when \\1 was taught\\. There are no records for (.+?) between them; this was not guessed\\. The difficulty may begin earlier: there are no records for (.+?), although the learner was enrolled when (?:it was|they were) taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). الموضوعات السابقة المسجلة التي يعتمد عليها نتائجها غير منخفضة، لذلك تبدأ الصعوبة من هنا. عدد أيام الغياب المسجلة في $5 هو $4، وهو الترم الذي تم فيه تدريس $1. لا توجد سجلات عن $6 بينهما، ولم يتم تخمين ذلك. قد تبدأ الصعوبة قبل ذلك: لا توجد سجلات عن $7، مع أن التلميذ كان مقيدا بالمدرسة وقت تدريس ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Its recorded prerequisites are fine, so the difficulty starts here\\. (\\d+) days? of absence (?:was|were) recorded in (.+?), when \\1 was taught\\. Records begin in grade (\\d+), so (.+?) (?:was|were) taught before the record\\. The difficulty may begin earlier: there are no records for (.+?), although the learner was enrolled when (?:it was|they were) taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). الموضوعات السابقة المسجلة التي يعتمد عليها نتائجها غير منخفضة، لذلك تبدأ الصعوبة من هنا. عدد أيام الغياب المسجلة في $5 هو $4، وهو الترم الذي تم فيه تدريس $1. السجلات تبدأ من الصف $6، أي أن تدريس $7 كان قبل بداية السجلات. قد تبدأ الصعوبة قبل ذلك: لا توجد سجلات عن $8، مع أن التلميذ كان مقيدا بالمدرسة وقت تدريس ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Its recorded prerequisites are fine, so the difficulty starts here\\. There are no records for (.+?) between them; this was not guessed\\. Records begin in grade (\\d+), so (.+?) (?:was|were) taught before the record\\. The difficulty may begin earlier: there are no records for (.+?), although the learner was enrolled when (?:it was|they were) taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). الموضوعات السابقة المسجلة التي يعتمد عليها نتائجها غير منخفضة، لذلك تبدأ الصعوبة من هنا. لا توجد سجلات عن $4 بينهما، ولم يتم تخمين ذلك. السجلات تبدأ من الصف $5، أي أن تدريس $6 كان قبل بداية السجلات. قد تبدأ الصعوبة قبل ذلك: لا توجد سجلات عن $7، مع أن التلميذ كان مقيدا بالمدرسة وقت تدريس ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Its recorded prerequisites are fine, so the difficulty starts here\\. (\\d+) days? of absence (?:was|were) recorded in (.+?), when \\1 was taught\\. There are no records for (.+?) between them; this was not guessed\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). الموضوعات السابقة المسجلة التي يعتمد عليها نتائجها غير منخفضة، لذلك تبدأ الصعوبة من هنا. عدد أيام الغياب المسجلة في $5 هو $4، وهو الترم الذي تم فيه تدريس $1. لا توجد سجلات عن $6 بينهما، ولم يتم تخمين ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Its recorded prerequisites are fine, so the difficulty starts here\\. (\\d+) days? of absence (?:was|were) recorded in (.+?), when \\1 was taught\\. Records begin in grade (\\d+), so (.+?) (?:was|were) taught before the record\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). الموضوعات السابقة المسجلة التي يعتمد عليها نتائجها غير منخفضة، لذلك تبدأ الصعوبة من هنا. عدد أيام الغياب المسجلة في $5 هو $4، وهو الترم الذي تم فيه تدريس $1. السجلات تبدأ من الصف $6، أي أن تدريس $7 كان قبل بداية السجلات."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Its recorded prerequisites are fine, so the difficulty starts here\\. (\\d+) days? of absence (?:was|were) recorded in (.+?), when \\1 was taught\\. The difficulty may begin earlier: there are no records for (.+?), although the learner was enrolled when (?:it was|they were) taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). الموضوعات السابقة المسجلة التي يعتمد عليها نتائجها غير منخفضة، لذلك تبدأ الصعوبة من هنا. عدد أيام الغياب المسجلة في $5 هو $4، وهو الترم الذي تم فيه تدريس $1. قد تبدأ الصعوبة قبل ذلك: لا توجد سجلات عن $6، مع أن التلميذ كان مقيدا بالمدرسة وقت تدريس ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Its recorded prerequisites are fine, so the difficulty starts here\\. There are no records for (.+?) between them; this was not guessed\\. Records begin in grade (\\d+), so (.+?) (?:was|were) taught before the record\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). الموضوعات السابقة المسجلة التي يعتمد عليها نتائجها غير منخفضة، لذلك تبدأ الصعوبة من هنا. لا توجد سجلات عن $4 بينهما، ولم يتم تخمين ذلك. السجلات تبدأ من الصف $5، أي أن تدريس $6 كان قبل بداية السجلات."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Its recorded prerequisites are fine, so the difficulty starts here\\. There are no records for (.+?) between them; this was not guessed\\. The difficulty may begin earlier: there are no records for (.+?), although the learner was enrolled when (?:it was|they were) taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). الموضوعات السابقة المسجلة التي يعتمد عليها نتائجها غير منخفضة، لذلك تبدأ الصعوبة من هنا. لا توجد سجلات عن $4 بينهما، ولم يتم تخمين ذلك. قد تبدأ الصعوبة قبل ذلك: لا توجد سجلات عن $5، مع أن التلميذ كان مقيدا بالمدرسة وقت تدريس ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Its recorded prerequisites are fine, so the difficulty starts here\\. Records begin in grade (\\d+), so (.+?) (?:was|were) taught before the record\\. The difficulty may begin earlier: there are no records for (.+?), although the learner was enrolled when (?:it was|they were) taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). الموضوعات السابقة المسجلة التي يعتمد عليها نتائجها غير منخفضة، لذلك تبدأ الصعوبة من هنا. السجلات تبدأ من الصف $4، أي أن تدريس $5 كان قبل بداية السجلات. قد تبدأ الصعوبة قبل ذلك: لا توجد سجلات عن $6، مع أن التلميذ كان مقيدا بالمدرسة وقت تدريس ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Its recorded prerequisites are fine, so the difficulty starts here\\. (\\d+) days? of absence (?:was|were) recorded in (.+?), when \\1 was taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). الموضوعات السابقة المسجلة التي يعتمد عليها نتائجها غير منخفضة، لذلك تبدأ الصعوبة من هنا. عدد أيام الغياب المسجلة في $5 هو $4، وهو الترم الذي تم فيه تدريس $1."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Its recorded prerequisites are fine, so the difficulty starts here\\. There are no records for (.+?) between them; this was not guessed\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). الموضوعات السابقة المسجلة التي يعتمد عليها نتائجها غير منخفضة، لذلك تبدأ الصعوبة من هنا. لا توجد سجلات عن $4 بينهما، ولم يتم تخمين ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Its recorded prerequisites are fine, so the difficulty starts here\\. Records begin in grade (\\d+), so (.+?) (?:was|were) taught before the record\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). الموضوعات السابقة المسجلة التي يعتمد عليها نتائجها غير منخفضة، لذلك تبدأ الصعوبة من هنا. السجلات تبدأ من الصف $4، أي أن تدريس $5 كان قبل بداية السجلات."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Its recorded prerequisites are fine, so the difficulty starts here\\. The difficulty may begin earlier: there are no records for (.+?), although the learner was enrolled when (?:it was|they were) taught\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). الموضوعات السابقة المسجلة التي يعتمد عليها نتائجها غير منخفضة، لذلك تبدأ الصعوبة من هنا. قد تبدأ الصعوبة قبل ذلك: لا توجد سجلات عن $4، مع أن التلميذ كان مقيدا بالمدرسة وقت تدريس ذلك."
+  },
+  {
+   "re": "^(.+?) is low \\(mean ([\\d.]+) over (\\d+) items\\)\\. Its recorded prerequisites are fine, so the difficulty starts here\\.$",
+   "ar": "النتائج في $1 منخفضة (المتوسط $2، عدد السجلات $3). الموضوعات السابقة المسجلة التي يعتمد عليها نتائجها غير منخفضة، لذلك تبدأ الصعوبة من هنا."
+  },
+  {
+   "re": "^No root found for (.+?)\\.$",
+   "ar": "لم يتم تحديد بداية للصعوبة في $1."
+  },
+  {
+   "re": "^Where the difficulty with (.+?) began cannot be told from the records\\.$",
+   "ar": "لا يمكن تحديد بداية الصعوبة في $1 من السجلات."
+  },
+  {
+   "re": "^A possible starting point for the difficulty with (.+?) is (.+?), but there is too little evidence to propose it\\.$",
+   "ar": "قد تكون بداية الصعوبة في $1 هي $2، لكن الأدلة أقل من أن تسمح باقتراح ذلك."
+  },
+  {
+   "re": "^Results in (.+?) are low, and there are no records for (.+?) \\(grade (\\d+)\\), which it builds on\\. Do you have a quiz, a test or a note about \\2 for this learner\\? If nothing exists, please say so\\.$",
+   "ar": "النتائج في $1 منخفضة، ولا توجد سجلات عن $2 (الصف $3) وهو موضوع يعتمد عليه. هل لديك اختبار قصير أو امتحان أو ملاحظة عن $2 لهذا التلميذ؟ إذا لم يوجد شيء، نرجو ذكر ذلك."
+  },
+  {
+   "re": "^Loaded (?:Learner )?(.+?)\\.$",
+   "ar": "اتفتح ملف التلميذ $1."
+  },
+  {
+   "re": "^Converted (.+?) with markitdown \\((\\d+) chars\\)\\.$",
+   "ar": "الملف $1 اتحول لنص بأداة markitdown (عدد الحروف: $2)."
+  },
+  {
+   "re": "^markitdown failed \\((.+)\\); recovered by reading (.+?) as text\\.$",
+   "ar": "أداة markitdown ما اشتغلتش ($1)، فالملف $2 اتقرا كنص عادي."
+  },
+  {
+   "re": "^Could not read (.+?): (.+)\\. Nothing recorded from it\\.$",
+   "ar": "الملف $1 ما اتقراش: $2. ما اتسجلش منه حاجة."
+  },
+  {
+   "re": "^Document names (.+), not (?:Learner )?(.+?)\\. Nothing recorded: a record must not land on the wrong learner\\.$",
+   "ar": "المستند مكتوب فيه $1، مش $2. ما اتسجلش حاجة: السجل ما ينفعش يتحط على تلميذ غلط."
+  },
+  {
+   "re": "^The model could not produce valid rows after retries \\((.+)\\)\\. Left for a teacher\\.$",
+   "ar": "النموذج ما قدرش يطلع سطور سليمة بعد كذا محاولة ($1). المستند اتساب للمدرس."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped a row about another learner\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال سطر عن تلميذ تاني."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped a row whose quote is not in the document\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال سطر نصه مش موجود في المستند."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped unknown concept id '(.+?)'\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال كود موضوع مش معروف '$3'."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: first reading had (\\d+) of (\\d+) table rows, asked again\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: أول قراءة طلعت $3 من $4 سطر في الجدول، فالنموذج اتسأل تاني."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: term found with a follow-up question\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: الترم اتعرف بسؤال إضافي."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: term taken from the file name\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: الترم اتاخد من اسم الملف."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: untagged marks filed under the topic the teacher was asked about\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: الدرجات اللي من غير موضوع اتسجلت تحت الموضوع اللي المدرس اتسأل عنه."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: year and term as given by the teacher\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: السنة والترم زي ما كتبهم المدرس."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped a row about another learner; dropped a row whose quote is not in the document\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال سطر عن تلميذ تاني؛ اتشال سطر نصه مش موجود في المستند."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped a row about another learner; dropped unknown concept id '(.+?)'\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال سطر عن تلميذ تاني؛ اتشال كود موضوع مش معروف '$3'."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped a row about another learner; first reading had (\\d+) of (\\d+) table rows, asked again\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال سطر عن تلميذ تاني؛ أول قراءة طلعت $3 من $4 سطر في الجدول، فالنموذج اتسأل تاني."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped a row about another learner; term found with a follow-up question\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال سطر عن تلميذ تاني؛ الترم اتعرف بسؤال إضافي."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped a row about another learner; term taken from the file name\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال سطر عن تلميذ تاني؛ الترم اتاخد من اسم الملف."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped a row about another learner; untagged marks filed under the topic the teacher was asked about\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال سطر عن تلميذ تاني؛ الدرجات اللي من غير موضوع اتسجلت تحت الموضوع اللي المدرس اتسأل عنه."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped a row about another learner; year and term as given by the teacher\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال سطر عن تلميذ تاني؛ السنة والترم زي ما كتبهم المدرس."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped a row whose quote is not in the document; dropped unknown concept id '(.+?)'\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال سطر نصه مش موجود في المستند؛ اتشال كود موضوع مش معروف '$3'."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped a row whose quote is not in the document; first reading had (\\d+) of (\\d+) table rows, asked again\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال سطر نصه مش موجود في المستند؛ أول قراءة طلعت $3 من $4 سطر في الجدول، فالنموذج اتسأل تاني."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped a row whose quote is not in the document; term found with a follow-up question\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال سطر نصه مش موجود في المستند؛ الترم اتعرف بسؤال إضافي."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped a row whose quote is not in the document; term taken from the file name\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال سطر نصه مش موجود في المستند؛ الترم اتاخد من اسم الملف."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped a row whose quote is not in the document; untagged marks filed under the topic the teacher was asked about\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال سطر نصه مش موجود في المستند؛ الدرجات اللي من غير موضوع اتسجلت تحت الموضوع اللي المدرس اتسأل عنه."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped a row whose quote is not in the document; year and term as given by the teacher\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال سطر نصه مش موجود في المستند؛ السنة والترم زي ما كتبهم المدرس."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped unknown concept id '(.+?)'; first reading had (\\d+) of (\\d+) table rows, asked again\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال كود موضوع مش معروف '$3'؛ أول قراءة طلعت $4 من $5 سطر في الجدول، فالنموذج اتسأل تاني."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped unknown concept id '(.+?)'; term found with a follow-up question\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال كود موضوع مش معروف '$3'؛ الترم اتعرف بسؤال إضافي."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped unknown concept id '(.+?)'; term taken from the file name\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال كود موضوع مش معروف '$3'؛ الترم اتاخد من اسم الملف."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped unknown concept id '(.+?)'; untagged marks filed under the topic the teacher was asked about\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال كود موضوع مش معروف '$3'؛ الدرجات اللي من غير موضوع اتسجلت تحت الموضوع اللي المدرس اتسأل عنه."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: dropped unknown concept id '(.+?)'; year and term as given by the teacher\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: اتشال كود موضوع مش معروف '$3'؛ السنة والترم زي ما كتبهم المدرس."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: first reading had (\\d+) of (\\d+) table rows, asked again; term found with a follow-up question\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: أول قراءة طلعت $3 من $4 سطر في الجدول، فالنموذج اتسأل تاني؛ الترم اتعرف بسؤال إضافي."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: first reading had (\\d+) of (\\d+) table rows, asked again; term taken from the file name\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: أول قراءة طلعت $3 من $4 سطر في الجدول، فالنموذج اتسأل تاني؛ الترم اتاخد من اسم الملف."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: first reading had (\\d+) of (\\d+) table rows, asked again; untagged marks filed under the topic the teacher was asked about\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: أول قراءة طلعت $3 من $4 سطر في الجدول، فالنموذج اتسأل تاني؛ الدرجات اللي من غير موضوع اتسجلت تحت الموضوع اللي المدرس اتسأل عنه."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: first reading had (\\d+) of (\\d+) table rows, asked again; year and term as given by the teacher\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: أول قراءة طلعت $3 من $4 سطر في الجدول، فالنموذج اتسأل تاني؛ السنة والترم زي ما كتبهم المدرس."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: term found with a follow-up question; term taken from the file name\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: الترم اتعرف بسؤال إضافي؛ الترم اتاخد من اسم الملف."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: term found with a follow-up question; untagged marks filed under the topic the teacher was asked about\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: الترم اتعرف بسؤال إضافي؛ الدرجات اللي من غير موضوع اتسجلت تحت الموضوع اللي المدرس اتسأل عنه."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: term found with a follow-up question; year and term as given by the teacher\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: الترم اتعرف بسؤال إضافي؛ السنة والترم زي ما كتبهم المدرس."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: term taken from the file name; untagged marks filed under the topic the teacher was asked about\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: الترم اتاخد من اسم الملف؛ الدرجات اللي من غير موضوع اتسجلت تحت الموضوع اللي المدرس اتسأل عنه."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: term taken from the file name; year and term as given by the teacher\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: الترم اتاخد من اسم الملف؛ السنة والترم زي ما كتبهم المدرس."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: untagged marks filed under the topic the teacher was asked about; year and term as given by the teacher\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: الدرجات اللي من غير موضوع اتسجلت تحت الموضوع اللي المدرس اتسأل عنه؛ السنة والترم زي ما كتبهم المدرس."
+  },
+  {
+   "re": "^Read (\\d+) rows for (.+?)\\. Checks: (.+)\\.$",
+   "ar": "السطور اللي اتقرت للترم $2: $1. مراجعات: $3."
+  },
+  {
+   "re": "^Recorded (\\d+) of (\\d+) rows\\.$",
+   "ar": "السطور اللي اتسجلت: $1 من $2."
+  },
+  {
+   "re": "^Recorded (\\d+) of (\\d+) rows\\. Not recorded: (.+)$",
+   "ar": "السطور اللي اتسجلت: $1 من $2. ما اتسجلش: $3"
+  },
+  {
+   "re": "^Model chose: no tools\\. Coverage check added nothing\\.$",
+   "ar": "النموذج ما اختارش أي أداة. مراجعة التغطية ما ضافتش حاجة."
+  },
+  {
+   "re": "^Model chose: no tools\\. Coverage check added: (.+)\\.$",
+   "ar": "النموذج ما اختارش أي أداة. مراجعة التغطية ضافت: $1."
+  },
+  {
+   "re": "^Model chose: (.+)\\. Coverage check added nothing\\.$",
+   "ar": "النموذج اختار: $1. مراجعة التغطية ما ضافتش حاجة."
+  },
+  {
+   "re": "^Model chose: (.+?)\\. Coverage check added: (.+)\\.$",
+   "ar": "النموذج اختار: $1. مراجعة التغطية ضافت: $2."
+  },
+  {
+   "re": "^There are no records for (.+), and a teacher has already answered about that\\. Not asked again\\.$",
+   "ar": "مفيش سجلات عن $1، وفيه مدرس رد على السؤال ده قبل كده. السؤال ما اتسألش تاني."
+  },
+  {
+   "re": "^There are still no records for (.+), but (\\d+) questions were already asked in this run\\. Left as an open question\\.$",
+   "ar": "لسه مفيش سجلات عن $1، بس عدد الأسئلة اللي اتسألت في التشغيل ده وصل $2. الموضوع اتساب كسؤال مفتوح."
+  },
+  {
+   "re": "^Could not ask about (.+?): (.+)$",
+   "ar": "السؤال عن $1 ما اتبعتش: $2"
+  },
+  {
+   "re": "^The records cannot tell where the difficulty with (.+?) began: nothing is recorded for (.+?)\\. Asked a teacher for it\\. The model's wording was not usable, so the plain template was used\\.$",
+   "ar": "السجلات مش كفاية عشان تحدد بداية الصعوبة في $1: مفيش حاجة مسجلة عن $2. اتبعت سؤال لمدرس عنها. صياغة النموذج ما نفعتش، فاتستخدمت الصيغة الجاهزة."
+  },
+  {
+   "re": "^The records cannot tell where the difficulty with (.+?) began: nothing is recorded for (.+?)\\. Asked a teacher for it\\.$",
+   "ar": "السجلات مش كفاية عشان تحدد بداية الصعوبة في $1: مفيش حاجة مسجلة عن $2. اتبعت سؤال لمدرس عنها."
+  },
+  {
+   "re": "^A teacher answered that no record of (.+?) exists\\. The question will not be asked again\\.$",
+   "ar": "فيه مدرس رد بإن مفيش سجل عن $1. السؤال مش هيتسأل تاني."
+  },
+  {
+   "re": "^A teacher supplied a record of (.+?)\\. Reading it, then investigating again\\. Converted (.+?) with markitdown \\((\\d+) chars\\)\\.$",
+   "ar": "فيه مدرس ضاف سجل عن $1. هيتقرا وبعدين التحليل يتعاد. الملف $2 اتحول لنص بأداة markitdown (عدد الحروف: $3)."
+  },
+  {
+   "re": "^A teacher supplied a record of (.+?)\\. Reading it, then investigating again\\. markitdown failed \\((.+)\\); recovered by reading (.+?) as text\\.$",
+   "ar": "فيه مدرس ضاف سجل عن $1. هيتقرا وبعدين التحليل يتعاد. أداة markitdown ما اشتغلتش ($2)، فالملف $3 اتقرا كنص عادي."
+  },
+  {
+   "re": "^A teacher supplied a record of (.+?)\\. Reading it, then investigating again\\. Could not read (.+?): (.+)\\. Nothing recorded from it\\.$",
+   "ar": "فيه مدرس ضاف سجل عن $1. هيتقرا وبعدين التحليل يتعاد. الملف $2 ما اتقراش: $3. ما اتسجلش منه حاجة."
+  },
+  {
+   "re": "^A teacher supplied a record of (.+?)\\. Reading it, then investigating again\\.$",
+   "ar": "فيه مدرس ضاف سجل عن $1. هيتقرا وبعدين التحليل يتعاد."
+  },
+  {
+   "re": "^A teacher supplied a record of (.+?)\\. Reading it, then investigating again\\. ?$",
+   "ar": "فيه مدرس ضاف سجل عن $1. هيتقرا وبعدين التحليل يتعاد."
+  },
+  {
+   "re": "^A teacher supplied a record of (.+?)\\. Reading it, then investigating again\\. (.+)$",
+   "ar": "فيه مدرس ضاف سجل عن $1. هيتقرا وبعدين التحليل يتعاد. $2"
+  },
+  {
+   "re": "^A teacher answered about (.+?), but the answer could not be read\\. Converted (.+?) with markitdown \\((\\d+) chars\\)\\.$",
+   "ar": "فيه مدرس رد بخصوص $1، بس الرد ما اتقراش. الملف $2 اتحول لنص بأداة markitdown (عدد الحروف: $3)."
+  },
+  {
+   "re": "^A teacher answered about (.+?), but the answer could not be read\\. markitdown failed \\((.+)\\); recovered by reading (.+?) as text\\.$",
+   "ar": "فيه مدرس رد بخصوص $1، بس الرد ما اتقراش. أداة markitdown ما اشتغلتش ($2)، فالملف $3 اتقرا كنص عادي."
+  },
+  {
+   "re": "^A teacher answered about (.+?), but the answer could not be read\\. Could not read (.+?): (.+)\\. Nothing recorded from it\\.$",
+   "ar": "فيه مدرس رد بخصوص $1، بس الرد ما اتقراش. الملف $2 ما اتقراش: $3. ما اتسجلش منه حاجة."
+  },
+  {
+   "re": "^A teacher answered about (.+?), but the answer could not be read\\.$",
+   "ar": "فيه مدرس رد بخصوص $1، بس الرد ما اتقراش."
+  },
+  {
+   "re": "^A teacher answered about (.+?), but the answer could not be read\\. ?$",
+   "ar": "فيه مدرس رد بخصوص $1، بس الرد ما اتقراش."
+  },
+  {
+   "re": "^A teacher answered about (.+?), but the answer could not be read\\. (.+)$",
+   "ar": "فيه مدرس رد بخصوص $1، بس الرد ما اتقراش. $2"
+  },
+  {
+   "re": "^(.+?) answered that no record of (.+?) exists\\. The question will not be asked again\\.$",
+   "ar": "$1 رد بإن مفيش سجل عن $2. السؤال مش هيتسأل تاني."
+  },
+  {
+   "re": "^(.+?) supplied a record of (.+?)\\. Reading it, then investigating again\\. Converted (.+?) with markitdown \\((\\d+) chars\\)\\.$",
+   "ar": "$1 ضاف سجل عن $2. هيتقرا وبعدين التحليل يتعاد. الملف $3 اتحول لنص بأداة markitdown (عدد الحروف: $4)."
+  },
+  {
+   "re": "^(.+?) supplied a record of (.+?)\\. Reading it, then investigating again\\. markitdown failed \\((.+)\\); recovered by reading (.+?) as text\\.$",
+   "ar": "$1 ضاف سجل عن $2. هيتقرا وبعدين التحليل يتعاد. أداة markitdown ما اشتغلتش ($3)، فالملف $4 اتقرا كنص عادي."
+  },
+  {
+   "re": "^(.+?) supplied a record of (.+?)\\. Reading it, then investigating again\\. Could not read (.+?): (.+)\\. Nothing recorded from it\\.$",
+   "ar": "$1 ضاف سجل عن $2. هيتقرا وبعدين التحليل يتعاد. الملف $3 ما اتقراش: $4. ما اتسجلش منه حاجة."
+  },
+  {
+   "re": "^(.+?) supplied a record of (.+?)\\. Reading it, then investigating again\\.$",
+   "ar": "$1 ضاف سجل عن $2. هيتقرا وبعدين التحليل يتعاد."
+  },
+  {
+   "re": "^(.+?) supplied a record of (.+?)\\. Reading it, then investigating again\\. ?$",
+   "ar": "$1 ضاف سجل عن $2. هيتقرا وبعدين التحليل يتعاد."
+  },
+  {
+   "re": "^(.+?) supplied a record of (.+?)\\. Reading it, then investigating again\\. (.+)$",
+   "ar": "$1 ضاف سجل عن $2. هيتقرا وبعدين التحليل يتعاد. $3"
+  },
+  {
+   "re": "^(.+?) answered about (.+?), but the answer could not be read\\. Converted (.+?) with markitdown \\((\\d+) chars\\)\\.$",
+   "ar": "$1 رد بخصوص $2، بس الرد ما اتقراش. الملف $3 اتحول لنص بأداة markitdown (عدد الحروف: $4)."
+  },
+  {
+   "re": "^(.+?) answered about (.+?), but the answer could not be read\\. markitdown failed \\((.+)\\); recovered by reading (.+?) as text\\.$",
+   "ar": "$1 رد بخصوص $2، بس الرد ما اتقراش. أداة markitdown ما اشتغلتش ($3)، فالملف $4 اتقرا كنص عادي."
+  },
+  {
+   "re": "^(.+?) answered about (.+?), but the answer could not be read\\. Could not read (.+?): (.+)\\. Nothing recorded from it\\.$",
+   "ar": "$1 رد بخصوص $2، بس الرد ما اتقراش. الملف $3 ما اتقراش: $4. ما اتسجلش منه حاجة."
+  },
+  {
+   "re": "^(.+?) answered about (.+?), but the answer could not be read\\.$",
+   "ar": "$1 رد بخصوص $2، بس الرد ما اتقراش."
+  },
+  {
+   "re": "^(.+?) answered about (.+?), but the answer could not be read\\. ?$",
+   "ar": "$1 رد بخصوص $2، بس الرد ما اتقراش."
+  },
+  {
+   "re": "^(.+?) answered about (.+?), but the answer could not be read\\. (.+)$",
+   "ar": "$1 رد بخصوص $2، بس الرد ما اتقراش. $3"
+  },
+  {
+   "re": "^(\\d+) candidate finding\\(s\\), (\\d+) not seen by a teacher before\\. (\\d+) statement\\(s\\) used the template after the guard rejected the model's wording\\. (\\d+) open question\\(s\\) left unanswered rather than guessed\\.$",
+   "ar": "استنتاجات مرشحة: $1، منها $2 ما اتعرضتش على مدرس قبل كده. صياغات اتاخدت من الصيغة الجاهزة بعد ما المراجعة الآلية رفضت صياغة النموذج: $3. أسئلة مفتوحة اتسابت من غير إجابة بدل التخمين: $4."
+  },
+  {
+   "re": "^Proposed (\\d+) finding\\(s\\) for teacher review\\.$",
+   "ar": "استنتاجات مقترحة لمراجعة المدرس: $1."
+  },
+  {
+   "re": "^Proposed (\\d+) finding\\(s\\) for teacher review\\. Refused by the server: (.+)$",
+   "ar": "استنتاجات مقترحة لمراجعة المدرس: $1. النظام رفض: $2"
+  },
+  {
+   "re": "^Teacher decided (\\d+) finding\\(s\\): (\\d+) approved\\.$",
+   "ar": "استنتاجات خد فيها المدرس قرار: $1، والمعتمد منها: $2."
+  },
+  {
+   "re": "^Teacher decided (\\d+) summary note\\(s\\): (\\d+) approved\\.$",
+   "ar": "رسائل ومذكرات خد فيها المدرس قرار: $1، والمعتمد منها: $2."
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\.$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1."
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. no usable Arabic note \\(not written\\); the English note stands$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. مفيش رسالة بالعربي تنفع (ما اتكتبتش)، فالرسالة الإنجليزي هي اللي موجودة"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. no usable Arabic note \\(empty\\); the English note stands$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. مفيش رسالة بالعربي تنفع (فاضية)، فالرسالة الإنجليزي هي اللي موجودة"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. no usable Arabic note \\(the note is not written in Arabic\\); the English note stands$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. مفيش رسالة بالعربي تنفع (مش مكتوبة بالعربي)، فالرسالة الإنجليزي هي اللي موجودة"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. no usable Arabic note \\(the note speaks to a parent \\('your child'\\); it must speak to the next teacher about the learner\\); the English note stands$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. مفيش رسالة بالعربي تنفع (مكتوبة كأنها لولي الأمر، والمفروض تكلم المدرس الجديد عن التلميذ)، فالرسالة الإنجليزي هي اللي موجودة"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. no usable Arabic note \\(the note contains numbers that are not in the approved findings: (.+?)\\); the English note stands$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. مفيش رسالة بالعربي تنفع (فيها أرقام مش موجودة في الاستنتاجات المعتمدة: $2)، فالرسالة الإنجليزي هي اللي موجودة"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. no usable Arabic note \\((.+)\\); the English note stands$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. مفيش رسالة بالعربي تنفع ($2)، فالرسالة الإنجليزي هي اللي موجودة"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. guardian: the model's wording was not usable \\(not written\\); used the approved statements as written$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. رسالة ولي الأمر: صياغة النموذج ما نفعتش (ما اتكتبتش)، فاتستخدمت الاستنتاجات المعتمدة بنصها"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. guardian: the model's wording was not usable \\(empty\\); used the approved statements as written$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. رسالة ولي الأمر: صياغة النموذج ما نفعتش (فاضية)، فاتستخدمت الاستنتاجات المعتمدة بنصها"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. guardian: the model's wording was not usable \\(the note is not written in Arabic\\); used the approved statements as written$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. رسالة ولي الأمر: صياغة النموذج ما نفعتش (مش مكتوبة بالعربي)، فاتستخدمت الاستنتاجات المعتمدة بنصها"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. guardian: the model's wording was not usable \\(the note speaks to a parent \\('your child'\\); it must speak to the next teacher about the learner\\); used the approved statements as written$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. رسالة ولي الأمر: صياغة النموذج ما نفعتش (مكتوبة كأنها لولي الأمر، والمفروض تكلم المدرس الجديد عن التلميذ)، فاتستخدمت الاستنتاجات المعتمدة بنصها"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. guardian: the model's wording was not usable \\(the note contains numbers that are not in the approved findings: (.+?)\\); used the approved statements as written$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. رسالة ولي الأمر: صياغة النموذج ما نفعتش (فيها أرقام مش موجودة في الاستنتاجات المعتمدة: $2)، فاتستخدمت الاستنتاجات المعتمدة بنصها"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. guardian: the model's wording was not usable \\((.+)\\); used the approved statements as written$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. رسالة ولي الأمر: صياغة النموذج ما نفعتش ($2)، فاتستخدمت الاستنتاجات المعتمدة بنصها"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. teacher_handover: the model's wording was not usable \\(not written\\); used the approved statements as written$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. مذكرة التسليم: صياغة النموذج ما نفعتش (ما اتكتبتش)، فاتستخدمت الاستنتاجات المعتمدة بنصها"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. teacher_handover: the model's wording was not usable \\(empty\\); used the approved statements as written$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. مذكرة التسليم: صياغة النموذج ما نفعتش (فاضية)، فاتستخدمت الاستنتاجات المعتمدة بنصها"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. teacher_handover: the model's wording was not usable \\(the note is not written in Arabic\\); used the approved statements as written$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. مذكرة التسليم: صياغة النموذج ما نفعتش (مش مكتوبة بالعربي)، فاتستخدمت الاستنتاجات المعتمدة بنصها"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. teacher_handover: the model's wording was not usable \\(the note speaks to a parent \\('your child'\\); it must speak to the next teacher about the learner\\); used the approved statements as written$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. مذكرة التسليم: صياغة النموذج ما نفعتش (مكتوبة كأنها لولي الأمر، والمفروض تكلم المدرس الجديد عن التلميذ)، فاتستخدمت الاستنتاجات المعتمدة بنصها"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. teacher_handover: the model's wording was not usable \\(the note contains numbers that are not in the approved findings: (.+?)\\); used the approved statements as written$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. مذكرة التسليم: صياغة النموذج ما نفعتش (فيها أرقام مش موجودة في الاستنتاجات المعتمدة: $2)، فاتستخدمت الاستنتاجات المعتمدة بنصها"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. teacher_handover: the model's wording was not usable \\((.+)\\); used the approved statements as written$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. مذكرة التسليم: صياغة النموذج ما نفعتش ($2)، فاتستخدمت الاستنتاجات المعتمدة بنصها"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. guardian: refused by the server \\((.+)\\)$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. رسالة ولي الأمر: النظام رفضها ($2)"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. teacher_handover: refused by the server \\((.+)\\)$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. مذكرة التسليم: النظام رفضها ($2)"
+  },
+  {
+   "re": "^Drafted (\\d+) summary note\\(s\\) for teacher review\\. (.+)$",
+   "ar": "رسائل ومذكرات اتكتبت لمراجعة المدرس: $1. $2"
+  },
+  {
+   "re": "^label on a child: \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "عبارة \"$1\" فيها وصف للتلميذ نفسه. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^comparison with classmates: \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "عبارة \"$1\" فيها مقارنة بين التلميذ وزمايله. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^prescriptive track assignment: \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "عبارة \"$1\" فيها توجيه للتلميذ لمسار معين. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The edited statement was rejected: statement is empty$",
+   "ar": "النص المعدل مرفوض: النص فاضي."
+  },
+  {
+   "re": "^The edited statement was rejected: label on a child: \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "النص المعدل مرفوض: عبارة \"$1\" فيها وصف للتلميذ نفسه. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The edited statement was rejected: comparison with classmates: \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "النص المعدل مرفوض: عبارة \"$1\" فيها مقارنة بين التلميذ وزمايله. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The edited statement was rejected: prescriptive track assignment: \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "النص المعدل مرفوض: عبارة \"$1\" فيها توجيه للتلميذ لمسار معين. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The edited statement was rejected: (?:label on a child|comparison with classmates|prescriptive track assignment): \"(.+?)\"\\. Describe the pattern in the evidence instead\\. \\| (?:label on a child|comparison with classmates|prescriptive track assignment): \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "النص المعدل مرفوض: العبارتين \"$1\" و\"$2\" فيهم وصف للتلميذ أو مقارنة بزمايله أو توجيه لمسار معين. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The edited statement was rejected: (.+)$",
+   "ar": "النص المعدل مرفوض لأن فيه وصف للتلميذ أو مقارنة بزمايله أو توجيه لمسار معين. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The statement was rejected: statement is empty$",
+   "ar": "نص الاستنتاج مرفوض: النص فاضي."
+  },
+  {
+   "re": "^The statement was rejected: label on a child: \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "نص الاستنتاج مرفوض: عبارة \"$1\" فيها وصف للتلميذ نفسه. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The statement was rejected: comparison with classmates: \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "نص الاستنتاج مرفوض: عبارة \"$1\" فيها مقارنة بين التلميذ وزمايله. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The statement was rejected: prescriptive track assignment: \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "نص الاستنتاج مرفوض: عبارة \"$1\" فيها توجيه للتلميذ لمسار معين. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The statement was rejected: (?:label on a child|comparison with classmates|prescriptive track assignment): \"(.+?)\"\\. Describe the pattern in the evidence instead\\. \\| (?:label on a child|comparison with classmates|prescriptive track assignment): \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "نص الاستنتاج مرفوض: العبارتين \"$1\" و\"$2\" فيهم وصف للتلميذ أو مقارنة بزمايله أو توجيه لمسار معين. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The statement was rejected: (.+)$",
+   "ar": "نص الاستنتاج مرفوض لأن فيه وصف للتلميذ أو مقارنة بزمايله أو توجيه لمسار معين. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The summary text was rejected: statement is empty$",
+   "ar": "نص الرسالة مرفوض: النص فاضي."
+  },
+  {
+   "re": "^The summary text was rejected: label on a child: \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "نص الرسالة مرفوض: عبارة \"$1\" فيها وصف للتلميذ نفسه. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The summary text was rejected: comparison with classmates: \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "نص الرسالة مرفوض: عبارة \"$1\" فيها مقارنة بين التلميذ وزمايله. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The summary text was rejected: prescriptive track assignment: \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "نص الرسالة مرفوض: عبارة \"$1\" فيها توجيه للتلميذ لمسار معين. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The summary text was rejected: (?:label on a child|comparison with classmates|prescriptive track assignment): \"(.+?)\"\\. Describe the pattern in the evidence instead\\. \\| (?:label on a child|comparison with classmates|prescriptive track assignment): \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "نص الرسالة مرفوض: العبارتين \"$1\" و\"$2\" فيهم وصف للتلميذ أو مقارنة بزمايله أو توجيه لمسار معين. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The summary text was rejected: (.+)$",
+   "ar": "نص الرسالة مرفوض لأن فيه وصف للتلميذ أو مقارنة بزمايله أو توجيه لمسار معين. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The question was rejected: statement is empty$",
+   "ar": "نص السؤال مرفوض: النص فاضي."
+  },
+  {
+   "re": "^The question was rejected: label on a child: \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "نص السؤال مرفوض: عبارة \"$1\" فيها وصف للتلميذ نفسه. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The question was rejected: comparison with classmates: \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "نص السؤال مرفوض: عبارة \"$1\" فيها مقارنة بين التلميذ وزمايله. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The question was rejected: prescriptive track assignment: \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "نص السؤال مرفوض: عبارة \"$1\" فيها توجيه للتلميذ لمسار معين. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The question was rejected: (?:label on a child|comparison with classmates|prescriptive track assignment): \"(.+?)\"\\. Describe the pattern in the evidence instead\\. \\| (?:label on a child|comparison with classmates|prescriptive track assignment): \"(.+?)\"\\. Describe the pattern in the evidence instead\\.$",
+   "ar": "نص السؤال مرفوض: العبارتين \"$1\" و\"$2\" فيهم وصف للتلميذ أو مقارنة بزمايله أو توجيه لمسار معين. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^The question was rejected: (.+)$",
+   "ar": "نص السؤال مرفوض لأن فيه وصف للتلميذ أو مقارنة بزمايله أو توجيه لمسار معين. اوصف النمط اللي ظاهر في الأدلة بدل كده."
+  },
+  {
+   "re": "^Unknown learner '(.+?)'\\.(?: Call list_learners to see valid ids\\.)?$",
+   "ar": "مفيش تلميذ بالكود '$1'."
+  },
+  {
+   "re": "^Unknown status '(.+?)'\\. Use one of: (.+)\\.$",
+   "ar": "الحالة '$1' مش معروفة. الاختيارات المتاحة: $2."
+  },
+  {
+   "re": "^No file called '(.+?)' in the inbox\\.$",
+   "ar": "مفيش ملف باسم '$1' في الوارد."
+  },
+  {
+   "re": "^(?:RuntimeError: )?Unknown model provider '(.+?)'\\.$",
+   "ar": "مصدر النموذج '$1' مش معروف."
+  },
+  {
+   "re": "^No key for (.+?) \\(cloud\\)\\. Add one on the Agent page first\\.$",
+   "ar": "مفيش مفتاح ل $1. ضيف مفتاح من صفحة المساعد الآلي الأول."
+  },
+  {
+   "re": "^No key for (.+?)\\. Add one on the Agent page first\\.$",
+   "ar": "مفيش مفتاح ل $1. ضيف مفتاح من صفحة المساعد الآلي الأول."
+  },
+  {
+   "re": "^The agent is not available on this machine: (.+)$",
+   "ar": "المساعد الآلي مش متاح على الجهاز ده: $1"
+  },
+  {
+   "re": "^The model endpoint at (.+?) did not answer \\((.+?)\\)\\.$",
+   "ar": "خدمة النموذج على العنوان $1 ما ردتش ($2)."
+  },
+  {
+   "re": "^(.+?) \\(cloud\\) did not list its models \\((.+?)\\)\\. Check the key\\.$",
+   "ar": "$1 ما عرضش النماذج المتاحة ($2). راجع المفتاح."
+  },
+  {
+   "re": "^(.+?) did not list its models \\((.+?)\\)\\. Check the key\\.$",
+   "ar": "$1 ما عرضش النماذج المتاحة ($2). راجع المفتاح."
+  },
+  {
+   "re": "^the (.+?) environment variable$",
+   "ar": "متغير البيئة $1"
+  },
+  {
+   "re": "^Unknown cloud provider '(.+?)'\\. Use one of: openai, anthropic\\.$",
+   "ar": "مصدر النموذج '$1' مش معروف. المتاح: OpenAI أو Claude."
+  },
+  {
+   "re": "^(?:RuntimeError: )?No key for (.+?) \\(cloud\\)\\. Add one on the Agent page, or set (.+?)\\.$",
+   "ar": "مفيش مفتاح ل $1. ضيف مفتاح من صفحة المساعد الآلي، أو اضبط متغير البيئة $2."
+  },
+  {
+   "re": "^(?:RuntimeError: )?No key for (.+?) \\(cloud\\)\\.$",
+   "ar": "مفيش مفتاح ل $1."
+  },
+  {
+   "re": "^(?:RuntimeError: )?Choose a model for (.+?) \\(cloud\\)\\.$",
+   "ar": "اختار نموذج ل $1."
+  },
+  {
+   "re": "^(?:RuntimeError: )?Choose a model for (.+?)\\.$",
+   "ar": "اختار نموذج ل $1."
+  },
+  {
+   "re": "^A password needs at least (\\d+) characters\\.$",
+   "ar": "كلمة السر لازم ما تقلش عن $1 حروف."
+  },
+  {
+   "re": "^Unknown teacher '(.+?)'\\. Only a named teacher can decide\\.$",
+   "ar": "مفيش مدرس بالكود '$1'. القرار لازم ياخده مدرس باسمه."
+  },
+  {
+   "re": "^Unknown teacher '(.+?)'\\.$",
+   "ar": "مفيش مدرس بالكود '$1'."
+  },
+  {
+   "re": "^The username '(.+?)' is taken\\.$",
+   "ar": "اسم المستخدم '$1' مستخدم قبل كده."
+  },
+  {
+   "re": "^(.+?) already has an account\\.$",
+   "ar": "$1 عنده حساب بالفعل."
+  },
+  {
+   "re": "^Unknown class '(.+?)'\\.$",
+   "ar": "مفيش فصل بالكود '$1'."
+  },
+  {
+   "re": "^There is already a class called (.+?) in (\\d+)\\.$",
+   "ar": "فيه فصل باسم $1 في سنة $2 بالفعل."
+  },
+  {
+   "re": "^No backup file at (.+)\\.$",
+   "ar": "مفيش ملف نسخة احتياطية في $1."
+  },
+  {
+   "re": "^To delete this record, type its record code exactly: (.+?)\\.$",
+   "ar": "عشان تمسح الملف ده، اكتب كود التلميذ بالظبط: $1."
+  },
+  {
+   "re": "^Unknown record '(.+?)'\\.$",
+   "ar": "مفيش سجل بالكود '$1'."
+  },
+  {
+   "re": "^Unknown finding '(.+?)'\\.$",
+   "ar": "مفيش استنتاج بالكود '$1'."
+  },
+  {
+   "re": "^Unknown summary '(.+?)'\\.$",
+   "ar": "مفيش رسالة أو مذكرة بالكود '$1'."
+  },
+  {
+   "re": "^Finding '(.+?)' was already decided \\(approved\\)\\.$",
+   "ar": "الاستنتاج '$1' اتاخد فيه قرار قبل كده (معتمد)."
+  },
+  {
+   "re": "^Summary '(.+?)' was already decided \\(approved\\)\\.$",
+   "ar": "الرسالة أو المذكرة '$1' اتاخد فيها قرار قبل كده (معتمد)."
+  },
+  {
+   "re": "^Finding '(.+?)' was already decided \\(edited\\)\\.$",
+   "ar": "الاستنتاج '$1' اتاخد فيه قرار قبل كده (معتمد بعد التعديل)."
+  },
+  {
+   "re": "^Summary '(.+?)' was already decided \\(edited\\)\\.$",
+   "ar": "الرسالة أو المذكرة '$1' اتاخد فيها قرار قبل كده (معتمد بعد التعديل)."
+  },
+  {
+   "re": "^Finding '(.+?)' was already decided \\(rejected\\)\\.$",
+   "ar": "الاستنتاج '$1' اتاخد فيه قرار قبل كده (مرفوض)."
+  },
+  {
+   "re": "^Summary '(.+?)' was already decided \\(rejected\\)\\.$",
+   "ar": "الرسالة أو المذكرة '$1' اتاخد فيها قرار قبل كده (مرفوض)."
+  },
+  {
+   "re": "^Finding '(.+?)' was already decided \\(proposed\\)\\.$",
+   "ar": "الاستنتاج '$1' اتاخد فيه قرار قبل كده (مقترح)."
+  },
+  {
+   "re": "^Summary '(.+?)' was already decided \\(proposed\\)\\.$",
+   "ar": "الرسالة أو المذكرة '$1' اتاخد فيها قرار قبل كده (مقترح)."
+  },
+  {
+   "re": "^Finding '(.+?)' was already decided \\(draft\\)\\.$",
+   "ar": "الاستنتاج '$1' اتاخد فيه قرار قبل كده (مسودة)."
+  },
+  {
+   "re": "^Summary '(.+?)' was already decided \\(draft\\)\\.$",
+   "ar": "الرسالة أو المذكرة '$1' اتاخد فيها قرار قبل كده (مسودة)."
+  },
+  {
+   "re": "^Finding '(.+?)' was already decided \\((.+?)\\)\\.$",
+   "ar": "الاستنتاج '$1' اتاخد فيه قرار قبل كده ($2)."
+  },
+  {
+   "re": "^Summary '(.+?)' was already decided \\((.+?)\\)\\.$",
+   "ar": "الرسالة أو المذكرة '$1' اتاخد فيها قرار قبل كده ($2)."
+  },
+  {
+   "re": "^Term must be 1, 2 or 3, got (.+?)\\.$",
+   "ar": "الترم لازم يكون 1 أو 2 أو 3، والمكتوب $1."
+  },
+  {
+   "re": "^Unknown request '(.+?)'\\.$",
+   "ar": "مفيش طلب بالكود '$1'."
+  },
+  {
+   "re": "^Request '(.+?)' was already answered \\(provided\\)\\.$",
+   "ar": "الطلب '$1' اترد عليه قبل كده (السجل اتضاف)."
+  },
+  {
+   "re": "^A teacher already answered a request about '(.+?)' \\(provided\\)\\. A teacher is not asked the same question twice\\.$",
+   "ar": "فيه مدرس رد قبل كده على طلب عن '$1' (السجل اتضاف). المدرس ما بيتسألش نفس السؤال مرتين."
+  },
+  {
+   "re": "^Request '(.+?)' was already answered \\(no_record\\)\\.$",
+   "ar": "الطلب '$1' اترد عليه قبل كده (مفيش سجل)."
+  },
+  {
+   "re": "^A teacher already answered a request about '(.+?)' \\(no_record\\)\\. A teacher is not asked the same question twice\\.$",
+   "ar": "فيه مدرس رد قبل كده على طلب عن '$1' (مفيش سجل). المدرس ما بيتسألش نفس السؤال مرتين."
+  },
+  {
+   "re": "^Request '(.+?)' was already answered \\((.+?)\\)\\.$",
+   "ar": "الطلب '$1' اترد عليه قبل كده ($2)."
+  },
+  {
+   "re": "^A teacher already answered a request about '(.+?)' \\((.+?)\\)\\. A teacher is not asked the same question twice\\.$",
+   "ar": "فيه مدرس رد قبل كده على طلب عن '$1' ($2). المدرس ما بيتسألش نفس السؤال مرتين."
+  },
+  {
+   "re": "^A pattern needs at least (\\d+) terms of data\\.$",
+   "ar": "النمط محتاج بيانات $1 ترمات على الأقل."
+  },
+  {
+   "re": "^limit must be between 1 and (\\d+), got (.+?)\\.$",
+   "ar": "الحد الأقصى لعدد السجلات لازم يكون بين 1 و $1، والمكتوب $2."
+  },
+  {
+   "re": "^Unknown evidence kind '(.+?)'\\. Use one of: (.+)\\.$",
+   "ar": "نوع السجل '$1' مش معروف. الاختيارات المتاحة: $2."
+  },
+  {
+   "re": "^Score must be between 0 and 1, got (.+?)\\. Divide marks by the maximum\\.$",
+   "ar": "الدرجة لازم تكون بين 0 و 1، والمكتوب $1. اقسم الدرجة على الدرجة النهائية."
+  },
+  {
+   "re": "^Unknown id '(.+?)' in (.+?)\\.$",
+   "ar": "الكود '$1' مش موجود في $2."
+  },
+  {
+   "re": "^Concept '(.+?)' is not in pack '(.+?)'; stored as needs_review\\.$",
+   "ar": "الموضوع '$1' مش موجود في المنهج '$2'، واتسجل على إنه محتاج مراجعة."
+  },
+  {
+   "re": "^Skill '(.+?)' is not in pack '(.+?)'; stored as needs_review\\.$",
+   "ar": "المهارة '$1' مش موجودة في المنهج '$2'، واتسجلت على إنها محتاجة مراجعة."
+  },
+  {
+   "re": "^Already recorded from '(.+?)'; returned the existing row\\.$",
+   "ar": "اتسجل قبل كده من '$1'، فرجع السجل الموجود."
+  },
+  {
+   "re": "^A '(.+?)' finding must cite at least 2 evidence rows\\.$",
+   "ar": "استنتاج من نوع '$1' لازم يستند لسجلين على الأقل من الأدلة."
+  },
+  {
+   "re": "^Evidence '(.+?)' does not exist\\.$",
+   "ar": "السجل '$1' مش موجود."
+  },
+  {
+   "re": "^Evidence '(.+?)' belongs to another learner and cannot be cited here\\.$",
+   "ar": "السجل '$1' تبع تلميذ تاني وما ينفعش يتذكر هنا."
+  },
+  {
+   "re": "^Unknown finding kind '(.+?)'\\. Use one of: (.+)\\.$",
+   "ar": "نوع الاستنتاج '$1' مش معروف. الاختيارات المتاحة: $2."
+  },
+  {
+   "re": "^Confidence must be between 0 and 1, got (.+?)\\.$",
+   "ar": "درجة الثقة لازم تكون بين 0 و 1، والمكتوب $1."
+  },
+  {
+   "re": "^Unknown audience '(.+?)'\\. Use one of: (.+)\\.$",
+   "ar": "نوع القارئ '$1' مش معروف. الاختيارات المتاحة: $2."
+  },
+  {
+   "re": "^Finding '(.+?)' does not exist for learner '(.+?)'\\.$",
+   "ar": "الاستنتاج '$1' مش موجود للتلميذ '$2'."
+  },
+  {
+   "re": "^Finding '(.+?)' is 'approved'\\. A teacher must approve it before it can be used in a summary\\.$",
+   "ar": "الاستنتاج '$1' حالته (معتمد). لازم مدرس يعتمده قبل ما يتستخدم في رسالة أو مذكرة."
+  },
+  {
+   "re": "^Finding '(.+?)' is 'edited'\\. A teacher must approve it before it can be used in a summary\\.$",
+   "ar": "الاستنتاج '$1' حالته (معتمد بعد التعديل). لازم مدرس يعتمده قبل ما يتستخدم في رسالة أو مذكرة."
+  },
+  {
+   "re": "^Finding '(.+?)' is 'rejected'\\. A teacher must approve it before it can be used in a summary\\.$",
+   "ar": "الاستنتاج '$1' حالته (مرفوض). لازم مدرس يعتمده قبل ما يتستخدم في رسالة أو مذكرة."
+  },
+  {
+   "re": "^Finding '(.+?)' is 'proposed'\\. A teacher must approve it before it can be used in a summary\\.$",
+   "ar": "الاستنتاج '$1' حالته (مقترح). لازم مدرس يعتمده قبل ما يتستخدم في رسالة أو مذكرة."
+  },
+  {
+   "re": "^Finding '(.+?)' is 'draft'\\. A teacher must approve it before it can be used in a summary\\.$",
+   "ar": "الاستنتاج '$1' حالته (مسودة). لازم مدرس يعتمده قبل ما يتستخدم في رسالة أو مذكرة."
+  },
+  {
+   "re": "^Finding '(.+?)' is '(.+?)'\\. A teacher must approve it before it can be used in a summary\\.$",
+   "ar": "الاستنتاج '$1' حالته ($2). لازم مدرس يعتمده قبل ما يتستخدم في رسالة أو مذكرة."
+  },
+  {
+   "re": "^Unknown concept '(.+?)' in pack '(.+?)'\\.$",
+   "ar": "الموضوع '$1' مش موجود في المنهج '$2'."
+  },
+  {
+   "re": "^There are already (\\d+) scored records for '(.+?)'\\. Read them with get_learner_timeline instead of asking a teacher\\.$",
+   "ar": "فيه بالفعل سجلات بدرجات للموضوع '$2' (عددها $1). الأفضل قرايتها من ملف التلميذ بدل سؤال مدرس."
+  },
+  {
+   "re": "^(.+?), (.+?): '(.+)' is not a mark\\.$",
+   "ar": "$1، $2: '$3' مش درجة."
+  },
+  {
+   "re": "^(.+?), (.+?): (.+?) is outside 0 to ([\\d.]+)\\.$",
+   "ar": "$1، $2: الدرجة $3 بره المدى من 0 ل $4."
+  },
+  {
+   "re": "^(.+?): no topic\\. Say which topic this question tests\\.$",
+   "ar": "$1: من غير موضوع. اكتب السؤال ده بيقيس أنهي موضوع."
+  },
+  {
+   "re": "^(.+?): '(.+)' is not a topic in the curriculum map\\. Pick one from the Topics sheet\\.$",
+   "ar": "$1: '$2' مش موضوع في خريطة المنهج. اختار موضوع من ورقة Topics."
+  },
+  {
+   "re": "^(.+?): the 'Out of' mark is missing or is not a number above zero\\.$",
+   "ar": "$1: الدرجة النهائية في صف 'Out of' ناقصة أو مش رقم أكبر من صفر."
+  },
+  {
+   "re": "^'(.+)' is not a learner record code in this school\\.$",
+   "ar": "'$1' مش كود تلميذ في المدرسة دي."
+  },
+  {
+   "re": "^(.+?) is not in one of your classes\\.$",
+   "ar": "$1 مش في فصل من فصولك."
+  },
+  {
+   "re": "^(.+?) appears twice in the sheet\\.$",
+   "ar": "$1 مكتوب مرتين في الكشف."
+  },
+  {
+   "re": "^The sheet still has problems: (.+)$",
+   "ar": "الكشف لسه فيه مشاكل: $1"
+  },
+  {
+   "re": "^This curriculum covers grades (\\d+) to (\\d+)\\.$",
+   "ar": "المنهج ده بيغطي الصفوف من $1 ل $2."
+  },
+  {
+   "re": "^Unknown run (.+?)$",
+   "ar": "مفيش تشغيل بالكود $1"
+  },
+  {
+   "re": "^This learner already has an open run \\((.+?), running\\)\\. Decide what is waiting, or wait for it to finish, before starting another\\.$",
+   "ar": "التلميذ ده عنده تشغيل مفتوح بالفعل ($1، شغال دلوقتي). خد قرار في اللي مستني، أو استنى لما يخلص، قبل ما تبدأ تشغيل جديد."
+  },
+  {
+   "re": "^This learner already has an open run \\((.+?), waiting_for_teacher\\)\\. Decide what is waiting, or wait for it to finish, before starting another\\.$",
+   "ar": "التلميذ ده عنده تشغيل مفتوح بالفعل ($1، مستني مدرس). خد قرار في اللي مستني، أو استنى لما يخلص، قبل ما تبدأ تشغيل جديد."
+  },
+  {
+   "re": "^Run (.+?) is running, not waiting for a teacher\\.$",
+   "ar": "التشغيل $1 حالته (شغال دلوقتي)، ومش مستني مدرس."
+  },
+  {
+   "re": "^Run (.+?) is done, not waiting for a teacher\\.$",
+   "ar": "التشغيل $1 حالته (خلص)، ومش مستني مدرس."
+  },
+  {
+   "re": "^Run (.+?) is failed, not waiting for a teacher\\.$",
+   "ar": "التشغيل $1 حالته (ما كملش)، ومش مستني مدرس."
+  },
+  {
+   "re": "^Run (.+?) is (.+?), not waiting for a teacher\\.$",
+   "ar": "التشغيل $1 حالته ($2)، ومش مستني مدرس."
+  },
+  {
+   "re": "^Choose a grade from (\\d+) to (\\d+)\\.$",
+   "ar": "اختار صف من $1 إلى $2."
+  },
+  {
+   "re": "^This curriculum has (\\d+) terms in a year\\.$",
+   "ar": "المنهج ده فيه $1 ترم في السنة."
+  },
+  {
+   "re": "^This cannot be withdrawn: (\\d+) records already use its topics\\.$",
+   "ar": "ما ينفعش تتسحب: فيه $1 سجل بيستخدم موضوعاتها."
+  },
+  {
+   "re": "^This cannot be added as it is: (.*)$",
+   "ar": "ما ينفعش تتضاف بالشكل ده: $1"
+  }
+ ]
+}

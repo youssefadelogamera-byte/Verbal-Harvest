@@ -1,0 +1,26 @@
+# Athar settings. You do not need to change anything here.
+#
+# A line that starts with # is ignored. To use a setting, remove the # and fill in the value,
+# then start Athar again.
+#
+# The easy way to use a model on the internet needs no file at all: open the Agent page,
+# open "Cloud models", and paste your OpenAI or Claude key there. That key is kept in memory
+# only and is forgotten when Athar stops.
+#
+# If LM Studio or Ollama is running on this computer, Athar finds it by itself. No setting needed.
+#
+# The lines below are for when you want the key remembered, or want another provider.
+# A key written here is stored on this computer as plain text. Do not share this file.
+
+# Remember an OpenAI or Claude key between starts:
+# OPENAI_API_KEY=
+# ANTHROPIC_API_KEY=
+
+# Use any other provider that speaks the OpenAI protocol (OpenRouter, Groq, Together, Ollama,
+# LM Studio) in place of the model in the models folder. All three lines are needed:
+# ATHAR_LLM_BASE_URL=https://openrouter.ai/api/v1
+# ATHAR_LLM_MODEL=qwen/qwen3.5-9b
+# ATHAR_LLM_API_KEY=
+
+# The address is normally http://127.0.0.1:8780. Change the port if something else uses it:
+# ATHAR_WEB_PORT=8780

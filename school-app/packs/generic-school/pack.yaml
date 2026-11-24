@@ -1,0 +1,25 @@
+# A whole-school map: mathematics, science, language and technology together.
+# It adds nothing of its own. It includes the four subject packs and then names the places where one
+# subject depends on another, so a difficulty can be traced across subjects (for example, a physics
+# topic that needs a maths topic first).
+id: generic-school
+name: School subjects, grades 1 to 8
+subject: school
+grades: [1, 8]
+languages: [en]
+
+includes:
+  - generic-maths
+  - generic-science
+  - generic-language
+  - generic-technology
+
+# Cross-subject "needs this first" links, added on top of each subject's own links.
+links:
+  - {concept: problem-solving-multistep, requires: [literal-comprehension]}   # maths word problems need reading
+  - {concept: speed-distance-time, requires: [division-long, unit-rates]}      # physics needs maths
+  - {concept: density, requires: [volume, division-long]}
+  - {concept: current-and-voltage, requires: [one-step-equations]}
+  - {concept: ecosystems, requires: [tables-and-charts]}                       # life science needs data handling
+  - {concept: spreadsheets-basics, requires: [tables-and-charts]}              # technology needs maths
+  - {concept: variables, requires: [missing-number-sentences]}
