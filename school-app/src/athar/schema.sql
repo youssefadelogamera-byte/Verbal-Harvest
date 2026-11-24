@@ -213,3 +213,26 @@ CREATE TABLE IF NOT EXISTS curriculum_additions (
   decided_by  TEXT,                          -- the teacher who approved, discarded or withdrew it
   decided_at  TEXT
 );
+
+-- Parent accounts, made by the school admin. A parent is not a teacher: separate table, separate sign-in
+-- and separate cookie. A parent sees only the children linked to them, and only what a teacher approved.
+CREATE TABLE IF NOT EXISTS parents (
+  id            TEXT PRIMARY KEY,               -- par_xxxx
+  name          TEXT NOT NULL,
+  username      TEXT NOT NULL UNIQUE COLLATE NOCASE,
+  password_hash TEXT NOT NULL,                  -- scrypt, salted
+  created_at    TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS parent_learners (
+  parent_id  TEXT NOT NULL REFERENCES parents(id) ON DELETE CASCADE,
+  learner_id TEXT NOT NULL REFERENCES learners(id),
+  PRIMARY KEY (parent_id, learner_id)
+);
+
+CREATE TABLE IF NOT EXISTS parent_sessions (
+  token_hash TEXT PRIMARY KEY,
+  parent_id  TEXT NOT NULL REFERENCES parents(id) ON DELETE CASCADE,
+  created_at TEXT NOT NULL,
+  expires_at TEXT NOT NULL
+);

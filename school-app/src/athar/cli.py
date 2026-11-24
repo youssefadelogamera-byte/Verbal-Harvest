@@ -107,6 +107,33 @@ def demo(lan: bool = typer.Option(False, "--lan", help="Serve every computer and
     web_main()
 
 
+@app.command()
+def start(lan: bool = typer.Option(False, "--lan", help="Serve every computer and phone on the school network.")) -> None:
+    """Open the school's own app: an empty school with no made-up data, kept in data/school.db.
+
+    The school admin creates the accounts, teachers, classes, learners and parents. The made-up school of
+    `athar demo` lives in a different file and is never mixed with these records."""
+    from .config import ROOT
+
+    os.environ.setdefault("ATHAR_DB", str(ROOT / "data" / "school.db"))
+    os.environ.setdefault("ATHAR_PACK", get_settings().demo_pack)
+    os.environ["ATHAR_REAL_SCHOOL"] = "1"
+    if lan:
+        os.environ["ATHAR_WEB_HOST"] = "0.0.0.0"
+    s = get_settings()
+    s.db_path.parent.mkdir(parents=True, exist_ok=True)
+    db.init_db()
+    from . import family
+    if family.mode() is None:
+        family.choose("school")
+    scheme = "https" if s.tls_cert else "http"
+    where = _network_address() if lan else s.web_host
+    console.print(f"School app: {scheme}://{where}:{s.web_port}   (Ctrl+C to stop)")
+    console.print(f"Records are kept in {s.db_path}. Make a backup from the School page.")
+    from .web.app import main as web_main
+    web_main()
+
+
 def _network_address() -> str:
     """This computer's address on the school network, for teachers to type on their phones."""
     import socket

@@ -39,6 +39,7 @@ Who does what:
 | `src/athar/report.py` | Printable learner report, built from approved findings only |
 | `src/athar/school.py` | Whole-school map by topic (never ranks learners) and its GraphML export |
 | `src/athar/accounts.py` | Sign-in: accounts, scrypt password hashes, sessions, admin and teacher roles |
+| `src/athar/parents.py` | Parent accounts the school admin makes: own table, sign-in and cookie; a parent sees only linked children and only approved items (`/parent`) |
 | `src/athar/classes.py` | Classes. Once sign-in is on, a teacher sees only the learners of their own classes |
 | `src/athar/privacy.py` | Backup and restore, one learner's record as a file, deleting one learner, withdrawing a record |
 | `src/athar/imports.py` | Marks sheet template and upload, new learner records, documents for the agent |
@@ -59,7 +60,8 @@ Who does what:
 
 ```
 uv sync --extra dev          # install
-uv run athar demo            # seed if needed, open the teacher app at http://127.0.0.1:8765
+uv run athar start           # the school's own, empty records (data/school.db), no made-up data; --lan for the network
+uv run athar demo            # seed a made-up school if needed (data/athar.db), open the app at http://127.0.0.1:8765
 uv run pytest -q             # tests (no model needed)
 uv run ruff check src tests  # lint
 uv run athar seed            # rebuild the synthetic Cambridge school, three subjects (wipes everything)

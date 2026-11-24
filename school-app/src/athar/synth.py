@@ -597,7 +597,7 @@ def generate(
     # ---- write to the database
     db.init_db(db_path)
     with db.connect(db_path) as conn:
-        for table in ("settings", "class_teachers", "class_learners", "classes", "sessions", "accounts", "record_requests", "approvals", "summaries", "findings", "audit_log",
+        for table in ("parent_sessions", "parent_learners", "parents", "settings", "class_teachers", "class_learners", "classes", "sessions", "accounts", "record_requests", "approvals", "summaries", "findings", "audit_log",
                       "evidence",
                       "teaching_units", "learners", "teacher_profiles", "teachers"):
             conn.execute(f"DELETE FROM {table}")

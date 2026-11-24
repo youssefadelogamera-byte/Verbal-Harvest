@@ -1,5 +1,8 @@
 {
  "exact": {
+  "Write the parent's name (2 to 80 characters).": "اكتب اسم ولي الأمر (من 2 إلى 80 حرفاً).",
+  "Choose at least one child for this parent.": "اختر طفلاً واحداً على الأقل لولي الأمر هذا.",
+  "The school's own records have no made-up children.": "لا يوجد أطفال تجريبيون في سجلات المدرسة الحقيقية.",
   "The topics it builds on do not show low results in the records, so the difficulty seems to start here.": "الموضوعات التي يعتمد عليها لا تظهر فيها نتائج منخفضة في السجلات، لذلك يبدو أن الصعوبة تبدأ من هنا.",
   "The finding compares results before and after units taught this way, against this learner's own earlier average.": "يقارن الاستنتاج بين النتائج قبل الوحدات التي تم تدريسها بهذه الطريقة وبعدها، قياسا على متوسط الطالب نفسه في الفترة السابقة.",
   "Offer harder or wider work in this area, and consider letting this learner explain it to others.": "يمكن تقديم أعمال أصعب أو أوسع في هذا المجال، مع التفكير في أن يشرحه هذا الطالب لغيره.",
@@ -99,6 +102,8 @@
   "The model is still starting. Wait a minute and try again.": "ما زال النموذج يعمل. انتظر دقيقة وحاول مرة أخرى."
  },
  "patterns": [
+  {"re": "^The username '(.+)' is already used\\.$", "ar": "اسم المستخدم '$1' مستخدم من قبل."},
+  {"re": "^Unknown parent '(.+)'\\.$", "ar": "ولي أمر غير معروف '$1'."},
   {
    "re": "^The term is 1 to (\\d+)\\.$",
    "ar": "الفصل الدراسي من 1 إلى $1."

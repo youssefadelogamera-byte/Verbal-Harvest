@@ -31,6 +31,8 @@ says what the code enforces today, what it does not, and how to report a problem
 | A photo of a paper is read only by a model on this computer (`localhost`). If the model is anywhere else, reading is refused, because a paper usually shows the child's name. The photo is not stored and not logged, and nothing read from it is saved until the parent confirms the lines. | `photo.py`, `web/app.py` | `tests/test_photo.py` |
 | A parent's note is stored as written and never becomes a score. The audit log records that a note was added, not its words. | `family.py` | `tests/test_family.py` |
 | A label in a curriculum pack that was cut at an unquoted comma is refused when the pack loads. | `curriculum.py` | `tests/test_synth_school.py` |
+| Only the signed-in school admin makes, changes or removes parent accounts; nobody can before an admin exists. A parent has a separate table, sign-in and cookie, sees only the children linked to them, and of those only approved findings, approved notes for the family and the report (without the note for the next teacher). A parent's session opens no staff page. A new password signs the parent out everywhere. | `parents.py`, `web/app.py` | `tests/test_parents.py` |
+| `athar start` (the school's own records) creates no made-up data and refuses to add made-up children. Its records are in `data/school.db`, never mixed with the demo school of `athar demo`. | `cli.py`, `web/app.py` | `tests/test_parents.py` |
 
 ## What it does not do yet
 
@@ -47,7 +49,7 @@ These are known gaps. Do not use Athar with real learners until they are closed.
   the app then serves HTTPS and marks the session cookie Secure. The app does not make a certificate for you, and
   this path has not been tested on a school network.
 - **No encryption at rest.** The database is one SQLite file. Protect the machine and its disk.
-- **Two roles only, and a class opens the whole record.** A teacher who has a learner in a class sees that
+- **Two staff roles only, and a class opens the whole record.** A teacher who has a learner in a class sees that
   learner's records in every subject and every year. That is on purpose (a difficulty in one subject often starts
   in another), but it is wider than "my subject only". Files in the inbox are shared by all signed-in teachers,
   and the school map shows topic totals for the learners a teacher can see, which is a small group.

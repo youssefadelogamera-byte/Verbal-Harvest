@@ -80,7 +80,8 @@ def create_account(teacher_id: str, username: str, password: str, role: str = "t
             raise ValueError(f"Unknown teacher '{teacher_id}'.")
         if db.one(conn, "SELECT 1 AS yes FROM accounts WHERE teacher_id = ?", (teacher_id,)):
             raise ValueError(f"{teacher['name']} already has an account.")
-        if db.one(conn, "SELECT 1 AS yes FROM accounts WHERE username = ?", (username,)):
+        if db.one(conn, "SELECT 1 AS yes FROM accounts WHERE username = ?", (username,)) or \
+                db.one(conn, "SELECT 1 AS yes FROM parents WHERE username = ?", (username,)):
             raise ValueError(f"The username '{username}' is taken.")
         if role != "admin" and db.one(conn, "SELECT 1 AS yes FROM accounts LIMIT 1") is None:
             raise ValueError("The first account must be the school admin.")
@@ -100,7 +101,8 @@ def create_teacher(name: str, subjects: list[str] | None, username: str, passwor
         raise ValueError("Give the teacher's name (2 to 80 characters).")
     _check_new(username, password, role)
     with db.connect(db_path) as conn:
-        if db.one(conn, "SELECT 1 AS yes FROM accounts WHERE username = ?", (username,)):
+        if db.one(conn, "SELECT 1 AS yes FROM accounts WHERE username = ?", (username,)) or \
+                db.one(conn, "SELECT 1 AS yes FROM parents WHERE username = ?", (username,)):
             raise ValueError(f"The username '{username}' is taken.")
         teacher_id = db.new_id("tch")
         conn.execute("INSERT INTO teachers (id, name, subjects) VALUES (?,?,?)",

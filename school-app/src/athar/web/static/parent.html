@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parents: Learning International Schools</title>
+<link rel="icon" href="/static/brand/mark.svg" type="image/svg+xml">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/static/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#1B2A6B">
+<style>
+/* The parents' page: the school's colours, nothing loaded from outside. */
+:root { --navy:#121C4A; --blue:#1F3F8F; --soft:#E8EEFA; --gold:#F5B21A; --teal:#14A3B5; --purple:#7A2E8C;
+  --ink:#0A0A0A; --muted:#5B6478; --line:#E3E8F2; --bg:#F5F7FB; --bad:#9C2B12; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 "Segoe UI", Tahoma, "Noto Sans Arabic", system-ui, sans-serif; }
+header { background: linear-gradient(160deg, var(--navy), #1B2A6B 55%, #24489B); color: #fff; border-bottom: 4px solid var(--gold); }
+header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 14px 16px; }
+.school { display: flex; align-items: center; gap: 10px; background: #fff; color: var(--navy); border-radius: 12px; padding: 6px 10px; }
+.school img { height: 40px; width: auto; }
+.school strong { font-size: 13px; letter-spacing: .02em; display: block; }
+.school span { font-size: 13px; }
+header button { font: inherit; font-size: 14px; color: #fff; background: transparent; border: 1px solid rgba(255,255,255,.5); border-radius: 999px; padding: 4px 14px; cursor: pointer; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+main { padding: 22px 0 40px; }
+.card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin: 0 0 16px; }
+h1 { font-size: 24px; margin: 0 0 6px; } h2 { font-size: 20px; margin: 0 0 8px; } h3 { font-size: 16px; margin: 16px 0 6px; }
+.muted { color: var(--muted); } .small { font-size: 14px; }
+label { display: grid; gap: 4px; font-weight: 600; font-size: 14px; color: var(--muted); margin: 10px 0; }
+input { font: inherit; padding: 10px 12px; border: 1px solid #C5CEDF; border-radius: 10px; min-height: 44px; direction: ltr; }
+.primary { font: inherit; font-weight: 600; background: var(--blue); color: #fff; border: 0; border-radius: 10px; padding: 10px 18px; min-height: 44px; cursor: pointer; }
+.link { color: var(--blue); }
+.err { color: var(--bad); }
+.finding { border-inline-start: 4px solid var(--teal); padding: 6px 12px; margin: 10px 0; background: var(--soft); border-radius: 8px; }
+.finding.kind-strength { border-color: var(--teal); } .finding.kind-struggle, .finding.kind-root_cause { border-color: var(--gold); } .finding.kind-what_worked { border-color: var(--purple); }
+.meta { font-size: 13px; color: var(--muted); }
+.signin { max-width: 420px; margin: 6vh auto 0; }
+:focus-visible { outline: 3px solid #B34700; outline-offset: 2px; }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="school"><img src="/brand/logo" alt=""><div><strong>Learning International Schools</strong><span lang="ar">مدارس التعليم العالمية</span></div></div>
+  <div><button type="button" id="lang"></button> <button type="button" id="out" hidden></button></div>
+</div></header>
+<main class="wrap" id="view"></main>
+<script>
+// Every piece of text on this page, in both languages.
+const WORDS = {
+  title: ["Parents", "أولياء الأمور"],
+  signInTitle: ["Sign in as a parent", "تسجيل دخول ولي الأمر"],
+  signInHelp: ["Use the username and password the school gave you.", "استخدم اسم المستخدم وكلمة المرور اللذين أعطتك إياهما المدرسة."],
+  username: ["Username", "اسم المستخدم"], password: ["Password", "كلمة المرور"], signIn: ["Sign in", "تسجيل الدخول"],
+  signOut: ["Sign out", "تسجيل الخروج"], staff: ["Staff sign-in", "دخول المعلمين والإدارة"],
+  hello: ["Welcome, ", "أهلاً، "],
+  intro: ["Here is what your child's teachers have read and approved. Each statement rests on your child's own records. Nothing here compares your child with anyone.",
+          "هنا ما قرأه معلمو ابنك واعتمدوه. كل عبارة مبنية على سجلات ابنك نفسه، ولا شيء هنا يقارن ابنك بأي أحد."],
+  grade: ["Grade ", "الصف "], findings: ["What the teachers approved", "ما اعتمده المعلمون"],
+  notes: ["Notes for the family", "رسائل للأسرة"], none: ["Nothing has been approved yet. The teachers add to this as the year goes on.", "لم يُعتمد شيء بعد. يضيف المعلمون إلى هذه الصفحة خلال السنة."],
+  report: ["Open the printable report", "افتح التقرير القابل للطباعة"], approvedBy: ["Approved by ", "اعتمده "], on: [" on ", " بتاريخ "],
+  noChildren: ["No child is linked to your account yet. Ask the school.", "لا يوجد طفل مرتبط بحسابك بعد. اسأل المدرسة."],
+  strength: ["Going well", "نقطة قوة"], struggle: ["Needs support", "يحتاج إلى دعم"], root_cause: ["Where a difficulty may have started", "من أين قد تكون الصعوبة بدأت"], what_worked: ["What has helped", "ما ساعد"],
+  failed: ["Could not reach the school's server. Is it running?", "تعذّر الوصول إلى خادم المدرسة. هل ما زال يعمل؟"],
+};
+const ERRORS = { "That username and password do not match.": "اسم المستخدم وكلمة المرور غير متطابقين.",
+  "Too many wrong passwords. Wait ten minutes, or ask the school to reset it.": "كُتبت كلمة المرور خطأً مرات كثيرة. انتظر عشر دقائق، أو اطلب من المدرسة إعادة تعيينها.",
+  "Sign in first.": "سجّل الدخول أولاً." };
+let LANG = "ar";
+try { LANG = localStorage.getItem("athar.lang") === "en" ? "en" : "ar"; } catch (e) {}   // the same choice as the staff page
+const asked = new URLSearchParams(location.search).get("lang");
+if (asked === "en" || asked === "ar") LANG = asked;
+const t = (k) => WORDS[k][LANG === "ar" ? 1 : 0];
+const say = (msg) => (LANG === "ar" && ERRORS[msg]) || msg;
+function h(tag, attrs, ...kids) {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) { if (v == null) continue; if (k === "text") el.textContent = v; else if (k.startsWith("on")) el.addEventListener(k.slice(2), v); else el.setAttribute(k, v); }
+  for (const kid of kids.flat()) if (kid != null) el.append(kid.nodeType ? kid : document.createTextNode(kid));
+  return el;
+}
+async function call(path, body) {
+  let r;
+  try { r = await fetch(path, body ? { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) } : {}); }
+  catch (e) { throw new Error(t("failed")); }
+  const data = await r.json().catch(() => ({}));
+  if (!r.ok) { const e = new Error(say(data.error || r.statusText)); e.status = r.status; throw e; }
+  return data;
+}
+function setLang() {
+  document.documentElement.lang = LANG; document.documentElement.dir = LANG === "ar" ? "rtl" : "ltr";
+  document.title = t("title") + ": Learning International Schools";
+  const b = document.getElementById("lang"); b.textContent = LANG === "ar" ? "English" : "العربية";
+  b.onclick = () => { LANG = LANG === "ar" ? "en" : "ar"; try { localStorage.setItem("athar.lang", LANG); } catch (e) {} document.cookie = "athar_lang=" + LANG + "; path=/; max-age=31536000; samesite=strict"; start(); };
+  document.getElementById("out").textContent = t("signOut");
+}
+function signInForm() {
+  const view = document.getElementById("view"); view.replaceChildren();
+  const user = h("input", { autocomplete: "username", required: "" }), pass = h("input", { type: "password", autocomplete: "current-password", required: "" });
+  const msg = h("p", { class: "err", role: "alert" });
+  const form = h("form", { class: "card signin" }, h("h1", { text: t("signInTitle") }), h("p", { class: "muted", text: t("signInHelp") }),
+    h("label", {}, t("username"), user), h("label", {}, t("password"), pass), h("button", { class: "primary", type: "submit" }, t("signIn")), msg,
+    h("p", { class: "small" }, h("a", { class: "link", href: "/" }, t("staff"))));
+  form.onsubmit = async (e) => { e.preventDefault(); msg.textContent = ""; try { await call("/api/parent/sign-in", { username: user.value, password: pass.value }); start(); } catch (err) { msg.textContent = err.message; pass.value = ""; } };
+  view.append(form); user.focus();
+}
+function childCard(c) {
+  const when = (iso) => (iso || "").slice(0, 10);
+  const findings = c.findings.map((f) => h("div", { class: "finding kind-" + f.kind },
+    h("strong", { text: WORDS[f.kind] ? t(f.kind) : f.kind }), h("p", { dir: "auto", text: f.statement }),
+    h("div", { class: "meta" }, t("approvedBy"), h("span", { dir: "auto", text: f.teacher || "" }), t("on"), when(f.decided_at))));
+  const notes = c.notes.map((n) => h("div", { class: "finding" }, h("p", { dir: "auto", text: n.text }),
+    h("div", { class: "meta" }, t("approvedBy"), h("span", { dir: "auto", text: n.teacher || "" }), t("on"), when(n.decided_at))));
+  return h("section", { class: "card" }, h("h2", {}, h("span", { dir: "auto", text: c.name }), " · ", t("grade") + c.grade),
+    notes.length ? [h("h3", { text: t("notes") }), notes] : null,
+    h("h3", { text: t("findings") }), findings.length ? findings : h("p", { class: "muted", text: t("none") }),
+    h("p", {}, h("a", { class: "link", href: "/api/parent/report/" + encodeURIComponent(c.learner_id), target: "_blank", rel: "noopener" }, t("report"))));
+}
+async function start() {
+  setLang();
+  const view = document.getElementById("view"), out = document.getElementById("out");
+  try {
+    const me = await call("/api/parent/me");
+    out.hidden = false; out.onclick = async () => { await call("/api/parent/sign-out", {}); out.hidden = true; signInForm(); };
+    view.replaceChildren(h("div", { class: "card" }, h("h1", {}, t("hello"), h("span", { dir: "auto", text: me.parent.name })), h("p", { class: "muted", text: t("intro") })),
+      ...(me.children.length ? me.children.map(childCard) : [h("p", { class: "card muted", text: t("noChildren") })]));
+  } catch (e) {
+    out.hidden = true;
+    if (e.status === 403 || e.status === 401) signInForm(); else view.replaceChildren(h("p", { class: "card err", text: e.message }));
+  }
+}
+start();
+</script>
+</body>
+</html>

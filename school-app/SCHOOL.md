@@ -12,6 +12,7 @@ school Wi-Fi, and can install it on the home screen like an app.
 
 **Easiest, on Windows:** double-click **`Start LIS Athar.cmd`** in this folder. The first time, it installs what it
 needs (uv and the app's packages, so it needs the internet once), then it starts the app and opens the browser.
+It opens the school's own, **empty** records (`data/school.db`): no made-up school, names or sample papers.
 Keep its window open while you use the app; close it to stop. **`Start LIS Athar (school network).cmd`** does the
 same for every computer and phone on the school Wi-Fi (step 4).
 
@@ -19,10 +20,21 @@ Or by hand, on any computer:
 
 ```
 uv sync
-uv run athar demo
+uv run athar start
 ```
 
-Open http://127.0.0.1:8765 on the server itself. The first run builds a made-up school so you can look around.
+Open http://127.0.0.1:8765 on the server itself. (`uv run athar demo` instead opens a separate made-up school, for trying things out.)
+
+## Setting up the school (admin)
+
+1. Open **School** and create the school admin account. This turns on sign-in.
+2. **Teachers:** under "Teachers and accounts", add each teacher with a username and a first password.
+3. **School years and classes:** under "Classes", make each class with its grade and the school year it belongs to
+   (the year it starts, for example 2026 for 2026/27). Open a class to give it to its teachers.
+4. **Students:** under "Add a learner", add each student with their class and grade. Each gets a record code.
+5. **Parents:** under "Parents", add each parent with a username and password and choose their children. Give
+   them the username, the password and the address of the parents' page: `http://<server>:8765/parent`. A parent
+   sees only their own children, and only what a teacher has approved.
 
 ## 2. Add the logo
 
@@ -36,7 +48,7 @@ From then on every page of data needs a username and password.
 ## 4. Open it to the school network
 
 ```
-uv run athar demo --lan
+uv run athar start --lan
 ```
 
 It prints the address to type on other devices, for example `http://192.168.1.20:8765`.
@@ -48,7 +60,7 @@ Phones only offer "Install app" / "Add to Home Screen" as a full app over HTTPS.
 certificate, for example one made by the school's IT team or with `mkcert` for the school's network name:
 
 ```
-ATHAR_TLS_CERT=/path/to/cert.pem ATHAR_TLS_KEY=/path/to/key.pem uv run athar demo --lan
+ATHAR_TLS_CERT=/path/to/cert.pem ATHAR_TLS_KEY=/path/to/key.pem uv run athar start --lan
 ```
 
 Then on each phone, open `https://<server address>:8765`:
@@ -89,5 +101,4 @@ The pack files are plain YAML, one line per topic, and say all this at the top.
 
 - **Ministry subjects.** Arabic, Islamic Studies and Social Studies are not mapped yet. Add them on the School page
   (type the topics or upload a contents page), or write a pack for each under `packs/`.
-- **Parent access.** Parents cannot yet sign in to the school's server to see their own child.
 - **Teacher access by subject.** A teacher with a learner in their class sees that learner in every subject.

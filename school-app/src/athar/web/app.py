@@ -27,6 +27,7 @@ from .. import (
     family,
     graph,
     imports,
+    parents,
     photo,
     privacy,
     report,
@@ -77,7 +78,8 @@ async def _require_sign_in(request: Request, call_next):
     # Topic names follow the reader's language: their own choice (a cookie), else the school's setting.
     chosen = request.cookies.get("athar_lang")
     current_lang.set(chosen if chosen in ("ar", "en") else get_settings().language)
-    if path.startswith(("/api/", "/learners/")) and path not in _OPEN and accounts.enabled():
+    if path.startswith(("/api/", "/learners/")) and path not in _OPEN and not path.startswith("/api/parent/") \
+            and accounts.enabled():
         who = accounts.session_teacher(request.cookies.get(accounts.COOKIE))
         if who is None:
             return JSONResponse({"error": "Sign in first."}, status_code=401)
@@ -718,7 +720,7 @@ def _latest_year() -> int | None:
 
 def _session_view(who: dict | None) -> dict:
     pack = _pack()
-    return {"product": get_settings().product_name, "school": _school(), "sign_in": accounts.enabled(), "teacher": who,
+    return {"product": get_settings().product_name, "school": _school(), "real_school": get_settings().real_school, "sign_in": accounts.enabled(), "teacher": who,
             "language": get_settings().language, "curriculum_name": pack.title(),
             "mode": family.mode(), "guardian": family.guardian(), "school_year": family.school_year(),
             "curriculum": {"id": pack.id, "name": pack.title(), "grades": list(pack.grades), "terms": pack.terms,
@@ -855,6 +857,8 @@ def family_add_child(body: ChildBody) -> dict:
 
 @app.post("/api/family/example-child")
 def family_example_child() -> dict:
+    if get_settings().real_school:
+        raise ValueError("The school's own records have no made-up children.")
     return family.add_example_child()
 
 
@@ -1151,6 +1155,103 @@ def curriculum_withdraw(addition_id: str, body: Actor, request: Request) -> dict
 @app.get("/")
 def index() -> FileResponse:
     return FileResponse(STATIC / "index.html", media_type="text/html")
+
+
+# ------------------------------------------------------------------ parents (accounts made by the school admin)
+
+class NewParent(BaseModel):
+    name: str
+    username: str
+    password: str
+    learner_ids: list[str]
+
+
+class ParentChildren(BaseModel):
+    learner_ids: list[str]
+
+
+class ParentPassword(BaseModel):
+    password: str
+
+
+class ParentSignIn(BaseModel):
+    username: str
+    password: str
+
+
+@app.get("/api/parents")
+def parents_list(request: Request) -> dict:
+    _admin(request)
+    return {"parents": parents.list_parents()}
+
+
+@app.post("/api/parents")
+def parents_create(body: NewParent, request: Request) -> dict:
+    who = _admin(request)
+    return parents.create_parent(body.name, body.username, body.password, body.learner_ids, actor=f"teacher:{who['id']}")
+
+
+@app.post("/api/parents/{parent_id}/children")
+def parents_children(parent_id: str, body: ParentChildren, request: Request) -> dict:
+    who = _admin(request)
+    return parents.set_children(parent_id, body.learner_ids, actor=f"teacher:{who['id']}")
+
+
+@app.post("/api/parents/{parent_id}/password")
+def parents_password(parent_id: str, body: ParentPassword, request: Request) -> dict:
+    who = _admin(request)
+    return parents.set_password(parent_id, body.password, actor=f"teacher:{who['id']}")
+
+
+@app.delete("/api/parents/{parent_id}")
+def parents_remove(parent_id: str, request: Request) -> dict:
+    who = _admin(request)
+    return parents.remove_parent(parent_id, actor=f"teacher:{who['id']}")
+
+
+def _the_parent(request: Request) -> dict:
+    found = parents.session_parent(request.cookies.get(parents.COOKIE))
+    if found is None:
+        raise accounts.NotAllowed("Sign in first.")
+    return found
+
+
+@app.post("/api/parent/sign-in")
+def parent_sign_in(body: ParentSignIn) -> JSONResponse:
+    signed = parents.sign_in(body.username, body.password)
+    response = JSONResponse({"parent": signed["parent"]})
+    response.set_cookie(parents.COOKIE, signed["token"], max_age=signed["max_age"], httponly=True,
+                        samesite="strict", path="/", secure=bool(get_settings().tls_cert))
+    return response
+
+
+@app.post("/api/parent/sign-out")
+def parent_sign_out(request: Request) -> JSONResponse:
+    parents.sign_out(request.cookies.get(parents.COOKIE))
+    response = JSONResponse({"signed_out": True})
+    response.delete_cookie(parents.COOKIE, path="/")
+    return response
+
+
+@app.get("/api/parent/me")
+def parent_me(request: Request) -> dict:
+    me = _the_parent(request)
+    return {"parent": me, "school": _school(), "language": get_settings().language, **parents.overview(me["id"])}
+
+
+@app.get("/api/parent/report/{learner_id}", response_class=HTMLResponse)
+def parent_report(learner_id: str, request: Request) -> str:
+    me = _the_parent(request)
+    if learner_id not in parents.children_of(me["id"]):
+        raise accounts.NotAllowed("This child is not linked to your account. Ask the school.")
+    data = report.build(learner_id)
+    data["notes"] = [n for n in data["notes"] if n["audience"] == "guardian"]    # the handover note is for teachers
+    return report.render_html(data)
+
+
+@app.get("/parent")
+def parent_page() -> FileResponse:
+    return FileResponse(STATIC / "parent.html", media_type="text/html")
 
 
 # ------------------------------------------------------------------ school branding and the installed app

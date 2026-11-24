@@ -154,6 +154,7 @@ def delete_learner(learner_id: str, confirm_code: str, actor: str = "system", db
         for table in ("record_requests", "summaries", "findings", "evidence"):
             counts[table] = conn.execute(f"DELETE FROM {table} WHERE learner_id = ?", (learner_id,)).rowcount
         conn.execute("DELETE FROM class_learners WHERE learner_id = ?", (learner_id,))
+        counts["parent_links"] = conn.execute("DELETE FROM parent_learners WHERE learner_id = ?", (learner_id,)).rowcount
         blank = db.jdump({"removed": "this learner's record was deleted"})
         counts["audit_rows_blanked"] = conn.execute(
             "UPDATE audit_log SET input = ?, output = ? WHERE input LIKE ? OR output LIKE ? OR input LIKE ? OR output LIKE ?",

@@ -387,7 +387,7 @@ def generate_school(db_path: Path | str | None = None, seed: int = 11, pack_id: 
     # ---- write
     db.init_db(db_path)
     with db.connect(db_path) as conn:
-        for table in ("settings", "class_teachers", "class_learners", "classes", "sessions", "accounts", "record_requests", "approvals", "summaries", "findings", "audit_log",
+        for table in ("parent_sessions", "parent_learners", "parents", "settings", "class_teachers", "class_learners", "classes", "sessions", "accounts", "record_requests", "approvals", "summaries", "findings", "audit_log",
                       "evidence", "teaching_units", "learners", "teacher_profiles", "teachers"):
             conn.execute(f"DELETE FROM {table}")
         conn.executemany("INSERT INTO teachers (id, name, subjects) VALUES (?, ?, ?)",

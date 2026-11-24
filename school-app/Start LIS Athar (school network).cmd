@@ -29,12 +29,12 @@ if errorlevel 1 (
   exit /b 1
 )
 
-rem ---- 3. Open the browser as soon as the app answers (the first start builds the demo school).
+rem ---- 3. Open the browser as soon as the app answers (it takes a few seconds).
 start "" /b powershell -NoProfile -WindowStyle Hidden -Command "for($i=0;$i -lt 300;$i++){try{Invoke-WebRequest -UseBasicParsing -TimeoutSec 2 http://127.0.0.1:8765/api/session | Out-Null; Start-Process 'http://127.0.0.1:8765'; break}catch{Start-Sleep -Seconds 1}}"
 
 echo.
 echo Starting the app. Teachers on the school Wi-Fi can open the address shown below.
 echo Keep this window open while you use it. Close it to stop the app.
 echo.
-uv run athar demo --lan
+uv run athar start --lan
 if errorlevel 1 pause

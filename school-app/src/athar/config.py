@@ -36,6 +36,8 @@ class Settings:
     school_name_ar: str = "مدارس التعليم العالمية"
     school_tagline: str = "AI-Powered · Future Skills · Wellbeing"
     branding_dir: Path = ROOT / "branding"  # put the school's logo here as logo.png, logo.svg, logo.jpg or logo.webp
+    # True for the school's own records (`athar start`): no made-up data is ever created or offered.
+    real_school: bool = False
 
 
 def get_settings() -> Settings:
@@ -63,4 +65,5 @@ def get_settings() -> Settings:
         school_name_ar=env("ATHAR_SCHOOL_NAME_AR", "مدارس التعليم العالمية"),
         school_tagline=env("ATHAR_SCHOOL_TAGLINE", "AI-Powered · Future Skills · Wellbeing"),
         branding_dir=Path(env("ATHAR_BRANDING", str(ROOT / "branding"))),
+        real_school=env("ATHAR_REAL_SCHOOL", "") in ("1", "true", "yes"),
     )

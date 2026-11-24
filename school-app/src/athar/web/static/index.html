@@ -782,7 +782,8 @@ function showSignIn(note) {
     h("h2", { text: "Sign in to " + PRODUCT }),
     note ? h("p", { class: "muted", text: note }) : h("p", { class: "muted", text: "Use the username your school admin gave you." }),
     field("Username", user), field("Password", pass),
-    h("div", { class: "row" }, h("button", { type: "submit", class: "primary" }, "Sign in")), msg);
+    h("div", { class: "row" }, h("button", { type: "submit", class: "primary" }, "Sign in")), msg,
+    h("p", { class: "small" }, h("a", { href: "/parent" }, "Are you a parent? Sign in here")));
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     msg.textContent = "";
@@ -809,6 +810,10 @@ async function init() {
   document.title = tr(PRODUCT + ": learning map");
   document.getElementById("product").textContent = PRODUCT;
   showSchool(state.session.school);
+  if (REAL()) {
+    document.getElementById("who-note").textContent = "Sign-in is not on yet: anyone at this computer can choose a name. The school admin turns it on from the School page.";
+    document.getElementById("foot").textContent = "Documents, the agent and the model only ever see a record code such as A-17. Nothing on this page ranks or compares learners. Every finding shows the records it rests on.";
+  }
   if (state.session.sign_in && !state.session.teacher) { showSignIn(); return; }
   if (!state.session.mode && !state.session.sign_in) { showChooser(); return; }
   FAMILY = state.session.mode === "family" && !state.session.sign_in;
@@ -1013,7 +1018,7 @@ async function viewOverview(root) {
   clear(root);
   root.append(h("div", { class: "pagehead" },
     h("div", {}, h("h2", { text: "Class overview" }),
-      h("p", { class: "muted", text: (o.curriculum ? o.curriculum.name + ". " : "") + (state.session.sign_in ? "You see the learners of your own classes." : "Made-up data, for trying things out. Nothing here is a real learner.") })),
+      h("p", { class: "muted", text: (o.curriculum ? o.curriculum.name + ". " : "") + (state.session.sign_in ? "You see the learners of your own classes." : (REAL() ? "Sign-in is not on yet. The school admin turns it on from the School page." : "Made-up data, for trying things out. Nothing here is a real learner.")) })),
     h("button", { type: "button", class: "primary", onclick: () => show("agent") }, "Run the agent on a document")));
 
   root.append(h("div", { class: "tiles" },
@@ -2267,7 +2272,7 @@ async function viewPeople(root) {
   const say = (box, cls, text) => clear(box).append(h("p", { class: cls, role: cls === "err" ? "alert" : "status", text }));
   const size = (n) => n > 1048576 ? (n / 1048576).toFixed(1) + " MB" : Math.max(1, Math.round(n / 1024)) + " KB";
   root.append(h("h2", { text: "School" }),
-    h("p", { class: "muted", text: demo ? "Made-up data, no sign-in yet. Everything here is open to whoever is at this machine." :
+    h("p", { class: "muted", text: demo ? (REAL() ? "Sign-in is not on yet. Everything here is open to whoever is at this machine." : "Made-up data, no sign-in yet. Everything here is open to whoever is at this machine.") :
       admin ? "You are the school admin: you set up classes, accounts and look after the records." :
       "Your classes and your own account. The school admin sets up classes and accounts." }));
 
@@ -2283,7 +2288,7 @@ async function viewPeople(root) {
     };
     root.append(h("div", { class: "card" },
       h("h3", { text: "Turn on sign-in" }),
-      h("p", { class: "muted", text: "Right now anyone who opens this page can pick a teacher's name. That is fine for made-up data. Create the school admin account to turn on sign-in: after that every teacher needs a username and a password, sees only the learners of their own classes, and only the admin can add teachers." }),
+      h("p", { class: "muted", text: (REAL() ? "Right now anyone who opens this page can pick a teacher's name. Do this before you add any real learner. " : "Right now anyone who opens this page can pick a teacher's name. That is fine for made-up data. ") + "Create the school admin account to turn on sign-in: after that every teacher needs a username and a password, sees only the learners of their own classes, and only the admin can add teachers." }),
       h("div", { class: "row" }, field("Your name", name), field("Username", user), field("Password (8 characters or more)", pass)),
       h("div", { class: "row", style: "margin-top:10px" }, go), msg));
   }
@@ -2292,8 +2297,10 @@ async function viewPeople(root) {
   const classBox = h("div");
   const classMsg = h("div");
   let classes = [];
+  let classesChanged = () => {};            // the learner form's class list follows every change
   async function loadClasses() {
     classes = (await api("/api/classes")).classes;
+    classesChanged();
     clear(classBox);
     if (!classes.length) {
       classBox.append(h("p", { class: "muted", text: admin ? "No class yet. Make the first one below." : "You have no class yet. Ask the school admin to give you one." }));
@@ -2366,8 +2373,14 @@ async function viewPeople(root) {
     // ---- add a learner (with made-up data and no sign-in this is open, to try things out)
     const lname = h("input", { type: "text", id: "nl-name", maxlength: 60 });
     const lgrade = gradeSelect("nl-grade");
-    const lclass = h("select", { id: "nl-class" }, admin || demo ? h("option", { value: "", text: "No class yet" }) : null,
-      classes.map((c) => h("option", { value: c.id, "data-grade": c.grade, text: c.name + " (grade " + c.grade + ")" })));
+    const lclass = h("select", { id: "nl-class" });
+    classesChanged = () => {
+      const keep = lclass.value;
+      clear(lclass).append(...[admin || demo ? h("option", { value: "", text: "No class yet" }) : null,
+        ...classes.map((c) => h("option", { value: c.id, "data-grade": c.grade, text: c.name + " (grade " + c.grade + ")" }))].filter(Boolean));
+      if ([...lclass.options].some((o) => o.value === keep)) lclass.value = keep;
+    };
+    classesChanged();
     lclass.onchange = () => { const c = classes.find((x) => x.id === lclass.value); if (c) lgrade.value = c.grade; };
     if (!admin && !demo) lclass.onchange();
     const lmsg = h("div");
@@ -2433,6 +2446,12 @@ async function viewPeople(root) {
     await loadPeople();
   }
 
+  if (admin && !FAMILY) {
+    const pcard = h("div", { class: "card" });
+    root.append(pcard);
+    try { await parentsCard(pcard); } catch (e) { pcard.append(h("p", { class: "err", role: "alert", text: e.message })); }
+  }
+
   if ((admin || demo) && !FAMILY) {
     const cur = h("div", { class: "card" });
     root.append(cur);
@@ -2489,7 +2508,7 @@ async function viewPeople(root) {
     try { showBackups(await api("/api/admin/backups")); } catch (e) { say(bmsg, "err", e.message); }
   }
 
-  if (demo) {
+  if (demo && !REAL()) {
     root.append(h("div", { class: "card" },
       h("h3", { text: "Are you a parent?" }),
       h("p", { class: "muted", text: "The same program has a family side, for a parent following their own child. Switching does not delete anything." }),
@@ -2509,6 +2528,60 @@ async function viewPeople(root) {
     root.append(h("div", { class: "card" }, h("h3", { text: "My password" }),
       h("div", { class: "row" }, field("Current password", cur), field("New password", next), pbtn), pmsg));
   }
+}
+
+// ---------------------------------------------------------------- parents: accounts the school admin makes
+// A parent signs in on /parent and sees only the children linked here, and only what a teacher approved.
+function learnerPicker(id, chosen) {
+  const sel = h("select", { id, multiple: true, size: Math.min(8, Math.max(3, state.learners.length)) },
+    state.learners.map((l) => h("option", { value: l.learner_id, selected: chosen.includes(l.learner_id), "data-raw": true,
+      text: l.name + "  (" + l.alias.replace("Learner ", "") + ")" + (l.grade_now ? "  ·  " + (LANG === "ar" ? "الصف " : "Grade ") + l.grade_now : "") })));
+  return sel;
+}
+const picked = (sel) => Array.from(sel.selectedOptions).map((o) => o.value);
+
+async function parentsCard(card) {
+  const list = (await api("/api/parents")).parents;
+  const msg = h("div");
+  const name = h("input", { type: "text", id: "par-name", maxlength: 80, autocomplete: "off" });
+  const user = h("input", { type: "text", id: "par-user", maxlength: 40, autocomplete: "off" });
+  const pass = h("input", { type: "password", id: "par-pass", autocomplete: "new-password" });
+  const kids = learnerPicker("par-kids", []);
+  const add = h("button", { type: "button", class: "primary" }, "Add the parent");
+  add.onclick = async () => {
+    try {
+      const r = await post("/api/parents", { name: name.value, username: user.value, password: pass.value, learner_ids: picked(kids) });
+      clear(card); await parentsCard(card);
+      card.append(h("p", { class: "okmsg", role: "status" }, "Account made. Give the parent their username and password yourself: ", h("strong", { dir: "ltr", text: r.username }), ". ", "They sign in at ", h("strong", { dir: "ltr", text: location.origin + "/parent" }), "."));
+    } catch (e) { sayIn(msg, "err", e.message); }
+  };
+  const rows = list.map((p) => {
+    const rmsg = h("div");
+    const edit = learnerPicker("par-kids-" + p.id, p.children.map((c) => c.learner_id));
+    const pw = h("input", { type: "password", id: "par-pw-" + p.id, autocomplete: "new-password" });
+    const saveKids = h("button", { type: "button" }, "Save the children");
+    saveKids.onclick = async () => { try { await post("/api/parents/" + encodeURIComponent(p.id) + "/children", { learner_ids: picked(edit) }); clear(card); await parentsCard(card); } catch (e) { sayIn(rmsg, "err", e.message); } };
+    const setPw = h("button", { type: "button" }, "Set a new password");
+    setPw.onclick = async () => { try { await post("/api/parents/" + encodeURIComponent(p.id) + "/password", { password: pw.value }); pw.value = ""; sayIn(rmsg, "okmsg", "Password changed. Tell the parent yourself."); } catch (e) { sayIn(rmsg, "err", e.message); } };
+    const remove = h("button", { type: "button", class: "danger" }, "Remove this parent");
+    remove.onclick = async () => {
+      if (!window.confirm(tr("Remove this parent's account? Their children's records stay."))) return;
+      try { await api("/api/parents/" + encodeURIComponent(p.id), { method: "DELETE" }); clear(card); await parentsCard(card); } catch (e) { sayIn(rmsg, "err", e.message); }
+    };
+    return h("details", { class: "card" },
+      h("summary", {}, h("strong", { dir: "auto", text: p.name }), h("span", { class: "muted", dir: "ltr", text: "  " + p.username + "  " }),
+        h("span", { class: "muted" }, "· ", h("span", { dir: "auto", text: p.children.map((c) => c.name).join("، ") }))),
+      h("div", { class: "row" }, field("Children", edit), saveKids),
+      h("div", { class: "row", style: "margin-top:10px" }, field("New password", pw), setPw, remove), rmsg);
+  });
+  card.append(...[h("h3", { text: "Parents" }),
+    h("p", { class: "muted", text: "Make an account for each parent and link it to their children. A parent signs in on the parents' page and sees only their own children, and only what a teacher has approved: findings, notes for the family and the printable report." }),
+    rows.length ? rows : h("p", { class: "muted", text: "No parent account yet." }),
+    h("h3", { style: "margin-top:18px", text: "Add a parent" }),
+    state.learners.length ? [h("div", { class: "row" }, field("Parent's name", name), field("Username", user), field("Password (8 characters or more)", pass)),
+      h("div", { class: "row" }, field("Children (hold Ctrl to choose more than one)", kids)), h("div", { class: "row" }, add)]
+      : h("p", { class: "muted", text: "Add the learners first. Then each parent can be linked to their children." }),
+    msg, h("p", { class: "small muted" }, "The parents' page: ", h("a", { href: "/parent", target: "_blank", rel: "noopener", dir: "ltr" }, location.origin + "/parent"))].flat(2));
 }
 
 // ---------------------------------------------------------------- the curriculum: what the school added, and adding more
@@ -2872,8 +2945,8 @@ function familyChildrenCard(after) {
     h("h4", { style: "margin-top:18px", text: "Add a child" }),
     h("div", { class: "row" }, field("Name", name), field("Grade now", grade), add),
     msg,
-    h("p", { class: "muted small", style: "margin-top:16px", text: "Not ready to type anything? Look around with two made-up children who have three years of results. You can remove them at any time." }),
-    h("div", { class: "row" }, example));
+    REAL() ? null : h("p", { class: "muted small", style: "margin-top:16px", text: "Not ready to type anything? Look around with two made-up children who have three years of results. You can remove them at any time." }),
+    REAL() ? null : h("div", { class: "row" }, example));
   draw();
   return card;
 }
@@ -3123,8 +3196,8 @@ async function viewFamilyAdd(root) {
     h("h3", { text: "A photo of a marked paper" }),
     h("p", { class: "muted", text: "Lay the paper flat in good light and take the photo straight from above, with the marks showing. Athar reads it with the model on this computer and fills in the lines below. The photo is not kept, and it is never sent anywhere. Choose the subject and the grade below first." }),
     h("div", { class: "row" }, field("Photo", shot), read),
-    h("p", { class: "muted small", style: "margin-top:12px", text: "No paper at hand? Try one of these made-up papers. They are pictures of invented tests, to show how it works." }),
-    h("div", { class: "row" }, sample("paper-maths-grade6-ar.png", "6", "maths", "Maths, grade 6, in Arabic"),
+    REAL() ? null : h("p", { class: "muted small", style: "margin-top:12px", text: "No paper at hand? Try one of these made-up papers. They are pictures of invented tests, to show how it works." }),
+    REAL() ? null : h("div", { class: "row" }, sample("paper-maths-grade6-ar.png", "6", "maths", "Maths, grade 6, in Arabic"),
       sample("paper-science-grade5-en.png", "5", "science", "Science, grade 5, in English"),
       sample("paper-english-grade4-en.png", "4", "english", "English, grade 4, one question unmarked")),
     pmsg), resultCard);
@@ -3230,6 +3303,9 @@ async function viewFamilySettings(root) {
       try { await post("/api/mode", { mode: "school" }); location.hash = ""; location.reload(); } catch (e) { sayIn(smsg, "err", e.message); }
     } }, "Switch to the school side")), smsg));
 }
+
+// ---- the school's own records (athar start) never show or offer made-up data
+const REAL = () => !!(state.session && state.session.real_school);
 
 // ---- the school this copy is for, and the installed app
 function showSchool(school) {
