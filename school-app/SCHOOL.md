@@ -10,6 +10,13 @@ school Wi-Fi, and can install it on the home screen like an app.
 
 ## 1. Install on the school server
 
+**Easiest, on Windows:** double-click **`Start LIS Athar.cmd`** in this folder. The first time, it installs what it
+needs (uv and the app's packages, so it needs the internet once), then it starts the app and opens the browser.
+Keep its window open while you use the app; close it to stop. **`Start LIS Athar (school network).cmd`** does the
+same for every computer and phone on the school Wi-Fi (step 4).
+
+Or by hand, on any computer:
+
 ```
 uv sync
 uv run athar demo
