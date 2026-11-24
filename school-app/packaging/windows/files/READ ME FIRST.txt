@@ -14,8 +14,8 @@ Athar follows one learner across years and shows where that learner is strong, w
 struggle, and where a struggle may have started. It is one program with two sides: one for a
 parent with their own children, one for a teacher and a school. A named person approves everything.
 
-Athar starts with Egypt and covers grades 4 to 8
-(Primary 4 to Preparatory 2).
+This copy is set up for Learning International Schools and covers the Cambridge curriculum,
+Years 1 to 11 (Primary, Lower Secondary and IGCSE), in Mathematics, Science and English.
 
 This folder holds the whole thing: the app, its own copy of Python, and a program that runs an
 open-weights model on this computer. It needs no internet and installs nothing on the computer.
@@ -43,7 +43,7 @@ package. If the port is taken, Athar picks the next free one and the black windo
 WHAT YOU SEE
 ------------
 
-A synthetic Egyptian school: made-up learners in grades 4 to 8, their teachers, and several
+A synthetic Cambridge school: made-up learners in Years 1 to 11, their teachers, and several
 school years of records. Every name and every record is invented. Try:
 
 - Class overview and School map: where the class and the school stand, by topic.

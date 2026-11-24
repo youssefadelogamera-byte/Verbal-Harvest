@@ -217,21 +217,23 @@ def test_a_marks_sheet_in_arabic_is_read_in_either_language(tmp_path, monkeypatc
     from athar import synth_school
     from athar.curriculum import current_lang
     monkeypatch.setenv("ATHAR_DB", str(tmp_path / "athar.db"))
-    made = synth_school.generate_school(db_path=tmp_path / "athar.db", pack_id="egypt-maths", out_dir=tmp_path, lang="ar")
+    made = synth_school.generate_school(db_path=tmp_path / "athar.db", pack_id="cambridge-maths", out_dir=tmp_path, lang="ar")
     with open(made["sample_marks_sheet"], "rb") as fh:
         table = imports.read_table("sample.csv", fh.read())
-    assert table[0][0] == "كود التلميذ" and table[1][0] == "الموضوع" and table[2][0] == "الدرجة من"
+    assert table[0][0] == "رمز الطالب" and table[1][0] == "الموضوع" and table[2][0] == "الدرجة من"
+    older = [["كود التلميذ", *table[0][1:]], *table[1:]]             # a sheet made before the wording changed
     grade = int(made["sample_marks_sheet"].split("marks-grade")[1].split("-")[0])
     for lang in ("en", "ar"):
         token = current_lang.set(lang)
         try:
             checked = imports.check_marks(table, title="اختبار قصير", year=2026, term=1, grade=grade)
+            assert imports.check_marks(older, title="اختبار قصير", year=2026, term=1, grade=grade)["ok"]
             rows = imports.template_rows([{"alias": "Learner A-01", "name": "زينب أ."}], 2)
         finally:
             current_lang.reset(token)
         assert checked["ok"], checked["problems"]
-        assert rows[0][0] == ("كود التلميذ" if lang == "ar" else "Learner code")
-    assert len(imports.template_xlsx(imports.template_rows([], 2, "ar"), imports.topics(__import__("athar").curriculum.load_pack("egypt-maths"), 4, 1), "ar")) > 2000
+        assert rows[0][0] == ("رمز الطالب" if lang == "ar" else "Learner code")
+    assert len(imports.template_xlsx(imports.template_rows([], 2, "ar"), imports.topics(__import__("athar").curriculum.load_pack("cambridge-maths"), 4, 1), "ar")) > 2000
 
 
 def test_quizzes_named_in_arabic_or_in_two_subjects_do_not_collide():
@@ -240,9 +242,9 @@ def test_quizzes_named_in_arabic_or_in_two_subjects_do_not_collide():
     assert imports._slug("اختبار الكسور") != imports._slug("اختبار الهندسة")
     assert imports._slug("اختبار الكسور") == imports._slug("  اختبار   الكسور ")
     assert imports._slug("Fractions quiz, week 6") == "fractions-quiz-week-6" and imports._slug("!!!") == "quiz"
-    pack = load_pack("egypt-school")
-    maths = {"n": 1, "topic_id": "g4-place-value"}
-    science = {"n": 1, "topic_id": next(c for c in pack.concepts if c.startswith("sci-g4-"))}
+    pack = load_pack("cambridge-school")
+    maths = {"n": 1, "topic_id": "m4-place-value-10000"}
+    science = {"n": 1, "topic_id": next(c for c in pack.concepts if c.startswith("s4-"))}
     one = imports._quiz_ref(pack, 2026, 1, 4, "Quiz 1", maths)
     assert one == imports._quiz_ref(pack, 2026, 1, 4, "Quiz 1", maths)              # the same quiz again
     assert one != imports._quiz_ref(pack, 2026, 1, 4, "Quiz 1", science)            # another subject

@@ -236,9 +236,9 @@ def test_arabic_report_is_right_to_left_and_worded_in_arabic(no_logo):
     page = report.render_html(full, lang="ar")
     assert current_lang.get() == "en"                                           # the language is put back afterwards
     assert page.startswith('<!doctype html>\n<html lang="ar" dir="rtl">')
-    for expected in ("<h2>ما تظهره السجلات</h2>", "<h2>ما اعتمده المدرسون</h2>", "<h2>الرسائل والمذكرات</h2>",
+    for expected in ("<h2>ما تظهره السجلات</h2>", "<h2>ما اعتمده المعلمون</h2>", "<h2>الرسائل والمذكرات</h2>",
                      "<h2>ما لا تستطيع السجلات أن تبينه</h2>", "<h1>تقرير التعلم: Salma O&#x27;Neil</h1>",
-                     "بداية الصعوبة المحتملة", "هذه ليست مقارنة مع أي تلميذ آخر", "<th>رقم السجل</th>", "بدأت هنا",
+                     "بداية الصعوبة المحتملة", "هذه ليست مقارنة مع أي طالب آخر", "<th>رقم السجل</th>", "بدأت هنا",
                      "تم التعديل والاعتماد بواسطة Jean D&#x27;Arc بتاريخ 2024-02-04.", "عدد السجلات التي يستند إليها: 7.",
                      "لا توجد سجلات لموضوع <strong>Area &lt;of&gt; rectangles</strong>.", "طباعة أو حفظ كملف"):
         assert expected in page, expected
@@ -250,8 +250,8 @@ def test_arabic_report_is_right_to_left_and_worded_in_arabic(no_logo):
     for rule in ("[dir=rtl] body{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',Arial", "letter-spacing:0;text-transform:none",
                  "[dir=rtl] svg{direction:ltr}", '[dir=rtl] .arrow::after{content:" \\2190"}', "[dir=rtl] th{"):
         assert rule in page, rule
-    assert "<td>\u20662021-T2\u2069</td>" in page and ">\u202bتلميذ\u202c</text>" in page and ">\u202bلا يوجد\u202c</text>" in page
-    assert 'aria-label="النتائج حسب الترم: \u20662021-T2\u2069 25%، ' in page
+    assert "<td>\u20662021-T2\u2069</td>" in page and ">\u202bطالب\u202c</text>" in page and ">\u202bلا يوجد\u202c</text>" in page
+    assert 'aria-label="النتائج حسب الفصل الدراسي: \u20662021-T2\u2069 25%، ' in page
     assert "<script" not in page and "http://" not in page and "—" not in page and "–" not in page
 
     ours, facts = read_page(page, full, also=("oral", "other_kind", "school_office"))

@@ -459,7 +459,7 @@ def _template_question(about: str, missing: str, grade: int, lang: str = "en") -
     """Fallback wording when the model's question does not pass the guard."""
     if lang == "ar":
         return (f"النتائج في {about} منخفضة، ولا توجد سجلات عن {missing} (الصف {grade}) الذي يعتمد عليه. "
-                f"هل لديك اختبار أو امتحان أو ملاحظة عن {missing} لهذا التلميذ؟ وإذا لم يوجد شيء، فضلًا اذكر ذلك.")
+                f"هل لديك اختبار أو امتحان أو ملاحظة عن {missing} لهذا الطالب؟ وإذا لم يوجد شيء، فضلًا اذكر ذلك.")
     return (f"Results in {about} are low, and there are no records for {missing} (grade {grade}), which it "
             f"builds on. Do you have a quiz, a test or a note about {missing} for this learner? "
             "If nothing exists, please say so.")
@@ -709,9 +709,9 @@ def _template_statement_ar(candidate: dict) -> str:
         return text
     if candidate["kind"] == "what_worked":
         return (f"تحسنت النتائج {f['times_followed_by_improvement']} مرة بعد دروس استُخدمت فيها طريقة "
-                f"{f['teaching_approach']}، مما يشير إلى أن هذه الطريقة قد تناسب هذا التلميذ في تعلم الموضوعات الجديدة.")
+                f"{f['teaching_approach']}، مما يشير إلى أن هذه الطريقة قد تناسب هذا الطالب في تعلم الموضوعات الجديدة.")
     word = "مرتفعة" if candidate["kind"] == "strength" else "منخفضة"
-    return (f"النتائج في {f['in']} {word} باستمرار خلال {len(f['terms'])} من الترمات "
+    return (f"النتائج في {f['in']} {word} باستمرار خلال {len(f['terms'])} من الفصول الدراسية "
             f"(المتوسط {round(f['average'] * 100)}% في {f['items']} سؤال).")
 
 

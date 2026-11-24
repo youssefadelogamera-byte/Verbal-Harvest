@@ -114,5 +114,5 @@ Athar has been tested on made-up data only. [SECURITY.md](../SECURITY.md) lists 
 - **Keep the computer and every backup safe.** A USB stick with a backup is the mark book itself.
 - **Use record codes, not names, in every document.**
 - **Do not send real records to a cloud model.** Use a model that runs on the school's computer.
-- **Take local legal advice.** Egyptian law treats children's data as sensitive. We are not lawyers.
+- **Take local legal advice.** Saudi Arabia's Personal Data Protection Law (PDPL) applies to learners' data, and children's data needs particular care. We are not lawyers.
 - **Never put real learner data in the public repository,** an issue or a screenshot.

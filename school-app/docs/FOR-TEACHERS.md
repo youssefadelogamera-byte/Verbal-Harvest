@@ -48,7 +48,7 @@ The assistant cannot approve anything. A learner's printable report is built fro
 
 ## Adding to the curriculum
 
-Athar comes with the Egyptian curriculum for grades 4 to 8. On the **School** page, under **The curriculum**, the school admin can add topics for another grade or another subject. Before sign-in is turned on, the teacher whose name is chosen can do it.
+Athar comes with the Cambridge curriculum for Mathematics, Science and English, Years 1 to 11. On the **School** page, under **The curriculum**, the school admin can add topics for another grade or another subject. Before sign-in is turned on, the teacher whose name is chosen can do it.
 
 1. Choose the subject (or type a new one), the grade and the term.
 2. Give Athar the topics. Type or paste them, one on each line, or upload the contents page of the book as a text, Word or Excel file, or as a picture. For a PDF, take a screenshot of the contents page.

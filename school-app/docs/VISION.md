@@ -1,5 +1,10 @@
 # Where Athar could go
 
+> **Note for Learning International Schools.** This page was written by the original authors of Athar, who built it
+> for Egyptian government schools. This copy has replaced the Egyptian curriculum with Cambridge (Years 1 to 11) for a
+> school in Saudi Arabia. What is said here about Egypt is kept as the authors' record; it does not describe this copy.
+> See [SCHOOL.md](../SCHOOL.md).
+
 This page is thinking, not a promise. Nothing here is built unless the [README](../README.md) says so. It is written for people who may want to build on Athar: what we think is worth doing next, how it could connect to the systems schools already have, how it could grow past one computer, and what we think should never be built.
 
 If you only read one section, read [What does not change](#what-does-not-change).

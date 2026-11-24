@@ -78,7 +78,7 @@ Rules:
 # Added to WORD_SYSTEM and REQUEST_SYSTEM when the school's language is Arabic.
 IN_ARABIC = """
 Language:
-- Write your reply in simple Modern Standard Arabic, in short clear sentences an Egyptian teacher reads easily.
+- Write your reply in simple Modern Standard Arabic, in short clear sentences a teacher in Saudi Arabia reads easily.
   No dialect, no English words.
 - Copy every topic name exactly as it is written in the FACTS.
 - Write numbers with the digits 0-9. Write a term as it is given, for example 2023-T2.

@@ -140,16 +140,16 @@ def test_the_page_route_is_for_the_family_and_its_own_children(db_path, monkeypa
 
 
 def test_a_topic_named_on_the_paper_beats_the_models_guess_and_a_total_is_not_a_line():
-    pack = load_pack("egypt-school")
+    pack = load_pack("cambridge-school")
     menu = photo.topic_menu(pack, 6, "maths")
     said = {"lines": [
-        {"about": "السؤال الأول: الأعداد النسبية", "topic_id": "g6-number-line", "mark": 2, "out_of": 5},     # the model guessed wrong
-        {"about": "السؤال الثاني: الأعداد الصحيحة وخط الأعداد", "topic_id": "g6-number-line", "mark": 4, "out_of": 5},
-        {"about": "something with no topic name in it", "topic_id": "g6-absolute-value", "mark": 5, "out_of": 5},
+        {"about": "السؤال الأول: النسبة والتناسب", "topic_id": "m6-expressions", "mark": 2, "out_of": 5},     # the model guessed wrong
+        {"about": "السؤال الثاني: ترتيب العمليات مع الأقواس", "topic_id": "m6-order-ops", "mark": 4, "out_of": 5},
+        {"about": "something with no topic name in it", "topic_id": "m6-expressions", "mark": 5, "out_of": 5},
         {"about": "المجموع", "topic_id": None, "mark": 11, "out_of": 15}]}                                     # the total, listed as a line
     out = photo.check(said, menu)
     assert [(x["topic_id"], x["topic_from"]) for x in out["lines"]] == [
-        ("g6-rational-numbers", "paper"), ("g6-number-line", "paper"), ("g6-absolute-value", "model")]
+        ("m6-ratio", "paper"), ("m6-order-ops", "paper"), ("m6-expressions", "model")]
     assert out["total_on_paper"] == {"mark": 11.0, "out_of": 15.0} and out["totals_match"] is True
-    assert photo.topic_in_words("Q4: The water cycle", photo.topic_menu(pack, 5, "science")) == "sci-g5-water-cycle"
+    assert photo.topic_in_words("Q4: The water cycle", photo.topic_menu(pack, 4, "science")) == "s4-water-cycle"
     assert photo.topic_in_words("a heading that names nothing", menu) is None

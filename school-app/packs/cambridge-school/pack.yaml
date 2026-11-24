@@ -1,0 +1,39 @@
+# Learning International Schools, the whole school on Cambridge: Mathematics, Science and English, Years 1 to 11.
+#
+# It adds no topic of its own. It includes the three subject packs and then names a few places where one
+# subject needs another, so a difficulty can be traced across subjects.
+#
+# Every subject pack is a DRAFT: topics are marked `verified: false` until a teacher checks them against the
+# Cambridge frameworks and the school's Marshall Cavendish books, and every "needs this first" link was drafted
+# by the authors of this software. The cross-subject links below are a draft too.
+#
+# Subjects the school teaches for the Saudi Ministry of Education (Arabic, Islamic Studies, Social Studies)
+# are not mapped yet. A school admin can add them on the School page, or a pack can be written for each.
+#
+# We graph the school's curriculum. We never change it.
+id: cambridge-school
+name: "Cambridge, Years 1 to 11"
+name_ar: "كامبريدج، من الصف الأول إلى الصف الحادي عشر"
+subject: school
+grades: [1, 11]
+terms: 3
+languages: [en]
+generator: school
+status: draft
+links_reviewed_by: null
+
+includes:
+  - cambridge-maths
+  - cambridge-science
+  - cambridge-english
+
+# Cross-subject "needs this first" links, added on top of each subject's own links. Draft.
+links:
+  - {concept: s4-tables-graphs, requires: [m3-bar-charts]}          # recording results in bar charts needs reading them
+  - {concept: s5-variables, requires: [m4-data-chance]}             # line graphs of a changing variable
+  - {concept: s8-speed, requires: [m7-functions]}                   # distance-time graphs are graphs of a function
+  - {concept: s9-density-pressure, requires: [m8-proportion-speed]}  # compound measures
+  - {concept: s10-moles, requires: [m8-indices]}                    # very large and small numbers in standard form
+  - {concept: s10-motion, requires: [m8-linear-graphs]}             # gradient of a velocity-time graph
+  - {concept: s9-resistance, requires: [m7-linear-equations]}       # rearranging V = IR
+  - {concept: e7-non-fiction, requires: [m7-statistics]}            # reading charts in media texts

@@ -2,7 +2,7 @@
 
 Athar is a free, open-source program that keeps a child's school results from year to year and shows where the child is doing well, where they struggle, and where a struggle may have started. The name is Arabic for a trace, the mark something leaves behind.
 
-It is one program with two sides. A **parent** uses it at home for their own children. A **teacher** uses it at school for their classes. It starts with Egypt and covers grades 4 to 8 (Primary 4 to Preparatory 2) in five subjects: Mathematics, Science, English, Arabic and Social Studies.
+It is one program with two sides. A **parent** uses it at home for their own children. A **teacher** uses it at school for their classes. This copy is set up for Learning International Schools in Saudi Arabia and covers the Cambridge curriculum, Years 1 to 11 (Primary, Lower Secondary and IGCSE) in five subjects: Mathematics, Science, English, Arabic and Social Studies.
 
 It runs on the person's own computer. It needs no internet, no account and no subscription, and nothing is sent anywhere.
 

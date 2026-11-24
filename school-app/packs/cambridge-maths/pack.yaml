@@ -1,0 +1,208 @@
+# Cambridge Mathematics, Years 1 to 11 (Cambridge Primary, Lower Secondary and IGCSE). DRAFT.
+# Written for Learning International Schools, Saudi Arabia, which teaches Cambridge with Marshall Cavendish books.
+#
+# What is taken from the curriculum: topic names follow the strands of the Cambridge curriculum frameworks
+# (Primary Mathematics 0096, Lower Secondary Mathematics 0862, IGCSE Mathematics 0580). They were written from general knowledge of those frameworks, not copied
+# from them, so every topic is marked `verified: false` until a teacher checks it.
+#
+# Grade = Cambridge stage/year: 1 to 6 Primary, 7 to 9 Lower Secondary, 10 and 11 IGCSE.
+# Term = the term of a three-term year in a typical scheme of work. Check each one against the order of the
+# units in the school's Marshall Cavendish books and move a topic to its real term.
+#
+# What is NOT from the curriculum: the `requires` links. Cambridge does not publish which topic depends on
+# which. These links were drafted by the authors of this software and have not been reviewed by a teacher.
+# The trace-back is only as good as these links.
+#
+# We graph the school's curriculum. We never change it.
+id: cambridge-maths
+name: "Cambridge, Mathematics, Years 1 to 11"
+name_ar: "كامبريدج، الرياضيات، من الصف الأول إلى الصف الحادي عشر"
+subject: maths
+subject_label: {en: "Mathematics", ar: "الرياضيات"}
+grades: [1, 11]
+terms: 3
+languages: [en, ar]
+generator: school
+status: draft
+links_reviewed_by: null
+
+sources:
+  - {id: cambridge, covers: "Years 1 to 11", kind: "Cambridge curriculum frameworks: Primary Mathematics 0096, Lower Secondary Mathematics 0862, IGCSE Mathematics 0580", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/", note: "strands and topic areas; written from general knowledge, not copied"}
+  - {id: mc-books, covers: "Years 1 to 11", kind: "The school's Marshall Cavendish books", url: null, note: "unit order not yet checked: terms follow a typical scheme of work"}
+
+strands:
+  - {id: number, label: {en: "Number", ar: "الأعداد"}}
+  - {id: calc, label: {en: "Calculation", ar: "العمليات الحسابية"}}
+  - {id: frac, label: {en: "Fractions, decimals, percentages and ratio", ar: "الكسور والكسور العشرية والنسب المئوية والنسبة"}}
+  - {id: alg, label: {en: "Algebra", ar: "الجبر"}}
+  - {id: geo, label: {en: "Geometry and position", ar: "الهندسة والموقع"}}
+  - {id: meas, label: {en: "Measure", ar: "القياس"}}
+  - {id: stats, label: {en: "Statistics and probability", ar: "الإحصاء والاحتمال"}}
+
+skills:
+  - {id: reasoning, label: {en: "Reasoning and explaining", ar: "التفكير المنطقي والتبرير"}}
+  - {id: problem-solving, label: {en: "Problem solving", ar: "حل المشكلات"}}
+  - {id: fluency, label: {en: "Fluency with number facts", ar: "الطلاقة في الحقائق العددية"}}
+
+approaches:
+  - {id: concrete_objects, label: {en: "Hands-on objects", ar: "وسائل محسوسة"}}
+  - {id: visual_models, label: {en: "Diagrams and visual models", ar: "رسومات ونماذج بصرية"}}
+  - {id: worked_examples, label: {en: "Worked examples", ar: "أمثلة محلولة"}}
+  - {id: peer_groups, label: {en: "Group work with peers", ar: "العمل في مجموعات"}}
+  - {id: inquiry, label: {en: "Inquiry and investigation", ar: "الاستقصاء والبحث"}}
+  - {id: drill_practice, label: {en: "Practice and retrieval", ar: "التدريب والاسترجاع"}}
+
+concepts:
+  # ---------------------------------------------------------------- Year 1 (Primary), term 1
+  - {id: m1-count-20, label: {en: "Counting and reading numbers to 20", ar: "العد وقراءة الأعداد حتى 20"}, strand: number, grade: 1, term: 1, requires: [], skills: [], source: cambridge, verified: false}
+  - {id: m1-compare-20, label: {en: "Comparing and ordering numbers to 20", ar: "مقارنة الأعداد حتى 20 وترتيبها"}, strand: number, grade: 1, term: 1, requires: [m1-count-20], skills: [], source: cambridge, verified: false}
+  - {id: m1-2d-shapes, label: {en: "Naming 2D shapes", ar: "تسمية الأشكال ثنائية الأبعاد"}, strand: geo, grade: 1, term: 1, requires: [], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 1 (Primary), term 2
+  - {id: m1-add-sub-20, label: {en: "Adding and subtracting within 20", ar: "الجمع والطرح ضمن العدد 20"}, strand: calc, grade: 1, term: 2, requires: [m1-count-20], skills: [], source: cambridge, verified: false}
+  - {id: m1-length-mass, label: {en: "Comparing length and mass", ar: "مقارنة الأطوال والكتل"}, strand: meas, grade: 1, term: 2, requires: [m1-compare-20], skills: [], source: cambridge, verified: false}
+  - {id: m1-halves, label: {en: "Halves of shapes and amounts", ar: "أنصاف الأشكال والكميات"}, strand: frac, grade: 1, term: 2, requires: [m1-2d-shapes], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 1 (Primary), term 3
+  - {id: m1-count-100, label: {en: "Counting to 100 in ones and tens", ar: "العد حتى 100 بالآحاد والعشرات"}, strand: number, grade: 1, term: 3, requires: [m1-compare-20], skills: [], source: cambridge, verified: false}
+  - {id: m1-time, label: {en: "Days of the week and o'clock time", ar: "أيام الأسبوع وقراءة الساعة بالساعات الكاملة"}, strand: meas, grade: 1, term: 3, requires: [m1-count-20], skills: [], source: cambridge, verified: false}
+  - {id: m1-money, label: {en: "Recognising coins and notes", ar: "التعرف على العملات المعدنية والورقية"}, strand: meas, grade: 1, term: 3, requires: [m1-count-20], skills: [], source: cambridge, verified: false}
+  - {id: m1-sort-data, label: {en: "Sorting objects and simple pictograms", ar: "تصنيف الأشياء والتمثيل بالصور"}, strand: stats, grade: 1, term: 3, requires: [m1-count-20], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 2 (Primary), term 1
+  - {id: m2-place-value-100, label: {en: "Place value: tens and ones to 100", ar: "القيمة المكانية: العشرات والآحاد حتى 100"}, strand: number, grade: 2, term: 1, requires: [m1-count-100], skills: [], source: cambridge, verified: false}
+  - {id: m2-add-sub-100, label: {en: "Adding and subtracting 2-digit numbers", ar: "جمع الأعداد المكونة من رقمين وطرحها"}, strand: calc, grade: 2, term: 1, requires: [m2-place-value-100, m1-add-sub-20], skills: [], source: cambridge, verified: false}
+  - {id: m2-odd-even, label: {en: "Odd and even numbers", ar: "الأعداد الفردية والزوجية"}, strand: number, grade: 2, term: 1, requires: [m1-count-100], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 2 (Primary), term 2
+  - {id: m2-mult-2-5-10, label: {en: "Multiplication as repeated addition: 2, 5 and 10", ar: "الضرب كجمع متكرر: 2 و5 و10"}, strand: calc, grade: 2, term: 2, requires: [m2-add-sub-100, m2-odd-even], skills: [], source: cambridge, verified: false}
+  - {id: m2-share-group, label: {en: "Division as sharing and grouping", ar: "القسمة كتوزيع وتجميع"}, strand: calc, grade: 2, term: 2, requires: [m2-mult-2-5-10], skills: [], source: cambridge, verified: false}
+  - {id: m2-fractions-quarters, label: {en: "Halves, quarters and thirds", ar: "الأنصاف والأرباع والأثلاث"}, strand: frac, grade: 2, term: 2, requires: [m1-halves, m2-share-group], skills: [], source: cambridge, verified: false}
+  - {id: m2-3d-shapes, label: {en: "2D and 3D shapes and their properties", ar: "الأشكال ثنائية وثلاثية الأبعاد وخصائصها"}, strand: geo, grade: 2, term: 2, requires: [m1-2d-shapes], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 2 (Primary), term 3
+  - {id: m2-measure-units, label: {en: "Measuring in centimetres, metres, grams and kilograms", ar: "القياس بالسنتيمتر والمتر والغرام والكيلوغرام"}, strand: meas, grade: 2, term: 3, requires: [m1-length-mass, m2-place-value-100], skills: [], source: cambridge, verified: false}
+  - {id: m2-time-quarter, label: {en: "Telling the time to the quarter hour", ar: "قراءة الوقت لأقرب ربع ساعة"}, strand: meas, grade: 2, term: 3, requires: [m1-time, m2-fractions-quarters], skills: [], source: cambridge, verified: false}
+  - {id: m2-tally-block, label: {en: "Tally charts and block graphs", ar: "جداول الإشارات والأعمدة البسيطة"}, strand: stats, grade: 2, term: 3, requires: [m1-sort-data, m2-mult-2-5-10], skills: [], source: cambridge, verified: false}
+  - {id: m2-position, label: {en: "Position, direction and turns", ar: "الموقع والاتجاه والدوران"}, strand: geo, grade: 2, term: 3, requires: [m2-fractions-quarters], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 3 (Primary), term 1
+  - {id: m3-place-value-1000, label: {en: "Place value to 1000", ar: "القيمة المكانية حتى 1000"}, strand: number, grade: 3, term: 1, requires: [m2-place-value-100], skills: [], source: cambridge, verified: false}
+  - {id: m3-add-sub-3digit, label: {en: "Adding and subtracting 3-digit numbers", ar: "جمع الأعداد المكونة من ثلاثة أرقام وطرحها"}, strand: calc, grade: 3, term: 1, requires: [m3-place-value-1000, m2-add-sub-100], skills: [], source: cambridge, verified: false}
+  - {id: m3-times-tables, label: {en: "Multiplication tables for 3, 4, 6 and 8", ar: "جداول الضرب للأعداد 3 و4 و6 و8"}, strand: calc, grade: 3, term: 1, requires: [m2-mult-2-5-10], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 3 (Primary), term 2
+  - {id: m3-mult-div, label: {en: "Multiplying and dividing 2-digit by 1-digit numbers", ar: "ضرب عدد من رقمين في عدد من رقم واحد وقسمته عليه"}, strand: calc, grade: 3, term: 2, requires: [m3-times-tables, m2-share-group, m3-place-value-1000], skills: [], source: cambridge, verified: false}
+  - {id: m3-fractions-of, label: {en: "Unit fractions and fractions of amounts", ar: "كسور الوحدة وكسور الكميات"}, strand: frac, grade: 3, term: 2, requires: [m2-fractions-quarters, m3-mult-div], skills: [], source: cambridge, verified: false}
+  - {id: m3-equiv-fractions, label: {en: "Equivalent fractions", ar: "الكسور المتكافئة"}, strand: frac, grade: 3, term: 2, requires: [m3-fractions-of], skills: [], source: cambridge, verified: false}
+  - {id: m3-angles-lines, label: {en: "Right angles, horizontal and vertical lines", ar: "الزوايا القائمة والخطوط الأفقية والرأسية"}, strand: geo, grade: 3, term: 2, requires: [m2-position], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 3 (Primary), term 3
+  - {id: m3-perimeter, label: {en: "Perimeter of simple shapes", ar: "محيط الأشكال البسيطة"}, strand: meas, grade: 3, term: 3, requires: [m2-measure-units, m3-add-sub-3digit], skills: [], source: cambridge, verified: false}
+  - {id: m3-time-minutes, label: {en: "Time to the minute and 24-hour time", ar: "قراءة الوقت بالدقائق ونظام 24 ساعة"}, strand: meas, grade: 3, term: 3, requires: [m2-time-quarter], skills: [], source: cambridge, verified: false}
+  - {id: m3-bar-charts, label: {en: "Bar charts, pictograms and Venn diagrams", ar: "الأعمدة البيانية والتمثيل بالصور وأشكال فن"}, strand: stats, grade: 3, term: 3, requires: [m2-tally-block], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 4 (Primary), term 1
+  - {id: m4-place-value-10000, label: {en: "Place value to 10 000 and rounding", ar: "القيمة المكانية حتى 10000 والتقريب"}, strand: number, grade: 4, term: 1, requires: [m3-place-value-1000], skills: [], source: cambridge, verified: false}
+  - {id: m4-negative, label: {en: "Negative numbers in context", ar: "الأعداد السالبة في مواقف حياتية"}, strand: number, grade: 4, term: 1, requires: [m4-place-value-10000], skills: [], source: cambridge, verified: false}
+  - {id: m4-written-add-sub, label: {en: "Written methods for addition and subtraction", ar: "الطرق المكتوبة للجمع والطرح"}, strand: calc, grade: 4, term: 1, requires: [m3-add-sub-3digit, m4-place-value-10000], skills: [], source: cambridge, verified: false}
+  - {id: m4-tables-12, label: {en: "Multiplication facts to 10 × 10 and multiples", ar: "حقائق الضرب حتى 10 × 10 والمضاعفات"}, strand: calc, grade: 4, term: 1, requires: [m3-times-tables], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 4 (Primary), term 2
+  - {id: m4-mult-div-written, label: {en: "Multiplying 3-digit by 1-digit numbers and division with remainders", ar: "ضرب عدد من ثلاثة أرقام في عدد من رقم واحد والقسمة مع الباقي"}, strand: calc, grade: 4, term: 2, requires: [m4-tables-12, m3-mult-div], skills: [], source: cambridge, verified: false}
+  - {id: m4-decimals-tenths, label: {en: "Decimals: tenths and hundredths", ar: "الكسور العشرية: الأعشار والأجزاء من مئة"}, strand: frac, grade: 4, term: 2, requires: [m3-equiv-fractions, m4-place-value-10000], skills: [], source: cambridge, verified: false}
+  - {id: m4-fractions-add, label: {en: "Adding and subtracting fractions with the same denominator", ar: "جمع الكسور ذات المقامات المتساوية وطرحها"}, strand: frac, grade: 4, term: 2, requires: [m3-equiv-fractions], skills: [], source: cambridge, verified: false}
+  - {id: m4-angles, label: {en: "Comparing angles and line symmetry", ar: "مقارنة الزوايا ومحور التماثل"}, strand: geo, grade: 4, term: 2, requires: [m3-angles-lines], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 4 (Primary), term 3
+  - {id: m4-area, label: {en: "Area by counting squares", ar: "المساحة بعدّ المربعات"}, strand: meas, grade: 4, term: 3, requires: [m3-perimeter, m4-tables-12], skills: [], source: cambridge, verified: false}
+  - {id: m4-coordinates, label: {en: "Coordinates in the first quadrant", ar: "الإحداثيات في الربع الأول"}, strand: geo, grade: 4, term: 3, requires: [m2-position], skills: [], source: cambridge, verified: false}
+  - {id: m4-sequences, label: {en: "Number sequences and term-to-term rules", ar: "المتتابعات العددية وقاعدة الانتقال من حد إلى آخر"}, strand: alg, grade: 4, term: 3, requires: [m4-tables-12], skills: [], source: cambridge, verified: false}
+  - {id: m4-data-chance, label: {en: "Line graphs, frequency tables and the language of chance", ar: "الخطوط البيانية وجداول التكرار ولغة الاحتمال"}, strand: stats, grade: 4, term: 3, requires: [m3-bar-charts], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 5 (Primary), term 1
+  - {id: m5-place-value-decimals, label: {en: "Place value of whole numbers and decimals", ar: "القيمة المكانية للأعداد الصحيحة والكسور العشرية"}, strand: number, grade: 5, term: 1, requires: [m4-place-value-10000, m4-decimals-tenths], skills: [], source: cambridge, verified: false}
+  - {id: m5-factors-primes, label: {en: "Factors, multiples and prime numbers", ar: "العوامل والمضاعفات والأعداد الأولية"}, strand: number, grade: 5, term: 1, requires: [m4-tables-12], skills: [], source: cambridge, verified: false}
+  - {id: m5-square-numbers, label: {en: "Square numbers", ar: "الأعداد المربعة"}, strand: number, grade: 5, term: 1, requires: [m5-factors-primes], skills: [], source: cambridge, verified: false}
+  - {id: m5-long-mult, label: {en: "Multiplying 2-digit by 2-digit numbers", ar: "ضرب عدد من رقمين في عدد من رقمين"}, strand: calc, grade: 5, term: 1, requires: [m4-mult-div-written], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 5 (Primary), term 2
+  - {id: m5-short-division, label: {en: "Dividing 3-digit by 1-digit numbers", ar: "قسمة عدد من ثلاثة أرقام على عدد من رقم واحد"}, strand: calc, grade: 5, term: 2, requires: [m4-mult-div-written], skills: [], source: cambridge, verified: false}
+  - {id: m5-fractions-compare, label: {en: "Comparing fractions, improper fractions and mixed numbers", ar: "مقارنة الكسور والكسور غير الفعلية والأعداد الكسرية"}, strand: frac, grade: 5, term: 2, requires: [m4-fractions-add, m5-factors-primes], skills: [], source: cambridge, verified: false}
+  - {id: m5-decimals-calc, label: {en: "Adding and subtracting decimals", ar: "جمع الكسور العشرية وطرحها"}, strand: frac, grade: 5, term: 2, requires: [m5-place-value-decimals, m4-written-add-sub], skills: [], source: cambridge, verified: false}
+  - {id: m5-percentages, label: {en: "Percentages as parts of 100", ar: "النسب المئوية كأجزاء من 100"}, strand: frac, grade: 5, term: 2, requires: [m4-decimals-tenths], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 5 (Primary), term 3
+  - {id: m5-angles-triangles, label: {en: "Measuring angles and the angles of a triangle", ar: "قياس الزوايا ومجموع زوايا المثلث"}, strand: geo, grade: 5, term: 3, requires: [m4-angles], skills: [], source: cambridge, verified: false}
+  - {id: m5-area-rect, label: {en: "Area and perimeter of rectangles", ar: "مساحة المستطيل ومحيطه"}, strand: meas, grade: 5, term: 3, requires: [m4-area, m5-long-mult], skills: [], source: cambridge, verified: false}
+  - {id: m5-translation, label: {en: "Translations and reflections", ar: "الانسحاب والانعكاس"}, strand: geo, grade: 5, term: 3, requires: [m4-coordinates], skills: [], source: cambridge, verified: false}
+  - {id: m5-probability, label: {en: "Chance experiments, mode and median", ar: "تجارب الاحتمال والمنوال والوسيط"}, strand: stats, grade: 5, term: 3, requires: [m4-data-chance], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 6 (Primary), term 1
+  - {id: m6-integers, label: {en: "Ordering integers and decimals to three places", ar: "ترتيب الأعداد الصحيحة والكسور العشرية حتى ثلاث منازل"}, strand: number, grade: 6, term: 1, requires: [m5-place-value-decimals, m4-negative], skills: [], source: cambridge, verified: false}
+  - {id: m6-order-ops, label: {en: "Order of operations with brackets", ar: "ترتيب العمليات مع الأقواس"}, strand: calc, grade: 6, term: 1, requires: [m5-long-mult, m5-short-division], skills: [], source: cambridge, verified: false}
+  - {id: m6-mult-div-decimals, label: {en: "Multiplying and dividing decimals by whole numbers", ar: "ضرب الكسور العشرية في الأعداد الصحيحة وقسمتها عليها"}, strand: calc, grade: 6, term: 1, requires: [m5-decimals-calc, m5-long-mult], skills: [], source: cambridge, verified: false}
+  - {id: m6-fractions-ops, label: {en: "Adding, subtracting and multiplying fractions", ar: "جمع الكسور وطرحها وضربها"}, strand: frac, grade: 6, term: 1, requires: [m5-fractions-compare], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 6 (Primary), term 2
+  - {id: m6-percent-of, label: {en: "Percentages of amounts; fractions, decimals and percentages", ar: "النسبة المئوية من كمية والتحويل بين الكسور والكسور العشرية والنسب المئوية"}, strand: frac, grade: 6, term: 2, requires: [m5-percentages, m6-fractions-ops], skills: [], source: cambridge, verified: false}
+  - {id: m6-ratio, label: {en: "Ratio and proportion", ar: "النسبة والتناسب"}, strand: frac, grade: 6, term: 2, requires: [m6-fractions-ops, m5-factors-primes], skills: [], source: cambridge, verified: false}
+  - {id: m6-expressions, label: {en: "Simple formulae and expressions", ar: "الصيغ والعبارات البسيطة"}, strand: alg, grade: 6, term: 2, requires: [m4-sequences, m6-order-ops], skills: [], source: cambridge, verified: false}
+  - {id: m6-quadrilaterals-circles, label: {en: "Quadrilaterals and parts of a circle", ar: "الأشكال الرباعية وأجزاء الدائرة"}, strand: geo, grade: 6, term: 2, requires: [m5-angles-triangles], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 6 (Primary), term 3
+  - {id: m6-area-triangles, label: {en: "Area of triangles and volume of cuboids", ar: "مساحة المثلث وحجم متوازي المستطيلات"}, strand: meas, grade: 6, term: 3, requires: [m5-area-rect], skills: [], source: cambridge, verified: false}
+  - {id: m6-four-quadrants, label: {en: "Coordinates in four quadrants and rotations", ar: "الإحداثيات في الأرباع الأربعة والدوران"}, strand: geo, grade: 6, term: 3, requires: [m5-translation, m6-integers], skills: [], source: cambridge, verified: false}
+  - {id: m6-mean-graphs, label: {en: "Mean, range and pie charts", ar: "المتوسط الحسابي والمدى والقطاعات الدائرية"}, strand: stats, grade: 6, term: 3, requires: [m5-probability, m6-percent-of], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 7 (Lower Secondary), term 1
+  - {id: m7-integers-ops, label: {en: "Calculating with integers", ar: "العمليات على الأعداد الصحيحة"}, strand: number, grade: 7, term: 1, requires: [m6-integers, m6-order-ops], skills: [], source: cambridge, verified: false}
+  - {id: m7-powers-roots, label: {en: "Squares, cubes, roots and prime factors", ar: "المربعات والمكعبات والجذور والعوامل الأولية"}, strand: number, grade: 7, term: 1, requires: [m5-square-numbers, m5-factors-primes], skills: [], source: cambridge, verified: false}
+  - {id: m7-rounding, label: {en: "Rounding to decimal places and estimation", ar: "التقريب لعدد من المنازل العشرية والتقدير"}, strand: number, grade: 7, term: 1, requires: [m6-integers], skills: [], source: cambridge, verified: false}
+  - {id: m7-expressions, label: {en: "Writing and simplifying expressions", ar: "كتابة العبارات الجبرية وتبسيطها"}, strand: alg, grade: 7, term: 1, requires: [m6-expressions], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 7 (Lower Secondary), term 2
+  - {id: m7-linear-equations, label: {en: "Solving simple linear equations", ar: "حل المعادلات الخطية البسيطة"}, strand: alg, grade: 7, term: 2, requires: [m7-expressions, m7-integers-ops], skills: [], source: cambridge, verified: false}
+  - {id: m7-fdp, label: {en: "Calculating with fractions, decimals and percentages", ar: "الحساب بالكسور والكسور العشرية والنسب المئوية"}, strand: frac, grade: 7, term: 2, requires: [m6-percent-of, m6-mult-div-decimals], skills: [], source: cambridge, verified: false}
+  - {id: m7-angles, label: {en: "Angles on a line, at a point and in triangles", ar: "الزوايا على مستقيم وحول نقطة وفي المثلث"}, strand: geo, grade: 7, term: 2, requires: [m6-quadrilaterals-circles], skills: [], source: cambridge, verified: false}
+  - {id: m7-constructions, label: {en: "Constructing triangles and nets", ar: "إنشاء المثلثات والشبكات"}, strand: geo, grade: 7, term: 2, requires: [m7-angles], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 7 (Lower Secondary), term 3
+  - {id: m7-area-volume, label: {en: "Compound areas, volume and surface area of cuboids", ar: "مساحة الأشكال المركبة وحجم متوازي المستطيلات ومساحة سطحه"}, strand: meas, grade: 7, term: 3, requires: [m6-area-triangles], skills: [], source: cambridge, verified: false}
+  - {id: m7-functions, label: {en: "Sequences, functions and graphs of y = mx", ar: "المتتابعات والدوال وتمثيل y = mx بيانياً"}, strand: alg, grade: 7, term: 3, requires: [m7-expressions, m6-four-quadrants], skills: [], source: cambridge, verified: false}
+  - {id: m7-ratio, label: {en: "Simplifying ratios and sharing in a ratio", ar: "تبسيط النسب والتقسيم بنسبة معطاة"}, strand: frac, grade: 7, term: 3, requires: [m6-ratio], skills: [], source: cambridge, verified: false}
+  - {id: m7-statistics, label: {en: "Collecting data, averages and statistical diagrams", ar: "جمع البيانات والمتوسطات والتمثيلات الإحصائية"}, strand: stats, grade: 7, term: 3, requires: [m6-mean-graphs], skills: [], source: cambridge, verified: false}
+  - {id: m7-probability, label: {en: "Probability on a scale from 0 to 1", ar: "الاحتمال على مقياس من 0 إلى 1"}, strand: stats, grade: 7, term: 3, requires: [m5-probability, m7-fdp], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 8 (Lower Secondary), term 1
+  - {id: m8-indices, label: {en: "Indices, standard form and prime factorisation", ar: "الأسس والصيغة العلمية والتحليل إلى العوامل الأولية"}, strand: number, grade: 8, term: 1, requires: [m7-powers-roots], skills: [], source: cambridge, verified: false}
+  - {id: m8-expand-factorise, label: {en: "Expanding brackets and factorising", ar: "فك الأقواس والتحليل إلى العوامل"}, strand: alg, grade: 8, term: 1, requires: [m7-expressions], skills: [], source: cambridge, verified: false}
+  - {id: m8-equations-inequalities, label: {en: "Equations with unknowns on both sides and inequalities", ar: "المعادلات بمجهول في الطرفين والمتباينات"}, strand: alg, grade: 8, term: 1, requires: [m7-linear-equations, m8-expand-factorise], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 8 (Lower Secondary), term 2
+  - {id: m8-fractions-ops, label: {en: "Calculating with fractions and mixed numbers", ar: "العمليات على الكسور والأعداد الكسرية"}, strand: frac, grade: 8, term: 2, requires: [m7-fdp], skills: [], source: cambridge, verified: false}
+  - {id: m8-percent-change, label: {en: "Percentage increase and decrease", ar: "الزيادة والنقصان بالنسبة المئوية"}, strand: frac, grade: 8, term: 2, requires: [m7-fdp], skills: [], source: cambridge, verified: false}
+  - {id: m8-polygons, label: {en: "Angles in polygons and parallel lines", ar: "زوايا المضلعات والمستقيمات المتوازية"}, strand: geo, grade: 8, term: 2, requires: [m7-angles], skills: [], source: cambridge, verified: false}
+  - {id: m8-circles, label: {en: "Circumference and area of a circle", ar: "محيط الدائرة ومساحتها"}, strand: meas, grade: 8, term: 2, requires: [m7-area-volume, m6-quadrilaterals-circles], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 8 (Lower Secondary), term 3
+  - {id: m8-linear-graphs, label: {en: "Straight-line graphs y = mx + c", ar: "تمثيل الخط المستقيم y = mx + c بيانياً"}, strand: alg, grade: 8, term: 3, requires: [m7-functions, m8-equations-inequalities], skills: [], source: cambridge, verified: false}
+  - {id: m8-transformations, label: {en: "Transformations and enlargement", ar: "التحويلات الهندسية والتكبير"}, strand: geo, grade: 8, term: 3, requires: [m6-four-quadrants, m7-ratio], skills: [], source: cambridge, verified: false}
+  - {id: m8-proportion-speed, label: {en: "Direct proportion, speed, distance and time", ar: "التناسب الطردي والسرعة والمسافة والزمن"}, strand: frac, grade: 8, term: 3, requires: [m7-ratio], skills: [], source: cambridge, verified: false}
+  - {id: m8-data, label: {en: "Grouped data, scatter graphs and comparing distributions", ar: "البيانات المبوبة وأشكال الانتشار ومقارنة التوزيعات"}, strand: stats, grade: 8, term: 3, requires: [m7-statistics], skills: [], source: cambridge, verified: false}
+  - {id: m8-combined-events, label: {en: "Combined events and sample spaces", ar: "الأحداث المركبة وفضاء العينة"}, strand: stats, grade: 8, term: 3, requires: [m7-probability], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 9 (Lower Secondary), term 1
+  - {id: m9-indices-standard-form, label: {en: "Laws of indices and calculating in standard form", ar: "قوانين الأسس والحساب بالصيغة العلمية"}, strand: number, grade: 9, term: 1, requires: [m8-indices], skills: [], source: cambridge, verified: false}
+  - {id: m9-algebraic-fractions, label: {en: "Expanding double brackets and algebraic fractions", ar: "ضرب قوسين وتبسيط الكسور الجبرية"}, strand: alg, grade: 9, term: 1, requires: [m8-expand-factorise, m8-fractions-ops], skills: [], source: cambridge, verified: false}
+  - {id: m9-simultaneous, label: {en: "Simultaneous linear equations", ar: "المعادلات الخطية الآنية"}, strand: alg, grade: 9, term: 1, requires: [m8-equations-inequalities, m8-linear-graphs], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 9 (Lower Secondary), term 2
+  - {id: m9-pythagoras, label: {en: "Pythagoras' theorem", ar: "نظرية فيثاغورس"}, strand: geo, grade: 9, term: 2, requires: [m8-polygons, m9-indices-standard-form], skills: [], source: cambridge, verified: false}
+  - {id: m9-prisms-cylinders, label: {en: "Volume and surface area of prisms and cylinders", ar: "حجم المنشورات والأسطوانات ومساحة سطحها"}, strand: meas, grade: 9, term: 2, requires: [m8-circles], skills: [], source: cambridge, verified: false}
+  - {id: m9-compound-percent, label: {en: "Compound and reverse percentages", ar: "النسب المئوية المركبة والعكسية"}, strand: frac, grade: 9, term: 2, requires: [m8-percent-change], skills: [], source: cambridge, verified: false}
+  - {id: m9-bearings-scale, label: {en: "Bearings and scale drawings", ar: "الاتجاهات بالدرجات والرسم بمقياس رسم"}, strand: geo, grade: 9, term: 2, requires: [m8-polygons, m8-proportion-speed], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 9 (Lower Secondary), term 3
+  - {id: m9-non-linear-graphs, label: {en: "Quadratic and real-life graphs", ar: "تمثيل الدوال التربيعية ومواقف الحياة بيانياً"}, strand: alg, grade: 9, term: 3, requires: [m8-linear-graphs], skills: [], source: cambridge, verified: false}
+  - {id: m9-similarity, label: {en: "Congruence and similarity", ar: "التطابق والتشابه"}, strand: geo, grade: 9, term: 3, requires: [m8-transformations], skills: [], source: cambridge, verified: false}
+  - {id: m9-investigation, label: {en: "Statistical investigations: sampling and comparing data", ar: "الاستقصاء الإحصائي: العينات ومقارنة البيانات"}, strand: stats, grade: 9, term: 3, requires: [m8-data], skills: [], source: cambridge, verified: false}
+  - {id: m9-tree-diagrams, label: {en: "Mutually exclusive events and tree diagrams", ar: "الأحداث المتنافية والمخططات الشجرية"}, strand: stats, grade: 9, term: 3, requires: [m8-combined-events], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 10 (IGCSE), term 1
+  - {id: m10-bounds-surds, label: {en: "Upper and lower bounds and surds", ar: "الحدود العليا والدنيا والجذور الصماء"}, strand: number, grade: 10, term: 1, requires: [m9-indices-standard-form, m7-rounding], skills: [], source: cambridge, verified: false}
+  - {id: m10-quadratics, label: {en: "Factorising and solving quadratic equations", ar: "تحليل المعادلات التربيعية وحلها"}, strand: alg, grade: 10, term: 1, requires: [m9-algebraic-fractions], skills: [], source: cambridge, verified: false}
+  - {id: m10-sets, label: {en: "Sets and Venn diagrams", ar: "المجموعات وأشكال فن"}, strand: number, grade: 10, term: 1, requires: [m9-tree-diagrams], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 10 (IGCSE), term 2
+  - {id: m10-functions, label: {en: "Composite and inverse functions", ar: "الدوال المركبة والدوال العكسية"}, strand: alg, grade: 10, term: 2, requires: [m9-non-linear-graphs], skills: [], source: cambridge, verified: false}
+  - {id: m10-trigonometry, label: {en: "Right-angled trigonometry", ar: "حساب المثلثات في المثلث القائم الزاوية"}, strand: geo, grade: 10, term: 2, requires: [m9-pythagoras, m9-similarity], skills: [], source: cambridge, verified: false}
+  - {id: m10-circle-theorems, label: {en: "Circle theorems", ar: "نظريات الدائرة"}, strand: geo, grade: 10, term: 2, requires: [m8-polygons, m8-circles], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 10 (IGCSE), term 3
+  - {id: m10-coordinate-geometry, label: {en: "Coordinate geometry: gradient, midpoint and length", ar: "الهندسة الإحداثية: الميل ونقطة المنتصف والطول"}, strand: alg, grade: 10, term: 3, requires: [m9-simultaneous, m9-pythagoras], skills: [], source: cambridge, verified: false}
+  - {id: m10-variation, label: {en: "Direct and inverse variation", ar: "التغير الطردي والعكسي"}, strand: frac, grade: 10, term: 3, requires: [m8-proportion-speed, m9-non-linear-graphs], skills: [], source: cambridge, verified: false}
+  - {id: m10-cumulative-frequency, label: {en: "Cumulative frequency and histograms", ar: "التكرار التراكمي والمدرجات التكرارية"}, strand: stats, grade: 10, term: 3, requires: [m9-investigation], skills: [], source: cambridge, verified: false}
+  - {id: m10-arcs-sectors, label: {en: "Arc length, sector area and 3D solids", ar: "طول القوس ومساحة القطاع والمجسمات"}, strand: meas, grade: 10, term: 3, requires: [m9-prisms-cylinders], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 11 (IGCSE), term 1
+  - {id: m11-inequalities-regions, label: {en: "Inequalities, regions and algebraic manipulation", ar: "المتباينات والمناطق والمعالجة الجبرية"}, strand: alg, grade: 11, term: 1, requires: [m10-quadratics, m8-equations-inequalities], skills: [], source: cambridge, verified: false}
+  - {id: m11-sine-cosine, label: {en: "Sine and cosine rules and 3D trigonometry", ar: "قانونا الجيب وجيب التمام وحساب المثلثات في ثلاثة أبعاد"}, strand: geo, grade: 11, term: 1, requires: [m10-trigonometry], skills: [], source: cambridge, verified: false}
+  - {id: m11-trig-graphs, label: {en: "Graphs of trigonometric functions", ar: "تمثيل الدوال المثلثية بيانياً"}, strand: alg, grade: 11, term: 1, requires: [m11-sine-cosine, m10-functions], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 11 (IGCSE), term 2
+  - {id: m11-vectors, label: {en: "Vectors", ar: "المتجهات"}, strand: geo, grade: 11, term: 2, requires: [m8-transformations, m10-coordinate-geometry], skills: [], source: cambridge, verified: false}
+  - {id: m11-differentiation, label: {en: "Differentiation and turning points", ar: "الاشتقاق ونقاط التحول"}, strand: alg, grade: 11, term: 2, requires: [m10-functions, m10-coordinate-geometry], skills: [], source: cambridge, verified: false}
+  - {id: m11-sequences, label: {en: "Quadratic, cubic and geometric sequences", ar: "المتتابعات التربيعية والتكعيبية والهندسية"}, strand: alg, grade: 11, term: 2, requires: [m10-quadratics, m7-functions], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 11 (IGCSE), term 3
+  - {id: m11-conditional-probability, label: {en: "Conditional probability", ar: "الاحتمال المشروط"}, strand: stats, grade: 11, term: 3, requires: [m10-sets, m9-tree-diagrams], skills: [], source: cambridge, verified: false}
+  - {id: m11-exponential, label: {en: "Exponential growth and decay", ar: "النمو والاضمحلال الأسي"}, strand: frac, grade: 11, term: 3, requires: [m9-compound-percent, m10-variation], skills: [], source: cambridge, verified: false}

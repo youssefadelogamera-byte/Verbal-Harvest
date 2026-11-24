@@ -1,0 +1,186 @@
+# Cambridge Science, Years 1 to 11 (Cambridge Primary, Lower Secondary and IGCSE). DRAFT.
+# Written for Learning International Schools, Saudi Arabia, which teaches Cambridge with Marshall Cavendish books.
+#
+# What is taken from the curriculum: topic names follow the strands of the Cambridge curriculum frameworks
+# (Primary Science 0097, Lower Secondary Science 0893, IGCSE Combined/Co-ordinated Science 0653/0654). They were written from general knowledge of those frameworks, not copied
+# from them, so every topic is marked `verified: false` until a teacher checks it.
+#
+# Grade = Cambridge stage/year: 1 to 6 Primary, 7 to 9 Lower Secondary, 10 and 11 IGCSE.
+# Term = the term of a three-term year in a typical scheme of work. Check each one against the order of the
+# units in the school's Marshall Cavendish books and move a topic to its real term.
+#
+# What is NOT from the curriculum: the `requires` links. Cambridge does not publish which topic depends on
+# which. These links were drafted by the authors of this software and have not been reviewed by a teacher.
+# The trace-back is only as good as these links.
+#
+# We graph the school's curriculum. We never change it.
+id: cambridge-science
+name: "Cambridge, Science, Years 1 to 11"
+name_ar: "كامبريدج، العلوم، من الصف الأول إلى الصف الحادي عشر"
+subject: science
+subject_label: {en: "Science", ar: "العلوم"}
+grades: [1, 11]
+terms: 3
+languages: [en, ar]
+generator: school
+status: draft
+links_reviewed_by: null
+
+sources:
+  - {id: cambridge, covers: "Years 1 to 11", kind: "Cambridge curriculum frameworks: Primary Science 0097, Lower Secondary Science 0893, IGCSE Combined/Co-ordinated Science 0653/0654", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/", note: "strands and topic areas; written from general knowledge, not copied"}
+  - {id: mc-books, covers: "Years 1 to 11", kind: "The school's Marshall Cavendish books", url: null, note: "unit order not yet checked: terms follow a typical scheme of work"}
+
+strands:
+  - {id: bio, label: {en: "Biology", ar: "الأحياء"}}
+  - {id: chem, label: {en: "Chemistry", ar: "الكيمياء"}}
+  - {id: phys, label: {en: "Physics", ar: "الفيزياء"}}
+  - {id: earth, label: {en: "Earth and space", ar: "الأرض والفضاء"}}
+  - {id: tws, label: {en: "Thinking and working scientifically", ar: "التفكير والعمل بطريقة علمية"}}
+
+skills:
+  - {id: investigating, label: {en: "Investigating", ar: "الاستقصاء"}}
+  - {id: modelling, label: {en: "Using models", ar: "استخدام النماذج"}}
+  - {id: data-handling, label: {en: "Handling data", ar: "التعامل مع البيانات"}}
+
+approaches:
+  - {id: concrete_objects, label: {en: "Hands-on objects", ar: "وسائل محسوسة"}}
+  - {id: visual_models, label: {en: "Diagrams and visual models", ar: "رسومات ونماذج بصرية"}}
+  - {id: worked_examples, label: {en: "Worked examples", ar: "أمثلة محلولة"}}
+  - {id: peer_groups, label: {en: "Group work with peers", ar: "العمل في مجموعات"}}
+  - {id: inquiry, label: {en: "Inquiry and investigation", ar: "الاستقصاء والبحث"}}
+  - {id: drill_practice, label: {en: "Practice and retrieval", ar: "التدريب والاسترجاع"}}
+
+concepts:
+  # ---------------------------------------------------------------- Year 1 (Primary), term 1
+  - {id: s1-living, label: {en: "Living and non-living things", ar: "الكائنات الحية وغير الحية"}, strand: bio, grade: 1, term: 1, requires: [], skills: [], source: cambridge, verified: false}
+  - {id: s1-body-senses, label: {en: "Parts of the body and the senses", ar: "أجزاء الجسم والحواس"}, strand: bio, grade: 1, term: 1, requires: [], skills: [], source: cambridge, verified: false}
+  - {id: s1-observe, label: {en: "Observing and asking questions", ar: "الملاحظة وطرح الأسئلة"}, strand: tws, grade: 1, term: 1, requires: [], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 1 (Primary), term 2
+  - {id: s1-materials, label: {en: "Everyday materials and their properties", ar: "المواد اليومية وخصائصها"}, strand: chem, grade: 1, term: 2, requires: [], skills: [], source: cambridge, verified: false}
+  - {id: s1-push-pull, label: {en: "Pushes and pulls", ar: "الدفع والسحب"}, strand: phys, grade: 1, term: 2, requires: [], skills: [], source: cambridge, verified: false}
+  - {id: s1-weather-day-night, label: {en: "Weather, day and night", ar: "الطقس والليل والنهار"}, strand: earth, grade: 1, term: 2, requires: [], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 1 (Primary), term 3
+  - {id: s1-plant-parts, label: {en: "Parts of a plant", ar: "أجزاء النبات"}, strand: bio, grade: 1, term: 3, requires: [s1-living], skills: [], source: cambridge, verified: false}
+  - {id: s1-light-sound, label: {en: "Sources of light and sound", ar: "مصادر الضوء والصوت"}, strand: phys, grade: 1, term: 3, requires: [s1-body-senses], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 2 (Primary), term 1
+  - {id: s2-habitats, label: {en: "Habitats and what animals need", ar: "البيئات وما تحتاجه الحيوانات"}, strand: bio, grade: 2, term: 1, requires: [s1-living], skills: [], source: cambridge, verified: false}
+  - {id: s2-health, label: {en: "Growing, eating well and keeping healthy", ar: "النمو والتغذية السليمة والصحة"}, strand: bio, grade: 2, term: 1, requires: [s1-body-senses], skills: [], source: cambridge, verified: false}
+  - {id: s2-predict-measure, label: {en: "Predicting and measuring", ar: "التنبؤ والقياس"}, strand: tws, grade: 2, term: 1, requires: [s1-observe], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 2 (Primary), term 2
+  - {id: s2-changing-materials, label: {en: "Changing materials: bending, stretching and heating", ar: "تغيير المواد: الثني والشد والتسخين"}, strand: chem, grade: 2, term: 2, requires: [s1-materials], skills: [], source: cambridge, verified: false}
+  - {id: s2-forces-shape, label: {en: "Forces change shape and movement", ar: "القوى تغير الشكل والحركة"}, strand: phys, grade: 2, term: 2, requires: [s1-push-pull], skills: [], source: cambridge, verified: false}
+  - {id: s2-electricity, label: {en: "Electrical devices and simple circuits", ar: "الأجهزة الكهربائية والدوائر البسيطة"}, strand: phys, grade: 2, term: 2, requires: [], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 2 (Primary), term 3
+  - {id: s2-seeds, label: {en: "How seeds grow into plants", ar: "كيف تنمو البذور إلى نباتات"}, strand: bio, grade: 2, term: 3, requires: [s1-plant-parts], skills: [], source: cambridge, verified: false}
+  - {id: s2-rocks-soil, label: {en: "Rocks, soil and the Earth's surface", ar: "الصخور والتربة وسطح الأرض"}, strand: earth, grade: 2, term: 3, requires: [s1-materials], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 3 (Primary), term 1
+  - {id: s3-plant-needs, label: {en: "What plants need to grow", ar: "ما يحتاجه النبات لينمو"}, strand: bio, grade: 3, term: 1, requires: [s2-seeds], skills: [], source: cambridge, verified: false}
+  - {id: s3-skeleton, label: {en: "Skeletons and muscles", ar: "الهيكل العظمي والعضلات"}, strand: bio, grade: 3, term: 1, requires: [s2-health], skills: [], source: cambridge, verified: false}
+  - {id: s3-classify, label: {en: "Sorting and classifying living things", ar: "تصنيف الكائنات الحية"}, strand: bio, grade: 3, term: 1, requires: [s2-habitats], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 3 (Primary), term 2
+  - {id: s3-states, label: {en: "Solids, liquids and gases", ar: "المواد الصلبة والسائلة والغازية"}, strand: chem, grade: 3, term: 2, requires: [s2-changing-materials], skills: [], source: cambridge, verified: false}
+  - {id: s3-magnets, label: {en: "Magnets and magnetic materials", ar: "المغناطيس والمواد المغناطيسية"}, strand: phys, grade: 3, term: 2, requires: [s2-forces-shape], skills: [], source: cambridge, verified: false}
+  - {id: s3-friction, label: {en: "Forces and friction", ar: "القوى والاحتكاك"}, strand: phys, grade: 3, term: 2, requires: [s2-forces-shape], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 3 (Primary), term 3
+  - {id: s3-light-shadows, label: {en: "Light, shadows and reflection", ar: "الضوء والظلال والانعكاس"}, strand: phys, grade: 3, term: 3, requires: [s1-light-sound], skills: [], source: cambridge, verified: false}
+  - {id: s3-sun-earth-moon, label: {en: "The Sun, Earth and Moon", ar: "الشمس والأرض والقمر"}, strand: earth, grade: 3, term: 3, requires: [s1-weather-day-night], skills: [], source: cambridge, verified: false}
+  - {id: s3-fair-test, label: {en: "Planning a fair test", ar: "التخطيط لاختبار عادل"}, strand: tws, grade: 3, term: 3, requires: [s2-predict-measure], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 4 (Primary), term 1
+  - {id: s4-food-chains, label: {en: "Food chains", ar: "السلاسل الغذائية"}, strand: bio, grade: 4, term: 1, requires: [s2-habitats, s3-plant-needs], skills: [], source: cambridge, verified: false}
+  - {id: s4-organs, label: {en: "Major organs of the human body", ar: "أعضاء جسم الإنسان الرئيسية"}, strand: bio, grade: 4, term: 1, requires: [s3-skeleton], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 4 (Primary), term 2
+  - {id: s4-changes-of-state, label: {en: "Melting, freezing, evaporation and condensation", ar: "الانصهار والتجمد والتبخر والتكثف"}, strand: chem, grade: 4, term: 2, requires: [s3-states], skills: [], source: cambridge, verified: false}
+  - {id: s4-circuits, label: {en: "Circuits, conductors and insulators", ar: "الدوائر الكهربائية والموصلات والعوازل"}, strand: phys, grade: 4, term: 2, requires: [s2-electricity], skills: [], source: cambridge, verified: false}
+  - {id: s4-sound, label: {en: "How sound travels: pitch and loudness", ar: "انتقال الصوت: درجته وشدته"}, strand: phys, grade: 4, term: 2, requires: [s1-light-sound], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 4 (Primary), term 3
+  - {id: s4-water-cycle, label: {en: "The water cycle", ar: "دورة الماء"}, strand: earth, grade: 4, term: 3, requires: [s4-changes-of-state], skills: [], source: cambridge, verified: false}
+  - {id: s4-rocks-fossils, label: {en: "Types of rock and fossils", ar: "أنواع الصخور والأحافير"}, strand: earth, grade: 4, term: 3, requires: [s2-rocks-soil], skills: [], source: cambridge, verified: false}
+  - {id: s4-tables-graphs, label: {en: "Recording results in tables and bar charts", ar: "تسجيل النتائج في جداول وأعمدة بيانية"}, strand: tws, grade: 4, term: 3, requires: [s3-fair-test], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 5 (Primary), term 1
+  - {id: s5-plant-life-cycle, label: {en: "Plant life cycles and pollination", ar: "دورة حياة النبات والتلقيح"}, strand: bio, grade: 5, term: 1, requires: [s3-plant-needs], skills: [], source: cambridge, verified: false}
+  - {id: s5-heart, label: {en: "The heart and circulation", ar: "القلب والدورة الدموية"}, strand: bio, grade: 5, term: 1, requires: [s4-organs], skills: [], source: cambridge, verified: false}
+  - {id: s5-microorganisms, label: {en: "Microorganisms and disease", ar: "الكائنات الدقيقة والأمراض"}, strand: bio, grade: 5, term: 1, requires: [s3-classify], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 5 (Primary), term 2
+  - {id: s5-dissolving, label: {en: "Dissolving, solutions and separating mixtures", ar: "الذوبان والمحاليل وفصل المخاليط"}, strand: chem, grade: 5, term: 2, requires: [s4-changes-of-state], skills: [], source: cambridge, verified: false}
+  - {id: s5-reversible, label: {en: "Reversible and irreversible changes", ar: "التغيرات العكسية وغير العكسية"}, strand: chem, grade: 5, term: 2, requires: [s5-dissolving], skills: [], source: cambridge, verified: false}
+  - {id: s5-forces-measure, label: {en: "Measuring forces: gravity, air and water resistance", ar: "قياس القوى: الجاذبية ومقاومة الهواء والماء"}, strand: phys, grade: 5, term: 2, requires: [s3-friction], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 5 (Primary), term 3
+  - {id: s5-light-refraction, label: {en: "Reflection and refraction of light", ar: "انعكاس الضوء وانكساره"}, strand: phys, grade: 5, term: 3, requires: [s3-light-shadows], skills: [], source: cambridge, verified: false}
+  - {id: s5-solar-system, label: {en: "The Solar System and the Earth's rotation", ar: "المجموعة الشمسية ودوران الأرض"}, strand: earth, grade: 5, term: 3, requires: [s3-sun-earth-moon], skills: [], source: cambridge, verified: false}
+  - {id: s5-variables, label: {en: "Variables and repeated measurements", ar: "المتغيرات وتكرار القياس"}, strand: tws, grade: 5, term: 3, requires: [s4-tables-graphs], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 6 (Primary), term 1
+  - {id: s6-keys, label: {en: "Classification keys and vertebrates", ar: "مفاتيح التصنيف والفقاريات"}, strand: bio, grade: 6, term: 1, requires: [s3-classify, s5-microorganisms], skills: [], source: cambridge, verified: false}
+  - {id: s6-organ-systems, label: {en: "Organ systems: digestion, breathing and excretion", ar: "أجهزة الجسم: الهضم والتنفس والإخراج"}, strand: bio, grade: 6, term: 1, requires: [s5-heart], skills: [], source: cambridge, verified: false}
+  - {id: s6-ecosystems, label: {en: "Ecosystems, food webs and human impact", ar: "الأنظمة البيئية والشبكات الغذائية وأثر الإنسان"}, strand: bio, grade: 6, term: 1, requires: [s4-food-chains], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 6 (Primary), term 2
+  - {id: s6-metals, label: {en: "Properties of metals and non-metals", ar: "خصائص الفلزات واللافلزات"}, strand: chem, grade: 6, term: 2, requires: [s5-dissolving], skills: [], source: cambridge, verified: false}
+  - {id: s6-reactions, label: {en: "Simple chemical reactions", ar: "التفاعلات الكيميائية البسيطة"}, strand: chem, grade: 6, term: 2, requires: [s5-reversible], skills: [], source: cambridge, verified: false}
+  - {id: s6-energy, label: {en: "Energy and energy transfers", ar: "الطاقة وانتقالها"}, strand: phys, grade: 6, term: 2, requires: [s4-circuits], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 6 (Primary), term 3
+  - {id: s6-circuit-symbols, label: {en: "Circuit diagrams and symbols", ar: "مخططات الدوائر الكهربائية ورموزها"}, strand: phys, grade: 6, term: 3, requires: [s4-circuits], skills: [], source: cambridge, verified: false}
+  - {id: s6-earth-structure, label: {en: "The Earth's structure, earthquakes and volcanoes", ar: "تركيب الأرض والزلازل والبراكين"}, strand: earth, grade: 6, term: 3, requires: [s4-rocks-fossils], skills: [], source: cambridge, verified: false}
+  - {id: s6-conclusions, label: {en: "Drawing conclusions and evaluating methods", ar: "استخلاص النتائج وتقييم الطرق"}, strand: tws, grade: 6, term: 3, requires: [s5-variables], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 7 (Lower Secondary), term 1
+  - {id: s7-cells, label: {en: "Plant and animal cells", ar: "الخلايا النباتية والحيوانية"}, strand: bio, grade: 7, term: 1, requires: [s6-organ-systems], skills: [], source: cambridge, verified: false}
+  - {id: s7-particles, label: {en: "The particle model of matter", ar: "النموذج الجسيمي للمادة"}, strand: chem, grade: 7, term: 1, requires: [s4-changes-of-state], skills: [], source: cambridge, verified: false}
+  - {id: s7-forces, label: {en: "Balanced and unbalanced forces", ar: "القوى المتزنة وغير المتزنة"}, strand: phys, grade: 7, term: 1, requires: [s5-forces-measure], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 7 (Lower Secondary), term 2
+  - {id: s7-variation, label: {en: "Variation and classification", ar: "التنوع والتصنيف"}, strand: bio, grade: 7, term: 2, requires: [s6-keys], skills: [], source: cambridge, verified: false}
+  - {id: s7-mixtures, label: {en: "Pure substances, mixtures and separation", ar: "المواد النقية والمخاليط وطرق الفصل"}, strand: chem, grade: 7, term: 2, requires: [s5-dissolving, s7-particles], skills: [], source: cambridge, verified: false}
+  - {id: s7-acids, label: {en: "Acids, alkalis and indicators", ar: "الأحماض والقلويات والكواشف"}, strand: chem, grade: 7, term: 2, requires: [s6-reactions], skills: [], source: cambridge, verified: false}
+  - {id: s7-energy-stores, label: {en: "Energy stores and conservation of energy", ar: "مخازن الطاقة وحفظ الطاقة"}, strand: phys, grade: 7, term: 2, requires: [s6-energy], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 7 (Lower Secondary), term 3
+  - {id: s7-rock-cycle, label: {en: "The rock cycle and the Earth's crust", ar: "دورة الصخور والقشرة الأرضية"}, strand: earth, grade: 7, term: 3, requires: [s6-earth-structure], skills: [], source: cambridge, verified: false}
+  - {id: s7-current, label: {en: "Current, series and parallel circuits", ar: "التيار الكهربائي والتوصيل على التوالي والتوازي"}, strand: phys, grade: 7, term: 3, requires: [s6-circuit-symbols], skills: [], source: cambridge, verified: false}
+  - {id: s7-investigation, label: {en: "Planning investigations and identifying hazards", ar: "التخطيط للاستقصاء وتحديد المخاطر"}, strand: tws, grade: 7, term: 3, requires: [s6-conclusions], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 8 (Lower Secondary), term 1
+  - {id: s8-respiration, label: {en: "Respiration and gas exchange", ar: "التنفس الخلوي وتبادل الغازات"}, strand: bio, grade: 8, term: 1, requires: [s7-cells, s6-organ-systems], skills: [], source: cambridge, verified: false}
+  - {id: s8-nutrition, label: {en: "Nutrition and the digestive system", ar: "التغذية والجهاز الهضمي"}, strand: bio, grade: 8, term: 1, requires: [s7-cells], skills: [], source: cambridge, verified: false}
+  - {id: s8-atoms-elements, label: {en: "Atoms, elements and the periodic table", ar: "الذرات والعناصر والجدول الدوري"}, strand: chem, grade: 8, term: 1, requires: [s7-particles], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 8 (Lower Secondary), term 2
+  - {id: s8-compounds, label: {en: "Compounds, formulae and word equations", ar: "المركبات والصيغ والمعادلات اللفظية"}, strand: chem, grade: 8, term: 2, requires: [s8-atoms-elements, s7-acids], skills: [], source: cambridge, verified: false}
+  - {id: s8-rates, label: {en: "Rates of reaction", ar: "سرعة التفاعل الكيميائي"}, strand: chem, grade: 8, term: 2, requires: [s8-compounds], skills: [], source: cambridge, verified: false}
+  - {id: s8-speed, label: {en: "Speed and distance–time graphs", ar: "السرعة ومنحنيات المسافة والزمن"}, strand: phys, grade: 8, term: 2, requires: [s7-forces], skills: [], source: cambridge, verified: false}
+  - {id: s8-light-colour, label: {en: "Light: reflection, refraction and colour", ar: "الضوء: الانعكاس والانكسار والألوان"}, strand: phys, grade: 8, term: 2, requires: [s5-light-refraction], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 8 (Lower Secondary), term 3
+  - {id: s8-magnetism, label: {en: "Magnetic fields and electromagnets", ar: "المجالات المغناطيسية والمغناطيس الكهربائي"}, strand: phys, grade: 8, term: 3, requires: [s3-magnets, s7-current], skills: [], source: cambridge, verified: false}
+  - {id: s8-climate, label: {en: "Climate, weather and the atmosphere", ar: "المناخ والطقس والغلاف الجوي"}, strand: earth, grade: 8, term: 3, requires: [s4-water-cycle], skills: [], source: cambridge, verified: false}
+  - {id: s8-populations, label: {en: "Ecosystems and changing populations", ar: "الأنظمة البيئية وتغير أعداد الكائنات"}, strand: bio, grade: 8, term: 3, requires: [s6-ecosystems], skills: [], source: cambridge, verified: false}
+  - {id: s8-data-analysis, label: {en: "Analysing data and spotting anomalies", ar: "تحليل البيانات وتحديد القيم الشاذة"}, strand: tws, grade: 8, term: 3, requires: [s7-investigation], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 9 (Lower Secondary), term 1
+  - {id: s9-photosynthesis, label: {en: "Photosynthesis and the carbon cycle", ar: "البناء الضوئي ودورة الكربون"}, strand: bio, grade: 9, term: 1, requires: [s8-respiration], skills: [], source: cambridge, verified: false}
+  - {id: s9-genes, label: {en: "Chromosomes, genes and inheritance", ar: "الكروموسومات والجينات والوراثة"}, strand: bio, grade: 9, term: 1, requires: [s7-cells, s7-variation], skills: [], source: cambridge, verified: false}
+  - {id: s9-atomic-structure, label: {en: "Atomic structure and the periodic table", ar: "تركيب الذرة والجدول الدوري"}, strand: chem, grade: 9, term: 1, requires: [s8-atoms-elements], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 9 (Lower Secondary), term 2
+  - {id: s9-bonding, label: {en: "Ionic and covalent bonding", ar: "الروابط الأيونية والتساهمية"}, strand: chem, grade: 9, term: 2, requires: [s9-atomic-structure, s8-compounds], skills: [], source: cambridge, verified: false}
+  - {id: s9-reactivity, label: {en: "Reactivity series and displacement", ar: "سلسلة النشاط الكيميائي والإحلال"}, strand: chem, grade: 9, term: 2, requires: [s8-compounds], skills: [], source: cambridge, verified: false}
+  - {id: s9-density-pressure, label: {en: "Density and pressure", ar: "الكثافة والضغط"}, strand: phys, grade: 9, term: 2, requires: [s8-speed, s7-particles], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 9 (Lower Secondary), term 3
+  - {id: s9-resistance, label: {en: "Voltage, current and resistance", ar: "فرق الجهد والتيار والمقاومة"}, strand: phys, grade: 9, term: 3, requires: [s7-current], skills: [], source: cambridge, verified: false}
+  - {id: s9-heat-transfer, label: {en: "Heat transfer: conduction, convection and radiation", ar: "انتقال الحرارة: التوصيل والحمل والإشعاع"}, strand: phys, grade: 9, term: 3, requires: [s7-energy-stores, s7-particles], skills: [], source: cambridge, verified: false}
+  - {id: s9-tectonics, label: {en: "Plate tectonics and the history of the Earth", ar: "الصفائح التكتونية وتاريخ الأرض"}, strand: earth, grade: 9, term: 3, requires: [s7-rock-cycle], skills: [], source: cambridge, verified: false}
+  - {id: s9-evaluating, label: {en: "Evaluating evidence and models", ar: "تقييم الأدلة والنماذج"}, strand: tws, grade: 9, term: 3, requires: [s8-data-analysis], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 10 (IGCSE), term 1
+  - {id: s10-molecules-enzymes, label: {en: "Biological molecules and enzymes", ar: "الجزيئات الحيوية والإنزيمات"}, strand: bio, grade: 10, term: 1, requires: [s8-nutrition, s8-rates], skills: [], source: cambridge, verified: false}
+  - {id: s10-transport, label: {en: "Transport in plants and humans", ar: "النقل في النبات والإنسان"}, strand: bio, grade: 10, term: 1, requires: [s9-photosynthesis, s8-respiration], skills: [], source: cambridge, verified: false}
+  - {id: s10-moles, label: {en: "Formulae, equations and the mole", ar: "الصيغ الكيميائية والمعادلات والمول"}, strand: chem, grade: 10, term: 1, requires: [s9-bonding], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 10 (IGCSE), term 2
+  - {id: s10-electrolysis, label: {en: "Electrolysis", ar: "التحليل الكهربائي"}, strand: chem, grade: 10, term: 2, requires: [s9-bonding, s9-resistance], skills: [], source: cambridge, verified: false}
+  - {id: s10-energetics, label: {en: "Energy changes and rates of reaction", ar: "تغيرات الطاقة وسرعة التفاعلات"}, strand: chem, grade: 10, term: 2, requires: [s8-rates, s10-moles], skills: [], source: cambridge, verified: false}
+  - {id: s10-motion, label: {en: "Motion, forces and momentum", ar: "الحركة والقوى وكمية الحركة"}, strand: phys, grade: 10, term: 2, requires: [s9-density-pressure], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 10 (IGCSE), term 3
+  - {id: s10-waves, label: {en: "Waves: properties, light and sound", ar: "الموجات: خصائصها والضوء والصوت"}, strand: phys, grade: 10, term: 3, requires: [s8-light-colour, s4-sound], skills: [], source: cambridge, verified: false}
+  - {id: s10-coordination, label: {en: "Nervous system, hormones and homeostasis", ar: "الجهاز العصبي والهرمونات والاتزان الداخلي"}, strand: bio, grade: 10, term: 3, requires: [s10-transport], skills: [], source: cambridge, verified: false}
+  - {id: s10-practical, label: {en: "Practical skills: measuring, recording and evaluating", ar: "المهارات العملية: القياس والتسجيل والتقييم"}, strand: tws, grade: 10, term: 3, requires: [s9-evaluating], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 11 (IGCSE), term 1
+  - {id: s11-evolution, label: {en: "Inheritance, variation and natural selection", ar: "الوراثة والتنوع والانتخاب الطبيعي"}, strand: bio, grade: 11, term: 1, requires: [s9-genes], skills: [], source: cambridge, verified: false}
+  - {id: s11-environment, label: {en: "Organisms and their environment, human impact", ar: "الكائنات الحية وبيئتها وأثر الإنسان"}, strand: bio, grade: 11, term: 1, requires: [s8-populations, s9-photosynthesis], skills: [], source: cambridge, verified: false}
+  - {id: s11-acids-salts, label: {en: "Acids, bases and salts", ar: "الأحماض والقواعد والأملاح"}, strand: chem, grade: 11, term: 1, requires: [s7-acids, s10-moles], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 11 (IGCSE), term 2
+  - {id: s11-metals, label: {en: "Metals and their extraction", ar: "الفلزات واستخلاصها"}, strand: chem, grade: 11, term: 2, requires: [s9-reactivity, s10-electrolysis], skills: [], source: cambridge, verified: false}
+  - {id: s11-organic, label: {en: "Organic chemistry: fuels, alkanes, alkenes and polymers", ar: "الكيمياء العضوية: الوقود والألكانات والألكينات والبوليمرات"}, strand: chem, grade: 11, term: 2, requires: [s9-bonding], skills: [], source: cambridge, verified: false}
+  - {id: s11-electromagnetism, label: {en: "Electromagnetic effects and electrical safety", ar: "التأثيرات الكهرومغناطيسية والسلامة الكهربائية"}, strand: phys, grade: 11, term: 2, requires: [s8-magnetism, s9-resistance], skills: [], source: cambridge, verified: false}
+  # ---------------------------------------------------------------- Year 11 (IGCSE), term 3
+  - {id: s11-thermal, label: {en: "Thermal physics and energy resources", ar: "الفيزياء الحرارية ومصادر الطاقة"}, strand: phys, grade: 11, term: 3, requires: [s9-heat-transfer, s10-motion], skills: [], source: cambridge, verified: false}
+  - {id: s11-radioactivity, label: {en: "Atomic physics and radioactivity", ar: "الفيزياء الذرية والنشاط الإشعاعي"}, strand: phys, grade: 11, term: 3, requires: [s9-atomic-structure], skills: [], source: cambridge, verified: false}
+  - {id: s11-space, label: {en: "Space physics: the Solar System and stars", ar: "فيزياء الفضاء: المجموعة الشمسية والنجوم"}, strand: earth, grade: 11, term: 3, requires: [s5-solar-system, s10-motion], skills: [], source: cambridge, verified: false}

@@ -124,11 +124,11 @@ SHEET = {
     "en": {"code": "Learner code", "name": "Name", "q": "Q", "topic": "Topic", "out_of": "Out of",
            "marks": "Marks", "topics": "Topics", "columns": ["Topic", "Grade", "Term", "Area", "Topic id"],
            "pick": "Pick a topic from the list (see the Topics sheet).", "unknown": "Unknown topic"},
-    "ar": {"code": "كود التلميذ", "name": "الاسم", "q": "س", "topic": "الموضوع", "out_of": "الدرجة من",
-           "marks": "الدرجات", "topics": "الموضوعات", "columns": ["الموضوع", "الصف", "الترم", "المجال", "كود الموضوع"],
-           "pick": "اختار موضوع من القائمة (شوف ورقة الموضوعات).", "unknown": "موضوع مش معروف"},
+    "ar": {"code": "رمز الطالب", "name": "الاسم", "q": "س", "topic": "الموضوع", "out_of": "الدرجة من",
+           "marks": "الدرجات", "topics": "الموضوعات", "columns": ["الموضوع", "الصف", "الفصل الدراسي", "المجال", "رمز الموضوع"],
+           "pick": "اختر موضوعاً من القائمة (انظر ورقة الموضوعات).", "unknown": "موضوع غير معروف"},
 }
-_CODE_ROW = ("learner", "كود")
+_CODE_ROW = ("learner", "رمز", "كود")       # "كود": sheets made before the wording changed
 _TOPIC_ROW = ("topic", "الموضوع")
 _OUT_ROW = ("out of", "max", "الدرجة من", "من")
 

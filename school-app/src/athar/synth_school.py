@@ -36,40 +36,43 @@ PAST_YEARS = 3
 CURRENT_TERM_SHARE = 0.4      # how much of the current term has been taught so far
 CREATED_AT = "2023-09-01T08:00:00+00:00"
 
-# Invented names. They are not real people.
-TEACHERS = ["Mona Abdel-Rahman", "Hany Mansour", "Dina El-Sherif", "Tarek Soliman", "Nermine Fawzy", "Sherif Barakat"]
-# A school with several subjects has two teachers per subject: one for the primary grades, one above.
-MORE_TEACHERS = ["Amal Zaki", "Wael Hegazy", "Rania Lotfy", "Ashraf Naguib", "Hoda Sabry", "Emad Tawfik",
-                 "Samar Yehia", "Magdy Ibrahim"]
+# Invented names. They are not real people. Names usual in Saudi Arabia, and a few teachers from abroad, as an
+# international school has.
+TEACHERS = ["Noura Al-Qahtani", "Faisal Al-Harbi", "Reem Al-Otaibi", "Abdullah Al-Ghamdi", "Hessa Al-Dosari",
+            "Turki Al-Shehri"]
+# A school with several subjects has teachers for each stage: primary, then the grades above.
+MORE_TEACHERS = ["Sarah Mitchell", "Omar Al-Zahrani", "Lama Al-Mutairi", "Daniel Hughes", "Amal Al-Juhani",
+                 "Khalid Al-Subaie", "Maha Al-Anazi", "Yousef Al-Shammari"]
 FIRST_NAMES = [
-    "Zeinab", "Youssef", "Malak", "Omar", "Habiba", "Mahmoud", "Farida", "Karim", "Salma", "Ziad", "Nour", "Hamza",
-    "Jana", "Mostafa", "Rokaya", "Adham", "Mariam", "Seif", "Hana", "Yassin", "Layla", "Khaled", "Aya", "Anas",
-    "Basmala", "Tamer", "Reem", "Fares", "Shahd", "Marwan", "Menna", "Eyad", "Rahma", "Bassel", "Judy", "Mazen",
-    "Kenzy", "Nader", "Lina", "Hazem", "Tasneem", "Amr", "Dalia", "Sami", "Yara", "Belal", "Nada", "Ramy",
+    "Abdulrahman", "Lulwa", "Faisal", "Joud", "Saud", "Ghala", "Nawaf", "Danah", "Rakan", "Shahad", "Turki", "Lamar",
+    "Mohammed", "Jana", "Abdulaziz", "Rimas", "Sultan", "Hala", "Bandar", "Wasan", "Fahad", "Layan", "Majed", "Reemas",
+    "Khalid", "Taif", "Meshari", "Sarah", "Yazeed", "Ruba", "Hamad", "Nouf", "Saleh", "Aljawhara", "Ziyad", "Haya",
+    "Mansour", "Deema", "Omar", "Leen", "Talal", "Maryam", "Nasser", "Bayan", "Waleed", "Atheer", "Ibrahim", "Razan",
 ]
-FAMILY_INITIALS = "AEHIKMNSRTFG"
+FAMILY_INITIALS = "AQHGDSMZJTBN"
 # The same invented people, written in Arabic, for a school whose language is Arabic.
 SCHOOL_NAME_AR = "مدرسة النهضة التجريبية (بيانات غير حقيقية)"
-TEACHERS_AR = ["منى عبد الرحمن", "هاني منصور", "دينا الشريف", "طارق سليمان", "نرمين فوزي", "شريف بركات"]
-MORE_TEACHERS_AR = ["أمل زكي", "وائل حجازي", "رانيا لطفي", "أشرف نجيب", "هدى صبري", "عماد توفيق", "سمر يحيى", "مجدي إبراهيم"]
+TEACHERS_AR = ["نورة القحطاني", "فيصل الحربي", "ريم العتيبي", "عبدالله الغامدي", "حصة الدوسري", "تركي الشهري"]
+MORE_TEACHERS_AR = ["سارة ميتشل", "عمر الزهراني", "لمى المطيري", "دانيال هيوز", "أمل الجهني", "خالد السبيعي",
+                    "مها العنزي", "يوسف الشمري"]
 FIRST_NAMES_AR = [
-    "زينب", "يوسف", "ملك", "عمر", "حبيبة", "محمود", "فريدة", "كريم", "سلمى", "زياد", "نور", "حمزة",
-    "جنى", "مصطفى", "رقية", "أدهم", "مريم", "سيف", "هنا", "ياسين", "ليلى", "خالد", "آية", "أنس",
-    "بسملة", "تامر", "ريم", "فارس", "شهد", "مروان", "منة", "إياد", "رحمة", "باسل", "جودي", "مازن",
-    "كنزي", "نادر", "لينا", "حازم", "تسنيم", "عمرو", "داليا", "سامي", "يارا", "بلال", "ندى", "رامي",
+    "عبدالرحمن", "لولوة", "فيصل", "جود", "سعود", "غلا", "نواف", "دانة", "راكان", "شهد", "تركي", "لمار",
+    "محمد", "جنى", "عبدالعزيز", "ريماس", "سلطان", "هلا", "بندر", "وسن", "فهد", "ليان", "ماجد", "ريماز",
+    "خالد", "طيف", "مشاري", "سارة", "يزيد", "ربى", "حمد", "نوف", "صالح", "الجوهرة", "زياد", "هيا",
+    "منصور", "ديمة", "عمر", "لين", "طلال", "مريم", "ناصر", "بيان", "وليد", "أثير", "إبراهيم", "رزان",
 ]
-FAMILY_INITIALS_AR = "أعحإكمنسرتفج"
+FAMILY_INITIALS_AR = "أقحغدسمزجتبن"
 WHAT_WORKS_AR = [
-    "أبدأ ب{approach} قبل أي شغل مكتوب، وكل تلميذين يشرحوا إجابتهم لبعض.",
-    "تمهيد قصير في أول كل حصة، وبعده {approach}. وبحتفظ بكراسة لكل تلميذ كسجل.",
-    "{approach}، مع أمثلة من السوق ومن نتايج الماتشات. واللي يخلص بدري يساعد زميله.",
-    "{approach} في مجموعات صغيرة والباقي بيشتغل من السبورة. وبصحح 8 كراسات في اليوم.",
+    "أبدأ باستخدام {approach} قبل أي عمل كتابي، ويشرح كل طالبين إجابتهما لبعضهما.",
+    "تمهيد قصير في بداية كل حصة، ثم {approach}. وأحتفظ بملف لكل طالب كسجل لعمله.",
+    "{approach}، مع أمثلة من الحياة اليومية ومن الرياضة. ومن ينهي مبكراً يساعد زميله.",
+    "{approach} في مجموعات صغيرة بينما يعمل الباقون من السبورة. وأصحح ثمانية دفاتر في اليوم.",
 ]
 WANTS_HELP_AR = [
-    "ألاقي وقت أشوف شغل كل تلميذ والفصل فيه أكتر من خمسين.",
-    "أعرف التلميذ درس إيه قبل ما يوصل لفصلي.",
-    "تدريس {strand} لتلاميذ فاتهم الصف اللي قبله.",
-    "أوضح للأسرة ابنهم واقف فين بكلام بسيط.",
+    "إيجاد وقت لمتابعة عمل كل طالب في فصل فيه أكثر من خمسة وعشرين طالباً.",
+    "معرفة ما درسه الطالب قبل أن يصل إلى فصلي.",
+    "تدريس {strand} لطلاب فاتهم الصف السابق.",
+    "توضيح مستوى الطالب لأسرته بكلمات بسيطة.",
 ]
 WORDS = {
     "en": {"question": "{topic}: question {k}", "homework": "Homework task: {topic}",
@@ -77,18 +80,18 @@ WORDS = {
            "taught": "Taught with: {approach}", "the_topic": "the topic", "languages": "Arabic, English",
            "default_approach": "Worked examples", "the_subject": "the subject"},
     "ar": {"question": "{topic}: السؤال {k}", "homework": "واجب: {topic}",
-           "project": "مهمة أداء آخر السنة: {topic}", "absent": "غياب {n} يوم في هذا الترم",
+           "project": "مهمة أداء آخر السنة: {topic}", "absent": "غياب {n} يوم في هذا الفصل الدراسي",
            "taught": "طريقة التدريس: {approach}", "the_topic": "الموضوع", "languages": "العربية والإنجليزية",
            "default_approach": "أمثلة محلولة", "the_subject": "المادة"},
 }
 WHAT_WORKS = [
     "Starting with {approach} before any written work. Pairs explain their answer to each other.",
     "A short warm-up every lesson, then {approach}. I keep one copybook per learner as a record.",
-    "{approach}, with examples from the market and from football scores. Fast finishers help a neighbour.",
+    "{approach}, with examples from daily life and from sport. Fast finishers help a neighbour.",
     "{approach} in small groups while the rest work from the board. I mark eight copybooks a day.",
 ]
 WANTS_HELP = [
-    "Finding time to see each learner's work with more than fifty in the class.",
+    "Finding time to see each learner's work with more than twenty-five in the class.",
     "Knowing what a learner covered before they reached my class.",
     "Teaching {strand} to learners who missed the earlier grade.",
     "Showing a family where their child is stuck, in plain words.",
@@ -96,14 +99,15 @@ WANTS_HELP = [
 
 
 def _term_dates(year: int, term: int, terms: int) -> tuple[dt.date, dt.date]:
-    """Two terms: late September to mid January, then February to early June. Otherwise equal thirds."""
+    """A school year that starts in late August, as in Saudi Arabia. Two terms: to mid January, then to mid June.
+    Three terms (a British-style year): to mid December, January to late March, April to mid June."""
     if terms == 2:
-        return (dt.date(year, 9, 21), dt.date(year + 1, 1, 15)) if term == 1 else (dt.date(year + 1, 2, 8), dt.date(year + 1, 6, 5))
-    return {1: (dt.date(year, 1, 20), dt.date(year, 4, 10)), 2: (dt.date(year, 5, 5), dt.date(year, 8, 10)),
-            3: (dt.date(year, 9, 1), dt.date(year, 12, 5))}[term]
+        return (dt.date(year, 8, 24), dt.date(year + 1, 1, 15)) if term == 1 else (dt.date(year + 1, 1, 25), dt.date(year + 1, 6, 15))
+    return {1: (dt.date(year, 8, 24), dt.date(year, 12, 12)), 2: (dt.date(year + 1, 1, 4), dt.date(year + 1, 3, 26)),
+            3: (dt.date(year + 1, 4, 5), dt.date(year + 1, 6, 15))}[term]
 
 
-def generate_school(db_path: Path | str | None = None, seed: int = 11, pack_id: str = "egypt-maths",
+def generate_school(db_path: Path | str | None = None, seed: int = 11, pack_id: str = "cambridge-school",
                     n_learners: int = 40, out_dir: Path | str | None = None, lang: str | None = None) -> dict[str, Any]:
     """`lang`: the language the made-up names, notes and labels are written in (the school's language
     by default). The numbers are the same in either language."""
@@ -243,17 +247,20 @@ def generate_school(db_path: Path | str | None = None, seed: int = 11, pack_id: 
     # ---- teachers and teaching units: one unit per (year, grade, topic) some learner met
     multi = len(subjects) > 1
     staff = (TEACHERS_AR, MORE_TEACHERS_AR) if lang == "ar" else (TEACHERS, MORE_TEACHERS)
-    names = (staff[0] + staff[1])[:2 * len(subjects)] if multi else staff[0]
-    if multi and len(names) < 2 * len(subjects):
-        raise ValueError("This generator has names for at most seven subjects.")
+    # A long span (Years 1 to 11) has three stages: primary, lower secondary, and the exam years. Otherwise two.
+    stage_tops = [6, 9] if g_hi - g_lo >= 8 else [g_lo + 2]
+    per = len(stage_tops) + 1
+    names = (staff[0] + staff[1])[:per * len(subjects)] if multi else staff[0]
+    if multi and len(names) < per * len(subjects):
+        raise ValueError(f"This generator has names for at most {len(staff[0] + staff[1]) // per} subjects.")
     teacher_ids = [ids.new("tch") for _ in names]
-    teacher_subjects = ({tid: [subjects[i // 2]] for i, tid in enumerate(teacher_ids)} if multi
+    teacher_subjects = ({tid: [subjects[i // per]] for i, tid in enumerate(teacher_ids)} if multi
                         else {tid: [pack["subject"]] for tid in teacher_ids})
     teacher_name = dict(zip(teacher_ids, names, strict=True))
 
     def teacher_of(subject: str, grade: int, year: int) -> str:
-        if multi:                                                        # primary grades, then the grades above
-            return teacher_ids[2 * subjects.index(subject) + (0 if grade <= g_lo + 2 else 1)]
+        if multi:                                                        # one teacher per stage and subject
+            return teacher_ids[per * subjects.index(subject) + sum(grade > top for top in stage_tops)]
         if grade == g_lo + 2 and year < CURRENT_YEAR:                    # one staff change, as schools have
             return teacher_ids[-1]
         return teacher_ids[(grade - g_lo) % (len(teacher_ids) - 1)]
@@ -461,8 +468,8 @@ def generate_school(db_path: Path | str | None = None, seed: int = 11, pack_id: 
              for n in range(1, 7)]
     sheet_teacher = teacher_name[teacher_of(subject_of(topic), grade, CURRENT_YEAR)]
     if lang == "ar":
-        lines = ["# كشف اختبار قصير (بيانات تجريبية غير حقيقية)", "", f"التلميذ: {focus['alias']}", f"الصف: {grade}",
-                 f"الترم: {CURRENT_YEAR}-T1", f"المدرس: {sheet_teacher}", f"المادة: {subject_name}",
+        lines = ["# كشف اختبار قصير (بيانات تجريبية غير حقيقية)", "", f"الطالب: {focus['alias']}", f"الصف: {grade}",
+                 f"الفصل الدراسي: {CURRENT_YEAR}-T1", f"المعلم: {sheet_teacher}", f"المادة: {subject_name}",
                  f"الاختبار: {CURRENT_YEAR}-T1-{subject_of(topic)}-quiz ({label(topic)})",
                  "", "| رقم السؤال | السؤال | الدرجة | من |", "|------|----------|-------|--------|"]
         lines += [f"| {n} | {q} | {m} | {o} |" for n, q, m, o in marks] + ["", "السؤال 4 لم يُجب عنه."]

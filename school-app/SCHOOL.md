@@ -64,10 +64,23 @@ it shows a clear message when the school server cannot be reached.
 | `ATHAR_WEB_PORT` | 8765 | Port |
 | `ATHAR_TLS_CERT`, `ATHAR_TLS_KEY` | none | Serve HTTPS |
 
+## The curriculum
+
+The app ships with **Cambridge maps for Mathematics, Science and English, Years 1 to 11** (`packs/cambridge-*`):
+Primary (Years 1 to 6), Lower Secondary (Years 7 to 9) and IGCSE (Years 10 and 11), three terms a year.
+"Grade" in the app means the Cambridge year.
+
+These maps are drafts. Before relying on them, the heads of each subject should:
+
+1. Check each topic name against the Cambridge framework and the school's Marshall Cavendish books.
+2. Move each topic to the term the school's books teach it in (the terms now follow a typical scheme of work).
+3. Check every "needs this first" link: the trace-back is only as good as these links.
+
+The pack files are plain YAML, one line per topic, and say all this at the top.
+
 ## Still to do for the school
 
-- **Curriculum.** The maps that ship are the Egyptian national curriculum, grades 4–8. If the school follows
-  a British, American or IB programme, or other grades, it needs its own maps. A school admin can add topics on
-  the School page, or new packs can be written under `packs/`.
+- **Ministry subjects.** Arabic, Islamic Studies and Social Studies are not mapped yet. Add them on the School page
+  (type the topics or upload a contents page), or write a pack for each under `packs/`.
 - **Parent access.** Parents cannot yet sign in to the school's server to see their own child.
 - **Teacher access by subject.** A teacher with a learner in their class sees that learner in every subject.

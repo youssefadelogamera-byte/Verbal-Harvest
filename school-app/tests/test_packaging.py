@@ -118,8 +118,8 @@ def test_the_build_seeds_the_default_school_and_names_no_pack(tmp_path, monkeypa
     monkeypatch.delenv("ATHAR_DEMO_PACK", raising=False)
     env = build.package_env(tmp_path)
     assert "ATHAR_PACK" not in env and "ATHAR_DEMO_PACK" not in env
-    monkeypatch.setenv("ATHAR_DEMO_PACK", "egypt-maths")
-    assert build.package_env(tmp_path)["ATHAR_DEMO_PACK"] == "egypt-maths"
+    monkeypatch.setenv("ATHAR_DEMO_PACK", "cambridge-maths")
+    assert build.package_env(tmp_path)["ATHAR_DEMO_PACK"] == "cambridge-maths"
 
 
 def test_the_source_line_survives_a_repository_with_no_commit(tmp_path):
@@ -278,9 +278,7 @@ def test_the_guide_goes_into_the_folder_and_opens_without_the_app(tmp_path):
     pictures = set(re.findall(r'src="(img/[^"]+)"', page))
     assert len(pictures) >= 20 and all((tmp_path / "Guide" / p).is_file() for p in pictures)
     assert {p.rsplit("-", 1)[1] for p in pictures} == {"en.png", "ar.png"}        # every picture in both languages
-    films = set(re.findall(r'src="(video/[^"]+)"', page))
-    assert films == {"video/athar-for-parents.mp4", "video/athar-for-teachers.mp4"}
-    assert all((tmp_path / "Guide" / f).stat().st_size > 1_000_000 for f in films)
+    assert "<video" not in page        # the two videos showed the earlier made-up school and were taken out
     for name, lang in build.GUIDE_LINKS.items():
         assert name.isascii()                    # an Arabic file name was lost by one unzip program
         assert f"Guide/guide.html?lang={lang}" in (tmp_path / name).read_text(encoding="utf-8")

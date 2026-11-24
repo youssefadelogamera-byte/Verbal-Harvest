@@ -1,6 +1,6 @@
 # Athar: notes for Claude Code
 
-Athar follows one learner across years and builds a cited profile for a teacher. It starts with Egypt, grades 4 to 8.
+Athar follows one learner across years and builds a cited profile for a teacher. This copy is for Learning International Schools (Saudi Arabia): Cambridge, Years 1 to 11.
 The Python package is `athar`, the command is `athar`, and every setting starts with `ATHAR_`.
 
 Read this first, then `README.md`, `ARCHITECTURE.md`, `SECURITY.md` and `EVALS.md`. Where the project could go is in
@@ -10,7 +10,7 @@ Read this first, then `README.md`, `ARCHITECTURE.md`, `SECURITY.md` and `EVALS.m
 
 Three maps laid over each other:
 
-- **Curriculum map**: topics and what each needs first, loaded from a pack (`packs/egypt-school/pack.yaml`).
+- **Curriculum map**: topics and what each needs first, loaded from a pack (`packs/cambridge-school/pack.yaml`).
   We graph the school's curriculum. We never change it.
 - **Learner map**: evidence rows (quiz items, notes, attendance) attached to topics over time.
 - **Teacher map**: what was taught, when, and with which approach.
@@ -50,10 +50,10 @@ Who does what:
 | `src/athar/synth_school.py` | A synthetic school built from any pack's own graph (`generator: school` in the pack) |
 | `src/athar/synth.py` | A smaller synthetic cohort on the generic packs, used by the evaluation set |
 | `src/athar/evals.py` | The evaluation set that writes `EVALS.md` |
-| `packs/egypt-*` | Egypt, grades 4 to 8, one pack per subject, and `egypt-school` which joins them. ALL DRAFT |
+| `packs/cambridge-*` | Cambridge, Years 1 to 11, one pack per subject (maths, science, English), and `cambridge-school` which joins them. ALL DRAFT, every topic `verified: false` |
 | `packs/generic-*` | Small country-neutral packs, used by the evaluation set and as examples |
 | `packaging/windows/` | The offline Windows package: `build.py`, `launch.py`, model download, start files |
-| `tests/` | 363 tests, no model needed |
+| `tests/` | About 360 tests, no model needed |
 
 ## Commands
 
@@ -62,7 +62,7 @@ uv sync --extra dev          # install
 uv run athar demo            # seed if needed, open the teacher app at http://127.0.0.1:8765
 uv run pytest -q             # tests (no model needed)
 uv run ruff check src tests  # lint
-uv run athar seed            # rebuild the synthetic Egyptian school, five subjects (wipes everything)
+uv run athar seed            # rebuild the synthetic Cambridge school, three subjects (wipes everything)
 uv run athar seed --pack generic-maths    # the small reference cohort the evaluation set uses
 uv run athar story           # findings waiting and decided, no model used
 uv run athar family-demo     # a made-up family (parent, three children, three years), no model used
@@ -132,10 +132,10 @@ Which models to use, and what was tried, is in `docs/MODELS.md`. Say which model
 
 - A label in a pack with a comma must be in quotes (`{en: "Ratio, proportion and percent"}`). The loader refuses
   a cut label.
-- Concept and strand ids must be unique across the packs that `egypt-school` includes. Each subject uses a prefix
-  (`sci-`, `eng-`, `ara-`, `soc-`; maths uses `g4-` and so on).
+- Concept and strand ids must be unique across the packs that `cambridge-school` includes. Each subject uses a prefix
+  with the year: `m4-` maths, `s4-` science, `e4-` English.
 - A topic may only need topics taught earlier (an earlier grade, or the same grade no later in the year). A test
-  checks every Egyptian pack.
+  checks every Cambridge pack.
 - A new route that returns learner data must filter with `_mine(request, ...)` or check with `classes.check`.
   Routes under `/api/learners/{id}/` are checked by the middleware.
 - `data/backups/` and `exports/` hold names. They are ignored by git. Keep it that way.

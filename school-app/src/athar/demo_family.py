@@ -21,29 +21,30 @@ from .curriculum import Pack, load_pack
 
 ACTOR = "demo-setup"
 SUBJECTS = {"maths": {"en": "Maths", "ar": "الرياضيات"}, "sci": {"en": "Science", "ar": "العلوم"},
-            "eng": {"en": "English", "ar": "اللغة الإنجليزية"}, "ara": {"en": "Arabic", "ar": "اللغة العربية"},
-            "soc": {"en": "Social Studies", "ar": "الدراسات الاجتماعية"}}
-PAPERS = ({"en": "monthly test", "ar": "اختبار الشهر"}, {"en": "end of term exam", "ar": "امتحان آخر الترم"})
+            "eng": {"en": "English", "ar": "اللغة الإنجليزية"}}
+PAPERS = ({"en": "monthly test", "ar": "اختبار شهري"}, {"en": "end of term exam", "ar": "اختبار نهاية الفصل الدراسي"})
 WORDS = {
-    "en": {"parent": "Mona", "children": ("Salma", "Youssef", "Laila"),
+    "en": {"parent": "Abeer", "children": ("Dalal", "Rayan", "Lamees"),
            "notes": (("She understands fractions when we cut real things, but loses marks in the written steps.",
                       "We went back to the grade 5 pages for ten minutes a day. She was quicker by the second week."),
                      ("He explains science experiments out loud very well. Writing the answer down takes him longer.",),
                      ()),
            "approved": "Recorded by the demo setup, not by a real parent."},
-    "ar": {"parent": "منى", "children": ("سلمى", "يوسف", "ليلى"),
-           "notes": (("بتفهم الكسور لما بنقسم حاجات حقيقية، بس بتخسر درجات في الخطوات المكتوبة.",
-                      "رجعنا لصفحات الصف الخامس عشر دقايق كل يوم. بقت أسرع من تاني أسبوع."),
-                     ("بيشرح تجارب العلوم بصوت عالي كويس جدا. كتابة الإجابة بتاخد منه وقت أطول.",),
+    "ar": {"parent": "عبير", "children": ("دلال", "ريان", "لميس"),
+           "notes": (("تفهم الكسور عندما نقسم أشياء حقيقية، لكنها تخسر درجات في الخطوات المكتوبة.",
+                      "عدنا إلى صفحات الصف الخامس عشر دقائق كل يوم، فأصبحت أسرع منذ الأسبوع الثاني."),
+                     ("يشرح تجارب العلوم بصوت مرتفع بشكل ممتاز، لكن كتابة الإجابة تأخذ منه وقتاً أطول.",),
                      ()),
            "approved": "سُجّل ضمن إعداد العرض التجريبي، وليس بقرار ولي أمر حقيقي."},
 }
 
 
 def subject_of(concept_id: str) -> str:
-    """The subject a topic belongs to, read from the start of its id (maths ids start with the grade)."""
+    """The subject a topic belongs to, read from the start of its id: m4-, s4- and e4- in the Cambridge packs."""
     head = concept_id.split("-")[0]
-    return "maths" if head[:1] == "g" and head[1:].isdigit() else head
+    if head[1:].isdigit():
+        return {"m": "maths", "s": "sci", "e": "eng"}.get(head[:1], head)
+    return head
 
 
 def _chain(pack: Pack, subject: str, grade: int) -> list[str]:
@@ -104,8 +105,8 @@ def build(language: str | None = None, seed: int = 21, db_path=None) -> dict[str
         first, top = pack.grades
         # name index, grade now, years of records, subjects with their usual level, where the difficulty is planted
         plan = (
-            (0, min(top, first + 3), 3, {"maths": 0.66, "sci": 0.8, "ara": 0.78, "eng": 0.7, "soc": 0.74}, "maths"),
-            (1, min(top, first + 2), 3, {"sci": 0.93, "maths": 0.74, "ara": 0.7, "eng": 0.62}, None),
+            (0, min(top, first + 3), 3, {"maths": 0.66, "sci": 0.8, "eng": 0.7}, "maths"),
+            (1, min(top, first + 2), 3, {"sci": 0.93, "maths": 0.74, "eng": 0.62}, None),
             (2, first, 0, {"maths": 0.7}, None),
         )
         out: dict[str, Any] = {"parent": who["name"], "children": [], "proposed": 0, "approved": 0, "waiting": 0,

@@ -1,5 +1,10 @@
 # Evaluation
 
+> **Note for Learning International Schools.** This page was written by the original authors of Athar, who built it
+> for Egyptian government schools. This copy has replaced the Egyptian curriculum with Cambridge (Years 1 to 11) for a
+> school in Saudi Arabia. What is said here about Egypt is kept as the authors' record; it does not describe this copy.
+> See [SCHOOL.md](SCHOOL.md).
+
 Run it yourself: `uv run athar eval` (add `--skip-model` for the engine tasks only, `--repeats N` to change
 the number of runs, `--models a,b` to compare models). The table below is written by that command. Raw
 results, including every attempt, are in `evals/results/`.

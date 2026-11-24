@@ -26,7 +26,7 @@ class Settings:
     web_port: int
     mcp_port: int
     product_name: str = "Athar"
-    demo_pack: str = "egypt-school"  # what `athar demo` seeds the first time
+    demo_pack: str = "cambridge-school"  # what `athar demo` seeds the first time
     tls_cert: str | None = None      # a certificate file: the app then serves HTTPS
     tls_key: str | None = None
     language: str = "ar"             # the language the page opens in, and the agent words findings in
@@ -54,7 +54,7 @@ def get_settings() -> Settings:
         web_port=int(env("ATHAR_WEB_PORT", "8765")),
         mcp_port=int(env("ATHAR_MCP_PORT", "8766")),
         product_name=env("ATHAR_PRODUCT_NAME", "Athar"),
-        demo_pack=env("ATHAR_DEMO_PACK", "egypt-school"),
+        demo_pack=env("ATHAR_DEMO_PACK", "cambridge-school"),
         tls_cert=env("ATHAR_TLS_CERT") or None,
         tls_key=env("ATHAR_TLS_KEY") or None,
         language=env("ATHAR_LANGUAGE", "ar") if env("ATHAR_LANGUAGE", "ar") in ("ar", "en") else "en",

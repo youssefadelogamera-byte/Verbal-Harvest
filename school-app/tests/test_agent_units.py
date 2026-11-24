@@ -318,7 +318,7 @@ def test_arabic_wording_uses_the_arabic_topic_names():
     from athar.agent.language import looks_like
     from athar.agent.workflow import _template_question, _template_statement, in_language
     from athar.curriculum import load_pack
-    pack = load_pack("egypt-maths")
+    pack = load_pack("cambridge-maths")
     some = next(iter(pack.concepts))
     english = pack.label(some, "en")
     candidate = {"kind": "strength", "facts": {"in": english, "terms": ["2021-T1", "2021-T2", "2021-T3"],

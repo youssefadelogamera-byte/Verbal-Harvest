@@ -7,12 +7,12 @@ from athar import db, demo_family, family, synth_school
 
 def test_the_made_up_family_shows_every_kind_of_page_and_is_never_logged_as_a_parent(tmp_path):
     db_path = tmp_path / "athar.db"
-    synth_school.generate_school(db_path=db_path, pack_id="egypt-school", n_learners=6, out_dir=tmp_path, lang="en")
+    synth_school.generate_school(db_path=db_path, pack_id="cambridge-school", n_learners=6, out_dir=tmp_path, lang="en")
     out = demo_family.build(language="en", db_path=db_path)
-    assert out["parent"] == "Mona" and [c["marks"] > 0 for c in out["children"]] == [True, True, True]
+    assert out["parent"] == "Abeer" and [c["marks"] > 0 for c in out["children"]] == [True, True, True]
     assert family.mode(db_path) == "family"
     by_name = {c["name"]: c for c in family.children(db_path)}
-    first, second, third = by_name["Salma"], by_name["Youssef"], by_name["Laila"]
+    first, second, third = by_name["Dalal"], by_name["Rayan"], by_name["Lamees"]
 
     helped = family.summary(first["learner_id"], db_path)                 # a difficulty that began in an earlier grade
     assert helped["enough"] and helped["help_first"] and helped["help_first"][0]["start"]["grade"] < first["grade_now"]

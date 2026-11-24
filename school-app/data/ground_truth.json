@@ -1,110 +1,118 @@
 {
   "seed": 11,
-  "pack_id": "egypt-school",
+  "pack_id": "cambridge-school",
   "school": "مدرسة النهضة التجريبية (بيانات غير حقيقية)",
   "language": "ar",
   "current_period": "2026-T1",
   "note": "Synthetic data. Planted patterns are what an honest analysis should find.",
   "planted": [
     {
-      "learner_id": "lrn_94571b0915",
+      "learner_id": "lrn_d228dfe3e4",
       "alias": "Learner V-25",
       "case": "new_arrival"
     },
     {
-      "learner_id": "lrn_7efaee51db",
+      "learner_id": "lrn_18626f3a55",
       "alias": "Learner F-13",
-      "case": "what_worked",
-      "approach": "story_problems"
-    },
-    {
-      "learner_id": "lrn_f8e777f99f",
-      "alias": "Learner W-84",
-      "case": "root_gap",
-      "root": "soc-g4-heritage-sites",
-      "later": [
-        "soc-g4-tourism-economy",
-        "soc-g4-protecting-heritage",
-        "soc-g5-architecture-arts",
-        "soc-g6-arab-tourism"
-      ],
-      "period": "2023-T2"
-    },
-    {
-      "learner_id": "lrn_41494b1684",
-      "alias": "Learner A-68",
-      "case": "root_gap",
-      "root": "soc-g5-victories",
-      "later": [
-        "soc-g5-links-world",
-        "soc-g7-new-kingdom",
-        "soc-g6-arab-integration",
-        "soc-g8-ancient-near-east-yemen",
-        "soc-g7-egypt-african-organizations"
-      ],
-      "period": "2023-T2"
-    },
-    {
-      "learner_id": "lrn_cd7bf1e6fc",
-      "alias": "Learner G-67",
-      "case": "no_pattern"
-    },
-    {
-      "learner_id": "lrn_a5b3fc4221",
-      "alias": "Learner H-66",
-      "case": "no_pattern"
-    },
-    {
-      "learner_id": "lrn_1ec216caa3",
-      "alias": "Learner C-73",
       "case": "strand_strength",
-      "strand": "sci-matter"
+      "strand": "tws"
     },
     {
-      "learner_id": "lrn_3fc5ede45f",
-      "alias": "Learner P-98",
+      "learner_id": "lrn_9ab808fbf6",
+      "alias": "Learner Z-82",
       "case": "strand_strength",
-      "strand": "eng-vocabulary"
+      "strand": "phys"
     },
     {
-      "learner_id": "lrn_51ef7551cd",
-      "alias": "Learner E-32",
+      "learner_id": "lrn_9f2394de5f",
+      "alias": "Learner N-58",
       "case": "unknown_root",
-      "root": "soc-g5-victories",
+      "root": "e5-authors-craft",
       "later": [
-        "soc-g5-links-world",
-        "soc-g7-new-kingdom",
-        "soc-g6-arab-integration",
-        "soc-g8-ancient-near-east-yemen",
-        "soc-g7-egypt-african-organizations"
+        "e5-figurative",
+        "e6-comparing-texts",
+        "e7-poetry",
+        "e7-fiction",
+        "e7-non-fiction",
+        "e8-language-structure"
       ],
-      "period": "2023-T2"
+      "period": "2023-T1"
     },
     {
-      "learner_id": "lrn_fa37ab8c02",
-      "alias": "Learner D-51",
-      "case": "root_gap",
-      "root": "soc-g5-victories",
-      "later": [
-        "soc-g5-links-world",
-        "soc-g7-new-kingdom",
-        "soc-g6-arab-integration",
-        "soc-g8-ancient-near-east-yemen",
-        "soc-g7-egypt-african-organizations"
-      ],
-      "period": "2023-T2"
-    },
-    {
-      "learner_id": "lrn_87b2868004",
-      "alias": "Learner W-83",
-      "case": "strand_strength",
-      "strand": "geometry"
-    },
-    {
-      "learner_id": "lrn_943463a850",
-      "alias": "Learner B-19",
+      "learner_id": "lrn_2151367600",
+      "alias": "Learner C-91",
       "case": "what_worked",
-      "approach": "story_problems"
+      "approach": "inquiry"
+    },
+    {
+      "learner_id": "lrn_434abc1d8b",
+      "alias": "Learner N-09",
+      "case": "root_gap",
+      "root": "m8-equations-inequalities",
+      "later": [
+        "m8-linear-graphs",
+        "m9-simultaneous",
+        "m11-inequalities-regions",
+        "m9-non-linear-graphs",
+        "s10-motion",
+        "m10-coordinate-geometry",
+        "m10-functions",
+        "m10-variation"
+      ],
+      "period": "2023-T1"
+    },
+    {
+      "learner_id": "lrn_abdf47bcde",
+      "alias": "Learner V-81",
+      "case": "no_pattern"
+    },
+    {
+      "learner_id": "lrn_5808c38afd",
+      "alias": "Learner Y-35",
+      "case": "strand_strength",
+      "strand": "earth"
+    },
+    {
+      "learner_id": "lrn_6794982dbc",
+      "alias": "Learner K-43",
+      "case": "no_pattern"
+    },
+    {
+      "learner_id": "lrn_f9ccef3ca6",
+      "alias": "Learner A-08",
+      "case": "root_gap",
+      "root": "s6-organ-systems",
+      "later": [
+        "s7-cells",
+        "s8-respiration",
+        "s8-nutrition",
+        "s9-photosynthesis"
+      ],
+      "period": "2023-T1"
+    },
+    {
+      "learner_id": "lrn_f76b840f65",
+      "alias": "Learner G-58",
+      "case": "what_worked",
+      "approach": "inquiry"
+    },
+    {
+      "learner_id": "lrn_299e2c30f2",
+      "alias": "Learner B-19",
+      "case": "root_gap",
+      "root": "e4-inference",
+      "later": [
+        "e4-fact-opinion",
+        "e5-authors-craft",
+        "e5-summarising",
+        "e5-persuasive",
+        "e5-figurative",
+        "e6-comparing-texts",
+        "e6-research",
+        "e6-formal-writing",
+        "e7-fiction"
+      ],
+      "period": "2023-T1"
     }
   ]
 }
