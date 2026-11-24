@@ -1,0 +1,52 @@
+[project]
+name = "athar"
+version = "0.1.0"
+description = "A living, cited learning map for every learner. An MCP server plus a LangGraph agent that traces why a learner struggles, what they are strong at, and what teaching worked, then stops for a teacher to decide."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "mcp>=1.9",
+    "langgraph>=0.4",
+    "langgraph-checkpoint-sqlite>=2.0",
+    "langchain-core>=0.3",
+    "langchain-openai>=0.3",
+    "aiosqlite>=0.20",
+    "networkx>=3.3",
+    "pydantic>=2.7",
+    "fastapi>=0.115",
+    "uvicorn>=0.30",
+    "pyyaml>=6.0",
+    "httpx>=0.27",
+    "python-multipart>=0.0.9",
+    "typer>=0.12",
+    "rich>=13.7",
+    "langchain-anthropic>=1.7.10",
+    "openpyxl>=3.1.5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.2", "pytest-asyncio>=0.23", "ruff>=0.5"]
+
+[project.scripts]
+athar = "athar.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/athar"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint.per-file-ignores]
+# typer declares command options as call expressions in argument defaults; that is its API.
+"src/athar/cli.py" = ["B008"]

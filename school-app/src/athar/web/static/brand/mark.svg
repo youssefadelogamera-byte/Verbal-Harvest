@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Learning International Schools">
+  <!-- A stand-in mark in the school's colours. Put the real logo in branding/logo.png to replace it. -->
+  <rect width="64" height="64" rx="14" fill="#FFFFFF"/>
+  <path d="M32 9 L50 18 L32 27 L14 18 Z" fill="#2A55B5"/>
+  <path d="M14 22 L32 31 L50 22 L50 27 L32 36 L14 27 Z" fill="#14A3B5"/>
+  <path d="M12 54 C12 41 21 36 32 36 C43 36 52 41 52 54 L45 54 C45 45 39 42 32 42 C25 42 19 45 19 54 Z" fill="#F5B21A"/>
+  <path d="M22 54 C22 48 26 45 32 45 C38 45 42 48 42 54 L37 54 C37 51 35 49.5 32 49.5 C29 49.5 27 51 27 54 Z" fill="#7A2E8C"/>
+</svg>

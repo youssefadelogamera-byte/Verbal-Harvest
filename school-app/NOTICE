@@ -1,0 +1,8 @@
+Learning International Schools: learning map
+
+This is an adaptation of Athar (https://github.com/OmarAxis/Athar), Copyright its authors,
+licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Changes made for Learning International Schools: school branding (name, logo, colours, report header),
+an installable app for phones and computers (web app manifest, icons, service worker), a mode that serves
+the school network (`athar demo --lan`), and a layout for phones.

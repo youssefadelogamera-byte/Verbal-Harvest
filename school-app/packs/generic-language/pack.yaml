@@ -1,0 +1,62 @@
+# Generic language and literacy, grades 1 to 8, for whatever the language of instruction is.
+# Not tied to any one country, language or national syllabus. It lists widely taught topics and the
+# order in which they depend on each other. A school can replace this file with its own pack.
+id: generic-language
+name: Language and literacy, grades 1 to 8
+subject: language
+subject_label: {en: Language and literacy}
+grades: [1, 8]
+languages: [en]
+
+strands:
+  - {id: reading, label: {en: Reading}}
+  - {id: writing, label: {en: Writing}}
+  - {id: grammar-and-vocabulary, label: {en: Grammar and vocabulary}}
+  - {id: speaking-and-listening, label: {en: Speaking and listening}}
+
+skills:
+  - {id: explaining-reasoning, label: {en: Explaining reasoning}}
+  - {id: communicating-clearly, label: {en: Communicating clearly}}
+  - {id: pattern-finding, label: {en: Pattern finding}}
+
+approaches:
+  - {id: concrete_objects, label: {en: Hands-on objects}}
+  - {id: visual_models, label: {en: Diagrams and visual models}}
+  - {id: worked_examples, label: {en: Worked examples}}
+  - {id: peer_groups, label: {en: Group work with peers}}
+  - {id: story_problems, label: {en: Story and real-life problems}}
+  - {id: drill_practice, label: {en: Drill and practice}}
+
+concepts:
+  # ------------------------------------------------------------------ Reading
+  - {id: letter-sounds, label: {en: Letters and their sounds}, strand: reading, grade: 1, requires: [], skills: []}
+  - {id: blending-words, label: {en: Blending sounds into words}, strand: reading, grade: 1, requires: [letter-sounds], skills: [pattern-finding]}
+  - {id: reading-fluency, label: {en: Reading aloud with fluency}, strand: reading, grade: 2, requires: [blending-words], skills: []}
+  - {id: literal-comprehension, label: {en: Understanding what a text says}, strand: reading, grade: 3, requires: [reading-fluency], skills: []}
+  - {id: main-idea, label: {en: Finding the main idea}, strand: reading, grade: 4, requires: [literal-comprehension], skills: []}
+  - {id: inference, label: {en: Reading between the lines}, strand: reading, grade: 5, requires: [literal-comprehension], skills: [explaining-reasoning]}
+  - {id: text-structure, label: {en: How a text is organised}, strand: reading, grade: 6, requires: [main-idea], skills: [pattern-finding]}
+  - {id: authors-purpose, label: {en: The author's purpose and viewpoint}, strand: reading, grade: 7, requires: [inference], skills: [explaining-reasoning]}
+  - {id: comparing-texts, label: {en: Comparing two texts}, strand: reading, grade: 8, requires: [authors-purpose, text-structure], skills: [explaining-reasoning]}
+
+  # ------------------------------------------------------------------ Writing
+  - {id: sentence-writing, label: {en: Writing complete sentences}, strand: writing, grade: 2, requires: [blending-words], skills: []}
+  - {id: paragraph-writing, label: {en: Writing a paragraph}, strand: writing, grade: 3, requires: [sentence-writing], skills: [communicating-clearly]}
+  - {id: narrative-writing, label: {en: Writing a story}, strand: writing, grade: 4, requires: [paragraph-writing], skills: [communicating-clearly]}
+  - {id: informational-writing, label: {en: Writing to inform}, strand: writing, grade: 5, requires: [paragraph-writing, main-idea], skills: [communicating-clearly]}
+  - {id: editing-revising, label: {en: Editing and improving a draft}, strand: writing, grade: 6, requires: [paragraph-writing], skills: []}
+  - {id: argument-writing, label: {en: Writing an argument with evidence}, strand: writing, grade: 7, requires: [informational-writing], skills: [explaining-reasoning]}
+
+  # ---------------------------------------------------- Grammar and vocabulary
+  - {id: nouns-verbs, label: {en: Naming and doing words}, strand: grammar-and-vocabulary, grade: 2, requires: [], skills: []}
+  - {id: tenses, label: {en: "Past, present and future"}, strand: grammar-and-vocabulary, grade: 3, requires: [nouns-verbs], skills: [pattern-finding]}
+  - {id: punctuation, label: {en: Punctuation}, strand: grammar-and-vocabulary, grade: 3, requires: [sentence-writing], skills: []}
+  - {id: vocabulary-in-context, label: {en: Working out word meanings from context}, strand: grammar-and-vocabulary, grade: 4, requires: [literal-comprehension], skills: []}
+  - {id: word-roots-affixes, label: {en: "Word roots, prefixes and suffixes"}, strand: grammar-and-vocabulary, grade: 5, requires: [reading-fluency], skills: [pattern-finding]}
+  - {id: complex-sentences, label: {en: Joining ideas in longer sentences}, strand: grammar-and-vocabulary, grade: 6, requires: [tenses, punctuation], skills: []}
+
+  # ---------------------------------------------------- Speaking and listening
+  - {id: listening-following, label: {en: Listening and following instructions}, strand: speaking-and-listening, grade: 1, requires: [], skills: []}
+  - {id: retelling, label: {en: Retelling in your own words}, strand: speaking-and-listening, grade: 2, requires: [listening-following], skills: [communicating-clearly]}
+  - {id: presenting, label: {en: Presenting to a group}, strand: speaking-and-listening, grade: 5, requires: [retelling], skills: [communicating-clearly]}
+  - {id: discussion-debate, label: {en: Discussion and debate}, strand: speaking-and-listening, grade: 7, requires: [presenting], skills: [explaining-reasoning]}

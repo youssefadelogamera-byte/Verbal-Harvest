@@ -1,0 +1,65 @@
+# Generic school science, grades 3 to 8: life science, materials, physics, earth and space.
+# Not tied to any one country or national syllabus. It lists widely taught topics and the order in
+# which they depend on each other. A school can replace this file with its own pack.
+id: generic-science
+name: School science, grades 3 to 8
+subject: science
+subject_label: {en: Science}
+grades: [3, 8]
+languages: [en]
+
+strands:
+  - {id: living-things, label: {en: Life science}}
+  - {id: matter-and-materials, label: {en: Matter and materials}}
+  - {id: forces-and-energy, label: {en: "Physics, forces and energy"}}
+  - {id: earth-and-space, label: {en: Earth and space}}
+
+skills:
+  - {id: observing-and-questioning, label: {en: Observing and asking questions}}
+  - {id: explaining-reasoning, label: {en: Explaining reasoning}}
+  - {id: working-with-data, label: {en: Working with data}}
+  - {id: pattern-finding, label: {en: Pattern finding}}
+
+approaches:
+  - {id: concrete_objects, label: {en: Hands-on objects}}
+  - {id: visual_models, label: {en: Diagrams and visual models}}
+  - {id: worked_examples, label: {en: Worked examples}}
+  - {id: peer_groups, label: {en: Group work with peers}}
+  - {id: story_problems, label: {en: Story and real-life problems}}
+  - {id: drill_practice, label: {en: Drill and practice}}
+
+concepts:
+  # ------------------------------------------------------------ Life science
+  - {id: living-nonliving, label: {en: Living and non-living things}, strand: living-things, grade: 3, requires: [], skills: [observing-and-questioning]}
+  - {id: plant-parts, label: {en: Parts of a plant and what they do}, strand: living-things, grade: 3, requires: [living-nonliving], skills: []}
+  - {id: animal-groups, label: {en: Grouping animals}, strand: living-things, grade: 4, requires: [living-nonliving], skills: [pattern-finding]}
+  - {id: food-chains, label: {en: Food chains}, strand: living-things, grade: 4, requires: [plant-parts, animal-groups], skills: []}
+  - {id: human-body-systems, label: {en: Human body systems}, strand: living-things, grade: 5, requires: [animal-groups], skills: []}
+  - {id: cells, label: {en: Cells as building blocks}, strand: living-things, grade: 6, requires: [human-body-systems], skills: []}
+  - {id: photosynthesis, label: {en: Photosynthesis}, strand: living-things, grade: 6, requires: [plant-parts, food-chains], skills: [explaining-reasoning]}
+  - {id: ecosystems, label: {en: Ecosystems and populations}, strand: living-things, grade: 7, requires: [food-chains, photosynthesis], skills: [working-with-data]}
+  - {id: inheritance-variation, label: {en: Inheritance and variation}, strand: living-things, grade: 8, requires: [cells], skills: [pattern-finding]}
+
+  # ---------------------------------------------------- Matter and materials
+  - {id: materials-properties, label: {en: Properties of materials}, strand: matter-and-materials, grade: 3, requires: [], skills: [observing-and-questioning]}
+  - {id: states-of-matter, label: {en: "Solids, liquids and gases"}, strand: matter-and-materials, grade: 4, requires: [materials-properties], skills: []}
+  - {id: mixtures-separating, label: {en: Mixtures and separating them}, strand: matter-and-materials, grade: 5, requires: [states-of-matter], skills: []}
+  - {id: particles-model, label: {en: The particle model}, strand: matter-and-materials, grade: 6, requires: [states-of-matter], skills: [explaining-reasoning]}
+  - {id: chemical-change, label: {en: Chemical and physical change}, strand: matter-and-materials, grade: 7, requires: [particles-model, mixtures-separating], skills: []}
+  - {id: atoms-elements, label: {en: Atoms and elements}, strand: matter-and-materials, grade: 8, requires: [particles-model], skills: []}
+
+  # ------------------------------------------------------------------ Physics
+  - {id: pushes-pulls, label: {en: Pushes and pulls}, strand: forces-and-energy, grade: 3, requires: [], skills: [observing-and-questioning]}
+  - {id: light-and-shadow, label: {en: Light and shadows}, strand: forces-and-energy, grade: 4, requires: [], skills: [observing-and-questioning]}
+  - {id: simple-circuits, label: {en: Simple electric circuits}, strand: forces-and-energy, grade: 5, requires: [], skills: []}
+  - {id: forces-and-motion, label: {en: Forces and motion}, strand: forces-and-energy, grade: 6, requires: [pushes-pulls], skills: [explaining-reasoning]}
+  - {id: energy-transfer, label: {en: Energy and how it is transferred}, strand: forces-and-energy, grade: 6, requires: [simple-circuits], skills: []}
+  - {id: speed-distance-time, label: {en: "Speed, distance and time"}, strand: forces-and-energy, grade: 7, requires: [forces-and-motion], skills: [working-with-data]}
+  - {id: density, label: {en: Density}, strand: forces-and-energy, grade: 7, requires: [particles-model], skills: []}
+  - {id: current-and-voltage, label: {en: Current and voltage}, strand: forces-and-energy, grade: 8, requires: [simple-circuits, energy-transfer], skills: []}
+
+  # ---------------------------------------------------------- Earth and space
+  - {id: weather-and-seasons, label: {en: Weather and seasons}, strand: earth-and-space, grade: 3, requires: [], skills: [working-with-data]}
+  - {id: rocks-and-soil, label: {en: Rocks and soil}, strand: earth-and-space, grade: 4, requires: [materials-properties], skills: []}
+  - {id: water-cycle, label: {en: The water cycle}, strand: earth-and-space, grade: 5, requires: [states-of-matter], skills: [explaining-reasoning]}
+  - {id: solar-system, label: {en: "Earth, sun and moon"}, strand: earth-and-space, grade: 6, requires: [light-and-shadow], skills: []}

@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ar" data-lang="ar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Athar guide: Learning International Schools</title>
+<style>
+  :root { --ink:#10201b; --soft:#55655f; --line:#dbe3e0; --bg:#f4f6f8; --card:#fff; --green:#1F3F8F; --deep:#121C4A; --mint:#E8EEFA; --warn:#fff6e0; --warnline:#e6c877; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.65 "Segoe UI", Tahoma, Arial, sans-serif; }
+  header { background:linear-gradient(160deg,var(--deep),var(--green)); color:#fff; padding:28px 16px 24px; }
+  .wrap { max-width:940px; margin:0 auto; padding:0 16px; }
+  header .wrap { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:0; }
+  header h1 { margin:0; font-size:30px; line-height:1.2; }
+  header p { margin:6px 0 0; opacity:.85; }
+  .lang button { font:inherit; font-size:15px; padding:7px 16px; border-radius:999px; border:1px solid rgba(255,255,255,.55); background:transparent; color:#fff; cursor:pointer; }
+  .lang button[aria-pressed="true"] { background:#fff; color:var(--deep); font-weight:600; }
+  nav { background:var(--card); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:2; }
+  nav .wrap { display:flex; gap:6px 18px; flex-wrap:wrap; padding-top:10px; padding-bottom:10px; }
+  nav a { color:var(--green); text-decoration:none; font-weight:600; font-size:15px; }
+  nav a:hover { text-decoration:underline; }
+  html[data-lang="ar"] [lang="en"], html[data-lang="en"] [lang="ar"] { display:none; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:22px 0; }
+  h2 { margin:0 0 6px; font-size:24px; scroll-margin-top:60px; }
+  h3 { margin:22px 0 4px; font-size:19px; }
+  p { margin:8px 0; }
+  ol, ul { margin:8px 0; padding-inline-start:24px; }
+  li { margin:5px 0; }
+  .lead { color:var(--soft); }
+  figure { margin:16px 0 6px; }
+  figure img { display:block; width:100%; height:auto; border:1px solid var(--line); border-radius:10px; }
+  video { display:block; width:100%; height:auto; border:1px solid var(--line); border-radius:10px; background:#121C4A; }
+  .films { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .films h3 { margin-top:6px; }
+  @media (max-width:640px) { .films { grid-template-columns:1fr; } }
+  figcaption { color:var(--soft); font-size:14.5px; margin-top:6px; }
+  .note { background:var(--mint); border-radius:10px; padding:12px 16px; margin:14px 0; }
+  .care { background:var(--warn); border:1px solid var(--warnline); border-radius:10px; padding:12px 16px; margin:14px 0; }
+  table { width:100%; border-collapse:collapse; margin:10px 0; font-size:16px; }
+  th, td { text-align:start; vertical-align:top; padding:10px 12px; border-bottom:1px solid var(--line); }
+  th { color:var(--soft); font-size:14px; font-weight:600; }
+  td:first-child { font-weight:600; width:36%; }
+  kbd { background:#eef1f3; border:1px solid var(--line); border-radius:5px; padding:1px 6px; font:inherit; font-size:15px; }
+  footer { color:var(--soft); font-size:14.5px; padding:6px 0 40px; }
+  @media (max-width:640px) { section { padding:16px; } td:first-child { width:42%; } table { font-size:15px; } }
+  @media print { nav, .lang { display:none; } section { break-inside:avoid; } body { background:#fff; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div>
+      <h1><span lang="ar">دليل أثر</span><span lang="en">The Athar guide</span></h1>
+      <p><span lang="ar">كيف تشغّله، وكيف تستخدمه كولي أمر أو معلم، وماذا تفعل إذا واجهت مشكلة.</span><span lang="en">How to start it, how to use it as a parent or a teacher, and what to do when something is not working.</span></p>
+    </div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set="ar" aria-pressed="true">العربية</button>
+      <button type="button" data-set="en" aria-pressed="false">English</button>
+    </div>
+  </div>
+</header>
+<nav><div class="wrap">
+  <a href="#start"><span lang="ar">التشغيل</span><span lang="en">Starting</span></a>
+  <a href="#parents"><span lang="ar">لولي الأمر</span><span lang="en">For parents</span></a>
+  <a href="#teachers"><span lang="ar">للمعلم</span><span lang="en">For teachers</span></a>
+  <a href="#model"><span lang="ar">المساعد</span><span lang="en">The assistant</span></a>
+  <a href="#fix"><span lang="ar">إذا واجهت مشكلة</span><span lang="en">If something is not working</span></a>
+  <a href="#safe"><span lang="ar">الحفاظ على السجلات</span><span lang="en">Keeping records safe</span></a>
+</div></nav>
+
+<!-- ============================== ARABIC ============================== -->
+<main class="wrap" lang="ar" dir="rtl">
+
+<section>
+  <h2>أثر في سطرين</h2>
+  <p>يحتفظ أثر بنتائج الطالب سنة بعد سنة، ويوضح ما يُحسنه، وما يحتاج فيه إلى مساعدة، ومن أين قد تكون الصعوبة بدأت. وهو برنامج واحد له جانبان: جانب لولي الأمر، وجانب للمعلم والمدرسة.</p>
+  <p>هذه النسخة معدّة لمدارس التعليم العالمية، وتأتي بمنهج كامبريدج للرياضيات والعلوم واللغة الإنجليزية من الصف الأول إلى الصف الحادي عشر. يعمل كل شيء على خادم المدرسة أو على هذا الحاسوب، ولا يوجد حساب لدى أي شركة.</p>
+  <div class="care">هذه نسخة مبكرة. الأسماء والسجلات التي تأتي مع البرنامج كلها غير حقيقية. والمنهج الذي بداخله مسودة تحتاج إلى مراجعة المعلمين ومطابقتها مع كتب Marshall Cavendish التي تدرّسها المدرسة.</div>
+</section>
+
+<section id="start">
+  <h2>التشغيل</h2>
+  <ol>
+    <li>انقر بزر الفأرة الأيمن على ملف zip واختر <b>Extract All</b>. فك الضغط في مكان عادي مثل Desktop أو Documents. لا تشغّله من داخل ملف zip، ولا تضعه في Program Files. يستغرق فك الضغط بضع دقائق لأن الملف كبير.</li>
+    <li>افتح المجلد وانقر نقراً مزدوجاً على <b>Start Athar</b>.</li>
+    <li>إذا ظهرت رسالة <b>Windows protected your PC</b>، فانقر <b>More info</b> ثم <b>Run anyway</b>. يحدث هذا في المرة الأولى فقط، لأن البرنامج غير موقّع.</li>
+    <li>ستُفتح نافذة سوداء، وبعد قليل يفتح المتصفح أثر على العنوان <kbd dir="ltr">http://127.0.0.1:8780</kbd>.</li>
+    <li>اترك النافذة السوداء مفتوحة طوال استخدامك أثر. لإغلاقه، أغلقها أو انقر نقراً مزدوجاً على <b>Stop Athar</b>.</li>
+  </ol>
+  <p>في المرة الأولى، يسأل أثر عمّن سيستخدمه. اختر <b>أنا ولي أمر</b> أو <b>أنا معلم أو أعمل في مدرسة</b>. يمكنك تغيير ذلك لاحقاً من الإعدادات.</p>
+  <figure><img src="img/start-ar.png" alt="شاشة التشغيل الأول: اختيار ولي أمر أو مدرسة" loading="lazy"><figcaption>التشغيل الأول. البرنامج واحد في الحالتين.</figcaption></figure>
+  <h3>ما يحتاج إليه الحاسوب</h3>
+  <ul>
+    <li>ويندوز 10 أو 11، بنظام 64-bit.</li>
+    <li>نحو 8 غيغابايت من المساحة الفارغة.</li>
+    <li>للمساعد: 16 غيغابايت من الذاكرة تكفي براحة. مع بطاقة رسومات تستغرق قراءة الورقة نحو دقيقة، ومن دونها قد تستغرق عدة دقائق.</li>
+  </ul>
+  <p>لإزالة أثر، احذف المجلد. لم يتغير شيء آخر على الحاسوب.</p>
+  <h3>على شبكة المدرسة وعلى الهواتف</h3>
+  <p>يمكن تشغيل أثر على حاسوب واحد في المدرسة ليفتحه المعلمون من حواسيبهم وهواتفهم عبر شبكة المدرسة، ويمكن تثبيته على الشاشة الرئيسية للهاتف كتطبيق. الخطوات في ملف <b>SCHOOL.md</b>. فعّل تسجيل الدخول قبل ذلك.</p>
+</section>
+
+<section id="parents">
+  <h2>لولي الأمر</h2>
+  <p class="lead">خمس دقائق وتكون جاهزاً.</p>
+  <h3>1. اكتب اسمك وأضف أبناءك</h3>
+  <p>اختر <b>أنا ولي أمر</b> واكتب اسمك. بعد ذلك اكتب لكل طفل اسمه الأول واختر صفه الحالي، ثم انقر <b>أضف هذا الطفل</b>. أضف جميع أبنائك، ولكل منهم صفحته. لا توجد كلمة مرور ولا حساب للطفل، وينتقل الطفل إلى الصف التالي تلقائياً كل سنة.</p>
+  <figure><img src="img/parent-family-ar.png" alt="صفحة الأسرة والإعدادات وفيها قائمة الأبناء" loading="lazy"><figcaption>أسماء أبنائك في القائمة الجانبية. انقر الاسم لترى ذلك الطفل، و«أضف طفلاً آخر» أسفل القائمة.</figcaption></figure>
+  <div class="note">تريد أن تستكشف أولاً؟ انقر <b>أضف طفلين تجريبيين للاستكشاف</b>. لديهما نتائج 3 سنوات غير حقيقية، ويمكنك إزالتهما في أي وقت.</div>
+
+  <h3>2. أضف نتيجة</h3>
+  <p>النتيجة اختبار أو امتحان أو واجب. يحتاج أثر إلى معرفة موضوع كل جزء في الورقة، لأن المجموع وحده لا يوضح موضع الصعوبة. أمامك طريقتان:</p>
+  <ul>
+    <li><b>صورة:</b> ضع الورقة المصححة مستوية في إضاءة جيدة وصوّرها من الأعلى مباشرة. يقرأ أثر الدرجات ويملأ السطور. راجع كل سطر مقابل الورقة، وضع علامة على <b>راجعت كل سطر على الورقة</b>، ثم انقر <b>احفظ هذه النتائج</b>. لا يُحفظ شيء قبل وضع العلامة.</li>
+    <li><b>كتابة:</b> اختر المادة والصف والفصل الدراسي والسنة، ولكل جزء اختر الموضوع واكتب الدرجة والدرجة الكاملة.</li>
+  </ul>
+  <figure><img src="img/parent-add-ar.png" alt="صفحة إضافة نتيجة أو ملاحظة" loading="lazy"><figcaption>صورة ورقة، أو كتابة الدرجات، أو ملاحظة بكلماتك. أسفل مربع الصورة أوراق تجريبية للتجربة.</figcaption></figure>
+  <div class="care">يقرأ أثر الصورة الواضحة المستقيمة جيداً. أما في الصورة المظلمة أو المائلة فقد يخطئ دون أن يذكر أنه غير متأكد، ولذلك فالمراجعة مسؤوليتك. ولم تُجرَّب قراءة خط اليد الحقيقي بما يكفي بعد. لا تُحفظ الصورة ولا تخرج من الحاسوب.</div>
+  <p>أوراق السنوات الماضية مهمة: كلما امتدت النتائج إلى الوراء أكثر، استطاع أثر أن يوضح أكثر.</p>
+
+  <h3>3. اقرأ الصفحة الرئيسية</h3>
+  <p>عندما يصبح لدى الطفل نحو 6 درجات، تعرض صفحة <b>ابني / ابنتي</b>: ما يسير جيداً، ومن أين تبدأ المساعدة، وما يأتي هذه السنة، وأسئلة يمكنك طرحها على المعلم.</p>
+  <figure><img src="img/parent-home-ar.png" alt="الصفحة الرئيسية لولي الأمر" loading="lazy"><figcaption>«من أين تبدأ المساعدة» يعود بالصعوبة إلى أقدم موضوع قد تكون بدأت منه. ابدأ بالأقدم.</figcaption></figure>
+  <figure><img src="img/parent-little-ar.png" alt="الصفحة الرئيسية عندما تكون السجلات قليلة" loading="lazy"><figcaption>إذا كانت الدرجات أقل من 6، يذكر أثر أن السجلات ما زالت قليلة ولا يقول شيئاً آخر.</figcaption></figure>
+
+  <h3>4. ما لاحظه أثر</h3>
+  <p>يعرض أثر ملاحظاته ومعها السجلات التي بُنيت عليها. أنت صاحب القرار: احتفظ بما يتفق مع ما تراه في البيت، وارفض ما لا يتفق. لا يُستخدم شيء قبل أن تقرر.</p>
+  <figure><img src="img/parent-noticed-ar.png" alt="صفحة ما لاحظه أثر" loading="lazy"><figcaption>تحت كل ملاحظة الدرجات التي بُنيت عليها، سطراً سطراً.</figcaption></figure>
+
+  <h3>5. الصورة الكاملة</h3>
+  <p>تعرض <b>الصورة الكاملة</b> كل ما سُجّل عن الطفل: المواد، والمهارات، وخريطة المنهج التي توضح ما يعتمد عليه كل موضوع.</p>
+  <figure><img src="img/parent-picture-ar.png" alt="الصورة الكاملة لطفل" loading="lazy"></figure>
+  <figure><img src="img/parent-map-ar.png" alt="خريطة التعلم" loading="lazy"><figcaption>خريطة التعلم. انقر أي موضوع لترى درجاته وتعود إلى ما قبله.</figcaption></figure>
+  <div class="note">لا يقارن أثر ابنك بأي أحد أبداً. إنه يقرأ النتائج التي أدخلتها فقط، والمعلم يعرف أموراً لا تعرفها هذه النتائج. وإذا كان شيء هنا لا يتفق مع ما تراه، فصدّق ما تراه.</div>
+</section>
+
+<section id="teachers">
+  <h2>للمعلم والمدرسة</h2>
+  <p class="lead">يفتح جانب المدرسة بمدرسة غير حقيقية: 40 طالباً من الصف الأول إلى الصف الحادي عشر على منهج كامبريدج، ومعلموهم، وسجلات عدة سنوات. جرّب عليها كما تشاء.</p>
+  <h3>1. نظرة على الفصل والمدرسة</h3>
+  <p>تعرض <b>نظرة على الفصل</b> عدد السجلات، وما ينتظر قرارك، ومتوسط كل مجال في كل صف. وتعرض <b>خريطة المدرسة</b> الصورة نفسها بالموضوعات. الصفحتان تصفان الموضوعات لا الطلاب، ولا يوجد ترتيب للطلاب في أي مكان.</p>
+  <figure><img src="img/teacher-overview-ar.png" alt="نظرة على الفصل" loading="lazy"></figure>
+  <figure><img src="img/teacher-school-ar.png" alt="خريطة المدرسة" loading="lazy"></figure>
+
+  <h3>2. طالب واحد</h3>
+  <p>من <b>الطلاب</b> اختر طالباً. ستجد ملفه، وخريطة التعلم، والأنماط التي استمرت عدة فصول دراسية، وما اعتُمد. في خريطة التعلم انقر موضوعاً نتائجه منخفضة ثم <b>تتبع البداية</b> لترى من أين قد تكون الصعوبة بدأت.</p>
+  <figure><img src="img/teacher-learner-ar.png" alt="ملف طالب" loading="lazy"></figure>
+
+  <h3>3. في انتظار المراجعة</h3>
+  <p>كل استنتاج ينتظر معلماً مسمّى. افتح الاستنتاج واطّلع على السجلات التي يستند إليها، ثم اختر <b>اعتماد</b> أو <b>تعديل</b> أو <b>رفض</b>. لا يستطيع المساعد اعتماد أي شيء. ويُبنى التقرير المطبوع للطالب مما اعتُمد فقط.</p>
+  <figure><img src="img/teacher-review-ar.png" alt="في انتظار المراجعة" loading="lazy"><figcaption>اختر اسمك من «الدخول باسم» قبل أن تقرر، ليُسجَّل القرار باسمك.</figcaption></figure>
+
+  <h3>4. إضافة سجلات</h3>
+  <ul>
+    <li><b>كشف درجات:</b> نزّل الكشف، واملأه في Excel، وارفعه. هذه الطريقة الدقيقة ولا تحتاج إلى نموذج.</li>
+    <li><b>مستند:</b> ورقة اختبار مكتوبة أو ملاحظة معلم. يقرؤها المساعد ويسجّل ما وجده، ويتوقف ليسألك إذا كان شيء غير واضح.</li>
+  </ul>
+  <figure><img src="img/teacher-add-ar.png" alt="صفحة إضافة سجلات" loading="lazy"></figure>
+  <p>لإضافة طالب جديد، انتقل إلى صفحة <b>المدرسة</b> واستخدم <b>أضف طالباً</b>. يحصل كل طالب على رمز قصير، وتُكتب المستندات بالرمز لا بالاسم.</p>
+
+  <h3>5. المساعد الآلي</h3>
+  <p>من صفحة <b>المساعد الآلي</b> شغّله على طالب ومستند. يقرأ، ويشغّل التحليلات، ويتوقف عند المعلم مرتين. أما الاستنتاجات نفسها فيستخرجها برنامج عادي، لا النموذج. وهذه الصفحة الوحيدة التي تحتاج إلى النموذج.</p>
+  <figure><img src="img/teacher-agent-ar.png" alt="صفحة المساعد الآلي" loading="lazy"></figure>
+
+  <h3>6. المدرسة وتسجيل الدخول</h3>
+  <p>يكون تسجيل الدخول غير مفعّل في البداية، فيستطيع أي شخص على الحاسوب فتح أثر. لتفعيله، افتح صفحة <b>المدرسة</b> وأنشئ حساب مسؤول المدرسة. بعدها تحتاج كل صفحة إلى اسم مستخدم وكلمة مرور، ولا يضيف المعلمين إلا المسؤول، ولا يرى كل معلم إلا طلاب فصوله. ويحتوي <b>سجل العمليات</b> على كل ما جرى ومن قام به.</p>
+  <div class="care">لا تُدخل بيانات طلاب حقيقية الآن. لم يُجرَّب أثر بعد مع معلم حقيقي أو طالب حقيقي.</div>
+
+  <h3>7. الإضافة إلى المنهج</h3>
+  <p>يأتي أثر بمنهج كامبريدج للرياضيات والعلوم واللغة الإنجليزية من الصف الأول إلى الصف الحادي عشر. ومن صفحة <b>المدرسة</b>، تحت <b>المنهج</b>، يمكنك إضافة موضوعات لمادة أخرى، مثل اللغة العربية أو الدراسات الإسلامية أو الدراسات الاجتماعية، أو لصف آخر.</p>
+  <ol>
+    <li>اختر المادة والصف والفصل الدراسي.</li>
+    <li>اكتب الموضوعات، كل موضوع في سطر. أو ارفع صفحة الفهرس من الكتاب: ملفاً نصياً أو Word أو Excel، أو صورة. وإذا كان الكتاب PDF، فالتقط لقطة شاشة لصفحة الفهرس.</li>
+    <li>ضع علامة على <b>دع النموذج يقرؤها</b> إذا أردت أن يكتب النموذج الموضوعات ويقترح أي موضوع يحتاج إلى أي موضوع. يستغرق ذلك نحو دقيقة.</li>
+    <li>انقر <b>أنشئ مسودة</b>.</li>
+  </ol>
+  <figure><img src="img/teacher-curriculum-ar.png" alt="بطاقة المنهج في صفحة المدرسة" loading="lazy"><figcaption>ما أضافته المدرسة في الأعلى، ونموذج الإضافة أسفله.</figcaption></figure>
+  <p><b>راجع المسودة.</b> يظهر كل موضوع باسمه باللغتين، وصفه وفصله الدراسي ومجاله، والموضوعات التي يحتاج إليها قبله، والموضوعات اللاحقة التي تحتاج إليه. صحّح الأسماء، وأزل كل رابط لا توافق عليه، وأضف الناقص. ثم ضع علامة على <b>راجعت كل موضوع وكل رابط</b> وانقر <b>اعتماد وإضافة للمنهج</b>.</p>
+  <figure><img src="img/teacher-curriculum-check-ar.png" alt="مراجعة مسودة قبل اعتمادها" loading="lazy"><figcaption>لا يدخل شيء إلى المنهج قبل أن يعتمده معلم مسمّى.</figcaption></figure>
+  <div class="care">يقرأ النموذج أسماء الموضوعات جيداً، لكن بعض الروابط التي يقترحها تكون خاطئة. والرابط الخاطئ يوجّه المعلم أو ولي الأمر إلى مكان خاطئ يبدأ منه المساعدة، فمراجعتك هي الضمان. ويمكن سحب الإضافة ما دام لا يوجد سجل يستخدم موضوعاتها. ولا يستطيع أولياء الأمور الإضافة إلى المنهج.</div>
+</section>
+
+<section id="model">
+  <h2>المساعد (النموذج)</h2>
+  <p>تحتوي النسخة الكاملة على نموذج مفتوح يعمل على هذا الحاسوب. لا تحتاج إلى تنزيل أي برنامج آخر، ولا يخرج شيء من الحاسوب.</p>
+  <ul>
+    <li>ما يحتاج إلى النموذج: قراءة صورة ورقة، وصفحة <b>قراءة ورقة</b> أو <b>المساعد الآلي</b>.</li>
+    <li>ما لا يحتاج إليه: كل شيء آخر.</li>
+    <li>بعد تشغيل أثر، انتظر دقيقة حتى يجهز النموذج.</li>
+  </ul>
+  <p>إذا كانت نسختك بلا نموذج، فستعرض عليك النافذة السوداء تنزيله في المرة الأولى: ملفان حجمهما 6.1 غيغابايت. اضغط Enter وانتظر. يحدث هذا مرة واحدة. وإذا رفضت، فانقر لاحقاً نقراً مزدوجاً على <b>Download the model</b> في مجلد أثر.</p>
+</section>
+
+<section id="fix">
+  <h2>إذا واجهت مشكلة</h2>
+  <table>
+    <thead><tr><th>ما حدث</th><th>ماذا تفعل</th></tr></thead>
+    <tbody>
+      <tr><td>يقول Google Drive إنه لا يستطيع فحص الملف من الفيروسات</td><td>هذا طبيعي مع أي ملف كبير. انقر <b>Download anyway</b>.</td></tr>
+      <tr><td>يقول ويندوز Windows protected your PC</td><td>انقر <b>More info</b> ثم <b>Run anyway</b>.</td></tr>
+      <tr><td>نقرت Start Athar ولم يحدث شيء</td><td>تأكد أنك فككت ضغط الملف كله وأنك تشغّل من المجلد المفكوك، لا من داخل ملف zip.</td></tr>
+      <tr><td>لم يُفتح المتصفح</td><td>اكتب <kbd dir="ltr">http://127.0.0.1:8780</kbd> في المتصفح. العنوان الصحيح مكتوب في النافذة السوداء.</td></tr>
+      <tr><td>تقول الصفحة إنها لا تستطيع الاتصال</td><td>أُغلقت النافذة السوداء. انقر نقراً مزدوجاً على <b>Start Athar</b> مرة أخرى.</td></tr>
+      <tr><td>التشغيل الأول بطيء</td><td>برنامج الحماية يفحص الملفات في المرة الأولى. انتظر، فالمرات التالية أسرع.</td></tr>
+      <tr><td>تقول الصفحة إن النموذج غير جاهز</td><td>انتظر دقيقة بعد التشغيل. إذا استمر ذلك، فانظر في مجلد <b>logs</b>. بقية أثر تعمل بلا نموذج.</td></tr>
+      <tr><td>قراءة الصورة خاطئة</td><td>صوّر مرة أخرى في إضاءة أفضل ومن الأعلى مباشرة، أو صحّح السطور يدوياً قبل الحفظ، أو اكتب الدرجات.</td></tr>
+      <tr><td>قراءة الورقة بطيئة جداً</td><td>الحاسوب بلا بطاقة رسومات أو ذاكرته قليلة. اكتب الدرجات يدوياً، فهذا لا يحتاج إلى نموذج.</td></tr>
+      <tr><td>لا أجد طريقة لإضافة طفل</td><td>افتح <b>الأسرة والإعدادات</b>، أو انقر <b>+ أضف طفلاً آخر</b> أسفل قائمة الأبناء.</td></tr>
+      <tr><td>اخترت ولي أمر وأنا معلم، أو العكس</td><td>افتح <b>الأسرة والإعدادات</b> أو <b>المدرسة</b> وانقر <b>انتقل إلى جانب المدرسة</b> أو <b>انتقل إلى جانب الأسرة</b>. تبقى السجلات في مكانها.</td></tr>
+      <tr><td>أريد البدء من جديد</td><td>أغلق أثر واحذف مجلد <b>data</b>. هذا يحذف كل ما أضفته والحسابات، فأنشئ نسخة احتياطية أولاً إذا كنت تحتاج إليها.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="safe">
+  <h2>الحفاظ على السجلات</h2>
+  <ul>
+    <li>كل السجلات في ملف واحد داخل مجلد <b>data</b>. من الإعدادات انقر <b>أنشئ نسخة احتياطية الآن</b> واحفظ نسخة على ذاكرة USB من حين لآخر. إذا فُقد الحاسوب، فُقدت السجلات معه.</li>
+    <li>يمكنك حفظ ملف طالب واحد كاملاً كملف، أو حذفه نهائياً، من الصفحة نفسها.</li>
+    <li>لنقل أثر إلى حاسوب آخر، أغلقه وانسخ المجلد كله.</li>
+    <li>يستمع أثر افتراضياً على هذا الحاسوب فقط، ولا يستطيع أي حاسوب آخر على الشبكة فتحه إلا إذا شُغّل لشبكة المدرسة.</li>
+    <li>لا توجد كلمة مرور على جانب ولي الأمر، فيستطيع أي شخص يستخدم الحاسوب فتح أثر. استخدم حسابات ويندوز إذا كان ذلك يهمك.</li>
+  </ul>
+</section>
+
+<footer>أثر برنامج مفتوح المصدر من Meska AI، معدّ هنا لمدارس التعليم العالمية. تراخيص كل ما في المجلد في مجلد LICENSES.</footer>
+</main>
+
+<!-- ============================== ENGLISH ============================== -->
+<main class="wrap" lang="en" dir="ltr">
+
+<section>
+  <h2>Athar in two lines</h2>
+  <p>Athar keeps a learner's results from year to year and shows where they are doing well, where they need help, and where a difficulty may have started. It is one program with two sides: one for a parent, one for a teacher and a school.</p>
+  <p>This copy is set up for Learning International Schools and comes with the Cambridge curriculum for Mathematics, Science and English, Years 1 to 11. Everything runs on the school's server or on this computer, and there is no account with any company.</p>
+  <div class="care">This is an early version. The names and records that come with it are all made up. The curriculum inside is a draft that teachers still need to review and match to the school's Marshall Cavendish books.</div>
+</section>
+
+
+<section id="start">
+  <h2>Starting</h2>
+  <ol>
+    <li>Right-click the zip file and choose <b>Extract All</b>. Extract it to a normal place such as Desktop or Documents. Do not run it from inside the zip, and do not put it in Program Files. Extracting takes a few minutes because the file is large.</li>
+    <li>Open the folder and double-click <b>Start Athar</b>.</li>
+    <li>If Windows says <b>Windows protected your PC</b>, click <b>More info</b>, then <b>Run anyway</b>. This happens the first time only, because the program is not signed.</li>
+    <li>A black window opens and, after a short wait, your browser opens Athar at <kbd>http://127.0.0.1:8780</kbd>.</li>
+    <li>Keep the black window open while you use Athar. To stop, close it or double-click <b>Stop Athar</b>.</li>
+  </ol>
+  <p>The first time, Athar asks who is using it. Choose <b>I am a parent</b> or <b>I am a teacher or I work in a school</b>. You can change this later in the settings.</p>
+  <figure><img src="img/start-en.png" alt="First start: choose parent or school" loading="lazy"><figcaption>First start. It is the same program either way.</figcaption></figure>
+  <h3>What the computer needs</h3>
+  <ul>
+    <li>Windows 10 or 11, 64-bit.</li>
+    <li>About 8 GB of free disk space.</li>
+    <li>For the assistant: 16 GB of memory is comfortable. With a graphics card, reading a paper takes about a minute. Without one it can take several minutes.</li>
+  </ul>
+  <p>To remove Athar, delete the folder. Nothing else on the computer was changed.</p>
+  <h3>On the school network and on phones</h3>
+  <p>Athar can run on one school computer so that teachers open it from their laptops and phones over the school network, and it can be installed on a phone's home screen like an app. The steps are in <b>SCHOOL.md</b>. Turn sign-in on first.</p>
+</section>
+
+<section id="parents">
+  <h2>For parents</h2>
+  <p class="lead">Five minutes and you are set up.</p>
+  <h3>1. Type your name and add your children</h3>
+  <p>Choose <b>I am a parent</b> and type your name. Then, for each child, type a first name, choose the grade they are in now, and press <b>Add this child</b>. Add all your children; each one gets their own page. There is no password and no account for a child, and a child moves up a grade by themselves each year.</p>
+  <figure><img src="img/parent-family-en.png" alt="Family and settings, with the list of children" loading="lazy"><figcaption>Your children are listed in the side panel. Click a name to see that child. "Add another child" is under the list.</figcaption></figure>
+  <div class="note">Want to look around first? Press <b>Add two made-up children to look around</b>. They have three years of invented results, and you can remove them at any time.</div>
+
+  <h3>2. Add a result</h3>
+  <p>A result is a test, an exam or a piece of homework. Athar needs to know what each part of the paper was about, because a total alone cannot show where the difficulty is. There are two ways:</p>
+  <ul>
+    <li><b>A photo:</b> lay the marked paper flat in good light and take the photo straight from above. Athar reads the marks and fills in the lines. Check every line against the paper, tick <b>I checked every line against the paper</b>, and press <b>Save these results</b>. Nothing is saved before you tick the box.</li>
+    <li><b>Typing:</b> choose the subject, the grade, the term and the year. For each part, choose the topic and type the mark and what it was out of.</li>
+  </ul>
+  <figure><img src="img/parent-add-en.png" alt="Add a result or a note" loading="lazy"><figcaption>A photo of a paper, typed marks, or a note in your own words. Under the photo box there are made-up papers to try it with.</figcaption></figure>
+  <div class="care">Athar reads a clear, straight photo well. On a dim or tilted photo it makes mistakes and does not say when it is unsure, which is why the check is yours. Real handwriting has not been tested enough yet. The photo is not kept and never leaves the computer.</div>
+  <p>Papers from earlier years are worth adding: the further back the results go, the more Athar can tell.</p>
+
+  <h3>3. Read the home page</h3>
+  <p>Once a child has about six marks, <b>My child</b> shows what is going well, where to help first, what is coming up this year, and questions you could ask the teacher.</p>
+  <figure><img src="img/parent-home-en.png" alt="The parent's home page" loading="lazy"><figcaption>"Where to help first" follows a difficulty back to the earlier topic where it may have started. Start with the earliest one.</figcaption></figure>
+  <figure><img src="img/parent-little-en.png" alt="The home page when there are few records" loading="lazy"><figcaption>With fewer than six marks, Athar says there is too little to tell and says nothing else.</figcaption></figure>
+
+  <h3>4. What Athar noticed</h3>
+  <p>Athar shows what it noticed, with the records behind it. You decide: keep what matches what you see at home, and reject what does not. Nothing is used until you decide.</p>
+  <figure><img src="img/parent-noticed-en.png" alt="What Athar noticed" loading="lazy"><figcaption>Under each finding are the marks it rests on, line by line.</figcaption></figure>
+
+  <h3>5. The full picture</h3>
+  <p><b>The full picture</b> shows everything on record for a child: subjects, skills, and the curriculum map that shows which topic builds on which.</p>
+  <figure><img src="img/parent-picture-en.png" alt="The full picture for one child" loading="lazy"></figure>
+  <figure><img src="img/parent-map-en.png" alt="The learning map" loading="lazy"><figcaption>The learning map. Click any topic to see its marks and to trace back to the topics before it.</figcaption></figure>
+  <div class="note">Athar never compares your child with anyone. It reads only the results you entered, and the teacher knows things these results do not. If something here does not match what you see, trust what you see.</div>
+</section>
+
+<section id="teachers">
+  <h2>For teachers and schools</h2>
+  <p class="lead">The school side opens with a made-up school: 40 learners from Year 1 to Year 11 on the Cambridge curriculum, their teachers, and several years of records. Try anything on it.</p>
+  <h3>1. The class and the school at a glance</h3>
+  <p><b>Class overview</b> shows how many records there are, what is waiting for your decision, and the average for each area in each grade. <b>School map</b> shows the same picture by topic. Both pages describe topics, not learners, and no page ranks learners.</p>
+  <figure><img src="img/teacher-overview-en.png" alt="Class overview" loading="lazy"></figure>
+  <figure><img src="img/teacher-school-en.png" alt="School map" loading="lazy"></figure>
+
+  <h3>2. One learner</h3>
+  <p>Under <b>Learners</b>, choose a learner. You get their profile, the learning map, the patterns that held over several terms, and what has been approved. On the learning map, click a topic with low results, then <b>Trace back</b>, to see where the difficulty may have started.</p>
+  <figure><img src="img/teacher-learner-en.png" alt="A learner's profile" loading="lazy"></figure>
+
+  <h3>3. The review queue</h3>
+  <p>Every finding waits for a named teacher. Open a finding, look at the records behind it, then approve, edit or reject it. The assistant cannot approve anything. A learner's printable report is built from approved findings only.</p>
+  <figure><img src="img/teacher-review-en.png" alt="The review queue" loading="lazy"><figcaption>Choose your name under "Signed in as" before you decide, so the decision is recorded under your name.</figcaption></figure>
+
+  <h3>4. Adding records</h3>
+  <ul>
+    <li><b>A marks sheet:</b> download the sheet, fill it in with Excel, and upload it. This is the exact way and it needs no model.</li>
+    <li><b>A document:</b> a typed quiz sheet or a teacher's note. The assistant reads it and records what it finds, and stops to ask you when something is unclear.</li>
+  </ul>
+  <figure><img src="img/teacher-add-en.png" alt="Add records" loading="lazy"></figure>
+  <p>To add a new learner, open the <b>School</b> page and use <b>Add a learner</b>. Each learner gets a short code, and documents are written with the code, not the name.</p>
+
+  <h3>5. The agent</h3>
+  <p>On the <b>Agent</b> page, start it on a learner and a document. It reads, runs the analyses, and stops for a teacher twice. The findings themselves are reached by plain code, not by the model. This is the only page on the school side that needs the model.</p>
+  <figure><img src="img/teacher-agent-en.png" alt="The Agent page" loading="lazy"></figure>
+
+  <h3>6. The school and sign-in</h3>
+  <p>Sign-in is off at first, so anyone at this computer can open Athar. To turn it on, open the <b>School</b> page and create the school admin. From then on every page needs a username and a password, only the admin adds teachers, and each teacher sees only the learners of their own classes. The <b>Audit log</b> lists every action and who did it.</p>
+  <div class="care">Do not put real learner data in it yet. Athar has not been used with a real teacher or a real learner.</div>
+
+  <h3>7. Adding to the curriculum</h3>
+  <p>Athar comes with the Cambridge curriculum for Mathematics, Science and English, Years 1 to 11. On the <b>School</b> page, under <b>The curriculum</b>, you can add topics for another subject, such as Arabic, Islamic Studies or Social Studies, or another grade.</p>
+  <ol>
+    <li>Choose the subject, the grade and the term.</li>
+    <li>Type the topics, one on each line. Or upload the contents page of the book: a text, Word or Excel file, or a picture. For a PDF, take a screenshot of the contents page.</li>
+    <li>Tick <b>Let the model read it</b> if you want the model to list the topics and suggest which topic needs which. This takes about a minute.</li>
+    <li>Press <b>Make a draft</b>.</li>
+  </ol>
+  <figure><img src="img/teacher-curriculum-en.png" alt="The curriculum card on the School page" loading="lazy"><figcaption>What the school has added is at the top, and the form to add more is under it.</figcaption></figure>
+  <p><b>Check the draft.</b> Every topic shows its name in both languages, its grade, term and area, the topics it needs first, and the later topics that need it. Fix the names, remove every link you do not agree with, and add the ones that are missing. Then tick <b>I checked every topic and every link</b> and press <b>Approve and add to the curriculum</b>.</p>
+  <figure><img src="img/teacher-curriculum-check-en.png" alt="Checking a draft before approving it" loading="lazy"><figcaption>Nothing enters the curriculum before a named teacher approves it.</figcaption></figure>
+  <div class="care">The model reads topic names well, but some of the links it suggests are wrong. A wrong link sends a teacher or a parent to the wrong place to start helping, so your check is the safeguard. An addition can be withdrawn as long as no record uses its topics. Parents cannot add to the curriculum.</div>
+</section>
+
+<section id="model">
+  <h2>The assistant (the model)</h2>
+  <p>The full version has an open model inside that runs on this computer. You do not need to install any other program, and nothing leaves the computer.</p>
+  <ul>
+    <li>What needs the model: reading a photo of a paper, and the <b>Read a paper</b> or <b>Agent</b> page.</li>
+    <li>What does not: everything else.</li>
+    <li>After starting Athar, wait a minute for the model to be ready.</li>
+  </ul>
+  <p>If your copy came without the model, the black window offers to download it the first time: two files, 6.1 GB in all. Press Enter and wait. You do this once. If you said no, double-click <b>Download the model</b> in the Athar folder later.</p>
+</section>
+
+<section id="fix">
+  <h2>If something is not working</h2>
+  <table>
+    <thead><tr><th>What happened</th><th>What to do</th></tr></thead>
+    <tbody>
+      <tr><td>Google Drive says it cannot scan the file for viruses</td><td>This is normal for any large file. Click <b>Download anyway</b>.</td></tr>
+      <tr><td>Windows says "Windows protected your PC"</td><td>Click <b>More info</b>, then <b>Run anyway</b>.</td></tr>
+      <tr><td>I double-clicked Start Athar and nothing happened</td><td>Make sure you extracted the whole zip and are starting it from the extracted folder, not from inside the zip.</td></tr>
+      <tr><td>The browser did not open</td><td>Type <kbd>http://127.0.0.1:8780</kbd> into the browser. The black window shows the exact address.</td></tr>
+      <tr><td>The page says it cannot connect</td><td>The black window was closed. Double-click <b>Start Athar</b> again.</td></tr>
+      <tr><td>The first start is slow</td><td>Your antivirus is checking the files for the first time. Wait; later starts are quicker.</td></tr>
+      <tr><td>The page says the model is not ready</td><td>Wait a minute after starting. If it stays that way, look in the <b>logs</b> folder. The rest of Athar works without the model.</td></tr>
+      <tr><td>A photo was read wrongly</td><td>Take it again in better light, straight from above, or correct the lines by hand before saving, or type the marks.</td></tr>
+      <tr><td>Reading a paper is very slow</td><td>The computer has no graphics card or little memory. Type the marks instead; that needs no model.</td></tr>
+      <tr><td>I cannot find how to add a child</td><td>Open <b>Family and settings</b>, or press <b>+ Add another child</b> under the list of children.</td></tr>
+      <tr><td>I chose parent but I am a teacher, or the other way round</td><td>Open <b>Family and settings</b> or <b>School</b> and press the button that switches to the other side. The records stay where they are.</td></tr>
+      <tr><td>I want to start again from nothing</td><td>Stop Athar and delete the <b>data</b> folder. This removes everything you added and the accounts, so make a backup first if you need one.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="safe">
+  <h2>Keeping records safe</h2>
+  <ul>
+    <li>All the records are in one file in the <b>data</b> folder. In the settings, press <b>Make a backup now</b> and save a copy to a USB stick now and then. If this computer is lost, so are the records.</li>
+    <li>The same page can save one learner's whole record as a file, or delete it for good.</li>
+    <li>To move Athar to another computer, stop it and copy the whole folder.</li>
+    <li>By default Athar listens on this computer only, and no other computer on the network can open it unless it is started for the school network.</li>
+    <li>On the parent side there is no password, so anyone who uses the computer can open Athar. Use Windows user accounts if that matters to you.</li>
+  </ul>
+</section>
+
+<footer>Athar is open source software from Meska AI, set up here for Learning International Schools. Licences of everything in the folder are in the LICENSES folder.</footer>
+</main>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  function set(lang) {
+    root.setAttribute("data-lang", lang);
+    root.lang = lang;
+    document.title = lang === "ar" ? "دليل أثر" : "The Athar guide";
+    document.querySelectorAll(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-set") === lang)); });
+    document.querySelector("header").dir = document.querySelector("nav").dir = lang === "ar" ? "rtl" : "ltr";
+    try { localStorage.setItem("athar.guide.lang", lang); } catch (e) { /* the guide works without it */ }
+  }
+  var asked = new URLSearchParams(location.search).get("lang"), kept = null;
+  try { kept = localStorage.getItem("athar.guide.lang"); } catch (e) { /* private window */ }
+  set(asked === "en" || asked === "ar" ? asked : (kept === "en" || kept === "ar" ? kept : "ar"));
+  document.querySelectorAll(".lang button").forEach(function (b) { b.addEventListener("click", function () { set(b.getAttribute("data-set")); }); });
+})();
+</script>
+</body>
+</html>

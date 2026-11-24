@@ -1,0 +1,53 @@
+# Generic technology and computing, grades 3 to 8.
+# Not tied to any one country or national syllabus. It lists widely taught topics and the order in
+# which they depend on each other. A school can replace this file with its own pack.
+id: generic-technology
+name: Technology and computing, grades 3 to 8
+subject: technology
+subject_label: {en: Technology}
+grades: [3, 8]
+languages: [en]
+
+strands:
+  - {id: digital-literacy, label: {en: Digital literacy}}
+  - {id: computational-thinking, label: {en: Computational thinking}}
+  - {id: design-and-making, label: {en: Design and making}}
+
+skills:
+  - {id: logical-sequencing, label: {en: Putting steps in a logical order}}
+  - {id: pattern-finding, label: {en: Pattern finding}}
+  - {id: working-with-data, label: {en: Working with data}}
+  - {id: explaining-reasoning, label: {en: Explaining reasoning}}
+
+approaches:
+  - {id: concrete_objects, label: {en: Hands-on objects}}
+  - {id: visual_models, label: {en: Diagrams and visual models}}
+  - {id: worked_examples, label: {en: Worked examples}}
+  - {id: peer_groups, label: {en: Group work with peers}}
+  - {id: story_problems, label: {en: Story and real-life problems}}
+  - {id: drill_practice, label: {en: Drill and practice}}
+
+concepts:
+  # ---------------------------------------------------------- Digital literacy
+  - {id: device-basics, label: {en: Using a device safely}, strand: digital-literacy, grade: 3, requires: [], skills: []}
+  - {id: typing-and-files, label: {en: Typing and saving files}, strand: digital-literacy, grade: 4, requires: [device-basics], skills: []}
+  - {id: online-safety, label: {en: Staying safe online}, strand: digital-literacy, grade: 4, requires: [device-basics], skills: [explaining-reasoning]}
+  - {id: searching-evaluating, label: {en: Searching and judging sources}, strand: digital-literacy, grade: 5, requires: [typing-and-files], skills: [explaining-reasoning]}
+  - {id: spreadsheets-basics, label: {en: Spreadsheets and simple formulas}, strand: digital-literacy, grade: 6, requires: [typing-and-files], skills: [working-with-data]}
+  - {id: data-privacy, label: {en: Personal data and privacy}, strand: digital-literacy, grade: 7, requires: [online-safety], skills: []}
+
+  # ---------------------------------------------------- Computational thinking
+  - {id: sequencing-instructions, label: {en: Instructions in the right order}, strand: computational-thinking, grade: 3, requires: [], skills: [logical-sequencing]}
+  - {id: loops, label: {en: Repeating steps with loops}, strand: computational-thinking, grade: 4, requires: [sequencing-instructions], skills: [pattern-finding]}
+  - {id: conditionals, label: {en: Decisions with if and else}, strand: computational-thinking, grade: 5, requires: [sequencing-instructions], skills: [logical-sequencing]}
+  - {id: decomposition, label: {en: Breaking a problem into parts}, strand: computational-thinking, grade: 5, requires: [sequencing-instructions], skills: [logical-sequencing]}
+  - {id: variables, label: {en: Variables}, strand: computational-thinking, grade: 6, requires: [loops, conditionals], skills: []}
+  - {id: debugging, label: {en: Finding and fixing errors}, strand: computational-thinking, grade: 6, requires: [loops, conditionals], skills: [explaining-reasoning]}
+  - {id: functions, label: {en: Functions and reuse}, strand: computational-thinking, grade: 7, requires: [variables], skills: [pattern-finding]}
+  - {id: simple-algorithms, label: {en: Simple algorithms}, strand: computational-thinking, grade: 8, requires: [functions, decomposition], skills: [logical-sequencing]}
+
+  # -------------------------------------------------------- Design and making
+  - {id: design-brief, label: {en: Understanding what a design must do}, strand: design-and-making, grade: 4, requires: [], skills: []}
+  - {id: prototyping, label: {en: Building a first version}, strand: design-and-making, grade: 5, requires: [design-brief], skills: []}
+  - {id: testing-improving, label: {en: Testing and improving a design}, strand: design-and-making, grade: 6, requires: [prototyping], skills: [explaining-reasoning]}
+  - {id: systems-inputs-outputs, label: {en: Systems with inputs and outputs}, strand: design-and-making, grade: 7, requires: [prototyping], skills: [logical-sequencing]}

@@ -1,0 +1,131 @@
+ATHAR
+=====
+
+A GUIDE WITH PICTURES is in this folder. Double-click "Guide (English)" or "Guide (Arabic)".
+It shows how to start Athar, how a parent and a teacher use it, and what to do when something
+is not working. The same guide opens from inside Athar under "Guide and help".
+Two short videos, one for parents and one for teachers, are at the top of the guide and in the
+"Guide" folder, inside "video".
+
+"About Athar" says what Athar is and what it does for a parent and for a teacher.
+The "Screenshots" folder has pictures of every main page, in English and in Arabic.
+
+Athar follows one learner across years and shows where that learner is strong, where they
+struggle, and where a struggle may have started. It is one program with two sides: one for a
+parent with their own children, one for a teacher and a school. A named person approves everything.
+
+This copy is set up for Learning International Schools and covers the Cambridge curriculum,
+Years 1 to 11 (Primary, Lower Secondary and IGCSE), in Mathematics, Science and English.
+
+This folder holds the whole thing: the app, its own copy of Python, and a program that runs an
+open-weights model on this computer. It needs no internet and installs nothing on the computer.
+
+
+HOW TO START
+------------
+
+1. Extract the whole zip to a normal folder, for example your Desktop or Documents.
+   Do not run it from inside the zip, and do not put it in "Program Files".
+2. Open the extracted folder and double-click "Start Athar".
+3. Windows may say "Windows protected your PC" the first time, because the program is not signed.
+   Click "More info", then "Run anyway".
+4. A black window opens and, after a short wait, your browser opens the app at
+   http://127.0.0.1:8780
+5. Keep the black window open while you use the app. Close it to stop Athar.
+   ("Stop Athar" does the same.)
+
+To remove Athar, delete the folder. Nothing else was changed on the computer.
+
+Athar uses its own address, so it can sit on the same computer as an earlier Athar
+package. If the port is taken, Athar picks the next free one and the black window shows it.
+
+
+WHAT YOU SEE
+------------
+
+A synthetic Cambridge school: made-up learners in Years 1 to 11, their teachers, and several
+school years of records. Every name and every record is invented. Try:
+
+- Class overview and School map: where the class and the school stand, by topic.
+- Learners: one learner's map. Click a weak topic, then "trace back".
+- Review queue: findings waiting for a teacher. Open one to see the records behind it.
+- Add records: a marks sheet you fill in with Excel, which needs no model, and documents
+  for the agent to read.
+- Agent: start the agent on a learner. It reads, investigates, and stops for a teacher.
+- School: sign-in and teacher accounts, backup, saving one learner's whole record as a file,
+  and deleting one learner.
+- Audit log: every action, with who did it.
+
+Only the Agent page needs a model. Everything else works without one.
+
+
+SIGN-IN
+-------
+
+Sign-in is off when you first start, so anyone at this computer can open the app and act as
+any teacher. To turn it on, open the School page and create the school admin. From then on
+every page of data needs a username and a password, only the admin adds teachers, and each
+teacher sees only the learners of their own classes.
+
+
+THE MODEL
+---------
+
+With the model (the larger zip): the file is in the "models" folder and it runs on this
+computer. Nothing leaves the computer.
+
+The first time Athar opens it asks who is using it: a parent, or a school. It is the same
+program. A parent sees only their own child. You can switch later in the settings.
+
+If there is no model yet, the black window offers to download one the first time. Press Enter
+and wait. You can also say no and do it later.
+
+Without the model (the smaller zip), choose one:
+
+  0) If LM Studio or Ollama is already running on this computer with a model loaded, there is
+     nothing to do. Athar finds it when it starts and says so in the black window.
+
+  a) Run "Download the model" once, with internet. It fetches two files (6.1 GB in all) into the "models"
+     folder and checks it. After that, no internet is needed.
+  b) Copy Qwen3.5-9B-Q4_K_M.gguf into the "models" folder yourself, for example from a USB stick.
+  c) Use a model on the internet: open the Agent page, open "Cloud models", paste your own
+     OpenAI or Claude key, and pick a model. The key is kept in memory only.
+     For other providers, or to have a key remembered, see settings.txt.
+
+A model on the internet receives the document and the records you run it on. Use it with the
+synthetic data only.
+
+
+WHAT THE COMPUTER NEEDS
+-----------------------
+
+- Windows 10 or 11, 64-bit.
+- About 8 GB of free disk space with the model, 1 GB without.
+- For the model on this computer: 16 GB of memory is comfortable. With a graphics card an agent
+  run takes about a minute. Without one it still works, but a run can take several minutes.
+- With less memory, use a model on the internet instead (option c above).
+
+
+IF SOMETHING GOES WRONG
+-----------------------
+
+- The browser did not open: type http://127.0.0.1:8780 into it yourself. The black window shows
+  the exact address.
+- "The model could not be started": look in the "logs" folder. The app still works without it.
+- The Agent page says the model is not ready: wait a minute after starting, or check "logs".
+- To start again with a fresh school: stop Athar and delete the "data" folder. This also
+  removes the accounts and everything you added.
+- Antivirus programs sometimes check the files on first start. That makes the first start slow.
+
+
+WHAT TO KNOW
+------------
+
+- This is an early version. It has not been used with a real teacher or a real learner.
+- Do not put real learner data in it yet. Use the synthetic school only.
+- The app listens on this computer only (127.0.0.1). Other computers cannot reach it.
+- A backup made on the School page is a file on this computer. Copy it somewhere else as well.
+- The model does not reach conclusions. Plain code does, and a teacher approves each one.
+
+Source code, tests and documents come with the project this package was built from. See VERSION.txt.
+Licences of everything in this folder: see the LICENSES folder.
